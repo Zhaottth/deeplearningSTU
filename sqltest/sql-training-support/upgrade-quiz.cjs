@@ -1,0 +1,91 @@
+const fs=require('node:fs');
+const vm=require('node:vm');
+process.chdir(__dirname);
+const source=fs.readFileSync(fs.existsSync('../1.original.html')?'../1.original.html':'../1.html','utf8');
+if(!fs.existsSync('../1.original.html'))fs.writeFileSync('../1.original.html',source);
+const bank=vm.runInNewContext(source.match(/const BANK=(\[[\s\S]*?\n\]);/)[1]);
+function fix(text,patch){const q=bank.find(q=>q.q===text);if(!q)throw Error(text);Object.assign(q,patch);}
+fix('数据库的本质是？',{q:'数据库是什么？',o:['内存中的一块缓存','按一定模型组织、存储和管理的数据集合','一段云存储服务','只能是一张二维表'],e:'数据库是有组织的数据集合；数据库管理系统负责查询、约束、事务等，不能把数据库简单等同于文件系统。'});
+fix('非关系型数据库强调以什么形式存储数据？',{q:'Redis 常见的基本数据访问模型是？',e:'Redis 常用键来访问值；NoSQL 还包含文档、宽列、图等模型，不能统一理解为 key-value。'});
+fix('关系型数据库强调以二维表格的形式存储数据。',{e:'关系模型在逻辑上以表（关系）、行、列组织数据；物理存储不一定是二维表格，关系模型也不要求只能使用 SQL。'});
+fix('关于关系型数据库，正确的是？',{o:['通常使用 SQL 进行查询','逻辑上以表、行、列组织数据','以 key-value 为唯一模型','属于 NoSQL'],e:'逻辑模型与物理存储要区分。NoSQL 包括多种模型。'});
+fix('关于 DQL，下面说法正确的是？',{o:['每份数据库文档都严格单独划分 DQL','常用教学分类，主要指 SELECT 查询','专门用来操作事务','用来定义访问权限和创建用户'],e:'DQL 是常见教学分类；MySQL 文档把 SELECT 列在数据操作语句中。本题库使用 DQL 表示查询。'});
+fix('“SQL 是普通话，MySQL、Oracle 是方言”这句话想说明什么？',{o:['SQL 只能在 MySQL 中使用','SQL 有标准，各数据库产品实现和扩展有所差异','方言是错误用法','两者毫无关系'],e:'SQL 是语言，MySQL、Oracle 是数据库产品。分页、类型、日期函数等可能存在方言差异，没有固定的 99%/1% 通用比例。'});
+fix('MySQL 的 SQL 语句区分大小写。',{q:'MySQL 的 SQL 关键字（如 SELECT）区分大小写。',e:'关键字不区分大小写；库表名受操作系统及 lower_case_table_names 影响，字符串比较还受排序规则影响。'});
+fix('int 不够用时，应该改用？',{q:'需要存储超出 INT 范围的整数时，优先考虑？',e:'INT 是 4 字节整数，BIGINT 是 8 字节整数；显示宽度不决定范围。'});
+fix('int 的默认长度是？',{q:'MySQL INT 的存储大小是？',o:['8 字节','4 字节','11 字节','32 字节'],e:'INT 占 4 字节。有符号范围为 -2147483648 到 2147483647。历史写法 INT(11) 的 11 是显示宽度，已弃用，不是容量。'});
+fix('执行 show create table 时，可以看到 MySQL 自动帮我们做了哪些事？',{q:'SHOW CREATE TABLE 的输出可以包含哪些信息？',o:['列和约束定义','引擎信息','表的字符集或排序规则','索引定义'],e:'输出建表定义。不要假设所有列都 DEFAULT NULL，也不要依赖旧版本的 INT(11) 显示。'});
+fix('修改表名的正确写法是？',{o:['rename table 旧表名 to 新表名;','alter table 旧表名 rename from 新表名;','change table 旧表名 to 新表名;','move table 旧表名 to 新表名;'],e:'RENAME TABLE 旧名 TO 新名；ALTER TABLE 旧名 RENAME TO 新名 也合法。'});
+fix('官方推荐用来清空整表数据的是？',{q:'需要清空整表并重置自增，且接受隐式提交时，应使用？',e:'TRUNCATE TABLE 属于 DDL，在 MySQL 中隐式提交，不能靠 ROLLBACK 撤销，也可能受外键约束限制。需要可回滚删除时考虑 InnoDB 事务中的 DELETE。'});
+fix('一个表中主键的个数是？',{q:'一个表最多可以定义几个 PRIMARY KEY 约束？',e:'最多一个主键约束，可以由多列组成（联合主键）；表也可以不显式声明主键。'});
+fix('给主键插入 null，报错信息是？',{q:'严格模式下，向非自增的主键列显式插入 NULL，通常会报？',e:'非自增主键不能为 NULL；AUTO_INCREMENT 列写 NULL 则通常触发生成自增值。'});
+fix('关于主键自增，正确的是？',{o:['默认自增起点通常为 1，步长可配置','推荐使用 INT 或 BIGINT','插入 NULL 通常生成自增值','InnoDB 中自增列不需要任何索引'],e:'InnoDB 自增列必须是某个索引的首列，但不要求一定是主键。0 的行为受 NO_AUTO_VALUE_ON_ZERO 模式影响；自增也不保证连续。'});
+fix('delete from 表名; 在工具里会弹黄警告，truncate 表名; 不会弹警告。',{q:'能否用“客户端是否弹警告”判断一条删除语句是否安全？',a:[1],e:'不能。警告是客户端行为。TRUNCATE 在 MySQL 中隐式提交，不可事务回滚；执行前要明确影响范围与恢复方案。'});
+fix('SQL 语句必须以分号结尾才能执行。',{a:[1],e:'分号通常是客户端语句分隔符。驱动 API 执行单条语句时通常可省略末尾分号。'});
+fix("varchar(10) 存储 'abc' 时，实际只占 3 个字符长度。",{q:"VARCHAR(10) 存储 'abc'，总存储空间一定只有 3 字节。",a:[1],e:'还需要长度信息；字节数受字符集影响。VARCHAR 的长度声明按字符计，不能直接等同于存储字节。'});
+fix('主键字段允许插入 null 值。',{q:'非自增主键可以把 NULL 作为实际存储的主键值。',e:'主键不能存储 NULL。自增主键接受 NULL 作为生成新值的输入，但最终存储的是生成的数字。'});
+fix('建表后给字段添加默认值，通常使用哪个关键字重定义字段？',{q:'使用 ALTER TABLE t ___ c c INT DEFAULT 1 重定义字段，空缺处是？',e:'该语法是 CHANGE 旧名 新名 定义。也可用 ALTER TABLE t ALTER COLUMN c SET DEFAULT 1 专门设置默认值。'});
+fix('下列可以删除表中数据的语句有？',{q:'下列能清空数据且保留表结构的语句有？'});
+fix('存储固定为 1 个字符的性别‘男/女’，可用？',{q:'需要声明固定长度为 1 个字符的字符串列，选择？'});
+fix('存储‘2023-10-01 12:30:00’这样精确到秒的时间，应使用？',{q:'需要保存不自动按会话时区转换的完整日期时间，选择？',e:'DATETIME 保存日期时间字面值；TIMESTAMP 还涉及会话时区与 UTC 的转换。二者都可支持小数秒。'});
+fix("纠错：insert into student(name) value ('张三');（value 应为 values）",{q:"将 MySQL 的合法写法 INSERT ... VALUE 改写为常用的 VALUES 写法：向 student(name) 插入 '张三'。",e:'MySQL 中 VALUE 是 VALUES 的合法同义词，原语句并非错误；通常写 VALUES 以保持一致。'});
+for(const q of bank){
+ if(/快捷键|ctrl \+ d/.test(q.q)) {q.q+='（JetBrains 默认 Windows 键位；其他工具可能不同）';q.e+=' 快捷键属于编辑器配置，不属于 SQL 语法。';}
+ if(q.q.includes('关于 SQL 通用语法')) {q.o[2]='SQL 关键字不区分大小写，建议统一风格';q.e='语句可换行；关键字不区分大小写。库表名与字符串另受环境设置影响。';}
+ if(q.e.includes('默认写法是 decimal(11,0)'))q.e='DECIMAL(11,2) 共 11 位数字，其中 2 位小数。MySQL 省略参数的 DECIMAL 默认为 DECIMAL(10,0)。';
+ if(q.e.includes('into 不能省'))q.e='多组值用逗号分隔。MySQL INSERT 中 INTO 可省略，但建议显式书写。';
+ if(q.e.includes('程序员归类，非官方'))q.e='本题库采用常见教学分类：SELECT 归 DQL。MySQL 文档也把 SELECT 列在数据操作语句中。';
+ if(q.q.includes('DML')) {q.q+='（本题库将 SELECT 单列为 DQL）';q.e+=' 分类命名不影响语句功能。';}
+ if(q.q.includes('插入记录时，自增字段可以写什么')) {q.q+='（未启用 NO_AUTO_VALUE_ON_ZERO）';q.e+=' 启用 NO_AUTO_VALUE_ON_ZERO 时，0 不触发自增；推荐省略该列或写 NULL。';}
+ if(q.e.includes('float/double 有精度问题'))q.e+=' DECIMAL 仍受声明的精度与小数位限制。';
+ if(q.q.includes('要彻底删除某字段的主键')){q.q='要取消唯一的自增主键并允许 NULL，可先去掉自增，再 DROP PRIMARY KEY，最后显式将列改为可空。';q.e='这是无其他依赖时的一种步骤。CHANGE/MODIFY 应写完整定义以免丢失属性；DROP PRIMARY KEY 不会自动去掉 NOT NULL。';}
+ if(q.q.includes('只想修改字段类型'))q.e='MODIFY 可修改类型和属性；CHANGE 还需要提供旧、新字段名。重定义时保留仍需要的属性。';
+ if(q.e.includes('ctrl+d、ctrl+c'))q.e='退出 mysql 客户端可用 exit、quit 或 \\q。Ctrl+C 通常用于中断当前输入或查询，不应当作通用退出命令。';
+}
+const add=(topic,q,o,a,e)=>bank.push({topic,type:Array.isArray(a)?'m':'s',q,o,a:Array.isArray(a)?a:[a],e});
+const fill=(topic,q,a,e)=>bank.push({topic,type:'f',q,a:Array.isArray(a)?a:[a],e});
+add('查询基础','WHERE score = NULL 能匹配 NULL 吗？',['能','不能，应使用 IS NULL','仅数字列可以','与 IS NULL 等价'],1,'NULL 表示未知；与 NULL 的普通比较结果为 UNKNOWN。WHERE 只保留 TRUE。');
+add('查询基础','COUNT(*) 与 COUNT(email) 的区别？',['完全相同','前者数行，后者只数 email 非 NULL 的行','前者只数主键','后者去重'],1,'COUNT(*) 统计行数；COUNT(列) 忽略 NULL；COUNT(DISTINCT 列) 统计非空不同值。');
+add('查询基础','WHERE a=1 OR b=2 AND c=3 的实际分组是？',['(a=1 OR b=2) AND c=3','a=1 OR (b=2 AND c=3)','从左到右','语法错误'],1,'AND 优先于 OR。复杂业务条件主动加括号，避免误读。');
+add('查询基础','无 ORDER BY 的结果顺序能保证吗？',['按主键','按插入顺序','不能保证','按索引创建时间'],2,'执行计划、并发和数据分布都可能改变返回顺序。分页需要确定性排序。');
+add('查询基础','取第 21–30 条，MySQL 写法是？',['LIMIT 20,10','LIMIT 21,10','LIMIT 10,20','LIMIT 20,30'],0,'LIMIT offset,count，偏移从 0 起。另一写法 LIMIT 10 OFFSET 20。');
+add('查询基础','LIKE 中匹配任意长度字符串（含空串）的是？',['_','%','*','?'],1,'百分号匹配零到多个字符，下划线匹配单个字符。');
+fill('查询基础','从 student(id,name,age) 查询年龄至少 18 的所有列，按 id 升序。','SELECT * FROM student WHERE age >= 18 ORDER BY id ASC;','先筛行再排序；ASC 可省略。参考匹配只覆盖列出的常用写法。');
+bank.at(-1).a.push('select * from student where age>=18 order by id');
+add('聚合分组','WHERE 与 HAVING 的区别？',['WHERE 过滤组','WHERE 过滤分组前的行，HAVING 过滤分组后的组','HAVING 只能过滤字符串','两者完全等价'],1,'例如 WHERE status=\'paid\' 先选订单，GROUP BY customer_id 后 HAVING SUM(amount)>1000 选客户。');
+add('聚合分组','启用 ONLY_FULL_GROUP_BY 时，SELECT dept,name,MAX(salary) GROUP BY dept 总是合法吗？',['是','否，name 需分组、聚合或满足函数依赖','只要有 MAX 就合法','自动选最高薪的 name'],1,'聚合 MAX 不会把其他列自动绑定到最大值对应的行。找最高薪员工可用窗口排名或回表连接。');
+add('聚合分组','空集合上的 COUNT(*) 与 SUM(amount) 分别为？',['0 和 0','NULL 和 NULL','0 和 NULL','报错'],2,'COUNT 返回 0，SUM 通常返回 NULL。需要 0 时用 COALESCE(SUM(amount),0)。');
+fill('聚合分组','orders(customer_id,amount)：按客户分组，输出 customer_id 和 SUM(amount)，仅保留总额大于 1000 的组。','SELECT customer_id, SUM(amount) FROM orders GROUP BY customer_id HAVING SUM(amount)>1000;','WHERE 不能直接过滤分组聚合值；用 HAVING。');
+add('聚合分组','统计已支付金额且未支付行计 0，使用？',["SUM(CASE WHEN status='paid' THEN amount ELSE 0 END)",'COUNT(amount)','MAX(status)','SUM(status)'],0,'条件聚合可一次扫描得到多个指标；注意空输入时 SUM 仍是 NULL。');
+add('多表与子查询','LEFT JOIN 右表没有匹配时会？',['删除左表行','保留左表行，右表列补 NULL','自动补 0','报错'],1,'LEFT JOIN 保留全部左表行。右表存在多条匹配时，一条左表记录也可展开为多行。');
+add('多表与子查询','LEFT JOIN 后 WHERE o.status=\'paid\' 的风险是？',['保留所有无订单客户','过滤掉右表为空的行','自动去重','无法使用索引'],1,'若要保留无已支付订单的客户，将该条件放在 ON 中。WHERE 会过滤 NULL 扩展行。');
+add('多表与子查询','查找没有订单的客户，稳妥的写法是？',['NOT EXISTS 相关子查询','NOT IN 一个可能含 NULL 的子查询','INNER JOIN','CROSS JOIN'],0,'NOT IN 遇到 NULL 会产生 UNKNOWN；NOT EXISTS 检查是否存在匹配行，不受这一陷阱影响。');
+add('多表与子查询','UNION 与 UNION ALL 的区别？',['前者保留重复','前者去重，后者保留重复','后者只能两列','完全相同'],1,'不需要去重时考虑 UNION ALL，避免去重成本。两边列数与类型需兼容。');
+add('多表与子查询','订单分别 JOIN 两条明细和三条支付记录，未经预聚合可能产生几行？',['2','3','5','6'],3,'一对多再一对多可能乘法膨胀为 2×3。应先把两侧按订单汇总，再关联。');
+fill('多表与子查询','customers(id,name) 与 orders(id,customer_id)：使用 c、o 别名，NOT EXISTS 查询没有订单的客户姓名。','SELECT c.name FROM customers c WHERE NOT EXISTS (SELECT 1 FROM orders o WHERE o.customer_id=c.id);','相关子查询逐个客户检查是否存在订单。SELECT 1 只用于存在性判断。');
+add('窗口函数','ROW_NUMBER、RANK、DENSE_RANK 对 100,100,90 降序排名的结果是？',['1,2,3 / 1,1,3 / 1,1,2','都为 1,2,3','都为 1,1,2','都为 1,1,3'],0,'ROW_NUMBER 不并列；RANK 并列后跳号；DENSE_RANK 并列后不跳号。MySQL 8.0+ 支持窗口函数。');
+add('窗口函数','每个部门分别排名应使用？',['GROUP BY 后删除明细','OVER(PARTITION BY dept ORDER BY salary DESC)','ORDER BY dept','DISTINCT dept'],1,'PARTITION BY 划分窗口，保留明细行。GROUP BY 通常把每组压缩成一行。');
+add('窗口函数','在同一 SELECT 的 WHERE 中直接使用窗口别名 rn 可行吗？',['可以','不行，使用 CTE/派生表后再过滤','仅 rn=1 可以','必须用 HAVING'],1,'WHERE 在窗口计算之前执行。用 WITH ranked AS (...) SELECT ... FROM ranked WHERE rn<=3。');
+add('窗口函数','逐行累计金额时，为明确使用行窗口应写？',['ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW','LIMIT 1','GROUP BY amount','ROWS BETWEEN CURRENT ROW AND 1 FOLLOWING'],0,'窗口 ORDER BY 还应包含唯一键来打破同值排序。默认 RANGE 对同序值可能一次纳入多行。');
+add('窗口函数','取同一客户上一笔订单金额使用？',['LEAD(amount)','LAG(amount)','MAX(amount)','COUNT(amount)'],1,'LAG 看前一行，LEAD 看后一行；配合 PARTITION BY customer_id ORDER BY created_at,id。');
+add('窗口函数','CTE（WITH）的主要价值是？',['保证查询更快','将复杂查询拆成可命名的步骤','自动创建永久表','替代所有索引'],1,'CTE 提升可读性；是否合并、物化以及性能如何取决于优化器与查询，不能保证提速。');
+add('索引与性能','联合 B-tree 索引 (a,b,c) 通常最直接支持哪种查找？',['只按 c','按 a 或 a,b 的前缀条件','任意列完全等效','只按 b'],1,'理解最左前缀原则；实际执行还可能出现索引跳跃扫描等优化，最终看 EXPLAIN 与测量。');
+add('索引与性能','WHERE DATE(created_at)=\'2026-01-01\' 的常见改写是？',["created_at >= '2026-01-01' AND created_at < '2026-01-02'", "created_at LIKE '%01%'",'删除 WHERE','按字符串排序'],0,'对普通索引列直接使用半开区间更有利于范围扫描，也覆盖小数秒。注意业务时区。');
+add('索引与性能','覆盖索引指什么？',['索引包含查询所需全部列','给所有列建单列索引','索引比表大','索引一定唯一'],0,'查询可直接从索引获取所需列，减少回表。索引也增加存储与写入成本。');
+add('索引与性能','EXPLAIN 中 type=ALL 就一定应新增索引吗？',['是','否，小表或读取大部分行时全扫可能合理','表示报错','表示所有索引都用了'],1,'结合扫描行数、过滤率、表大小和耗时判断，不要只追求某一个执行计划标签。');
+add('索引与性能','深分页 LIMIT 1000000,20 的改进方向是？',['无限增加 OFFSET','基于稳定排序键做游标分页','去掉 ORDER BY','SELECT *'],1,'例如 WHERE id>last_id ORDER BY id LIMIT 20。复杂排序需复合游标；不能直接随机跳任意页。');
+add('索引与性能','EXPLAIN ANALYZE 有什么要注意？',['只预测，不执行','会实际执行支持的语句，应评估耗时与影响','自动优化 SQL','只显示索引名'],1,'MySQL 8.0.18+ 提供 EXPLAIN ANALYZE，可观察实际时间、行数与循环次数。先在合适环境验证。');
+add('事务与并发','银行转账的原子性要求是？',['扣款成功就结束','扣款与入账全部成功或全部回滚','只使用 SELECT','分开自动提交'],1,'在 InnoDB 同一事务中完成两次写入并检查影响行数，成功后 COMMIT，失败 ROLLBACK。');
+add('事务与并发','InnoDB 默认隔离级别通常是？',['READ UNCOMMITTED','READ COMMITTED','REPEATABLE READ','SERIALIZABLE'],2,'默认通常为 REPEATABLE READ，实际以 @@transaction_isolation 为准。');
+add('事务与并发','读取到其他事务尚未提交的数据称为？',['脏读','不可重复读','死锁','索引覆盖'],0,'不可重复读是同一行的已提交值变化；幻读关注满足条件的行集合变化。');
+add('事务与并发','库存避免减成负数，推荐？',['先查再无条件减','UPDATE stock SET qty=qty-1 WHERE id=? AND qty>0 并检查影响行数','只在前端判断','用字符串保存库存'],1,'把业务条件与写入绑定在一条原子 UPDATE 中。关联其他写入时仍需要事务，并处理失败。');
+add('事务与并发','发生死锁时，应用应该？',['永远循环重试','回滚后有上限地重试整个业务事务','忽略错误','只重试最后一句且不检查事务状态'],1,'保持一致的加锁顺序、缩短事务；重试要有上限、退避与幂等设计。');
+add('事务与并发','SELECT ... FOR UPDATE 的用途是？',['不加锁查询','在事务中锁定待修改记录','给表永久加锁','提交事务'],1,'需在显式事务或关闭 autocommit 的合适上下文使用；锁范围取决于索引、条件与隔离级别。');
+add('建模与安全','防止 SQL 注入的首选方法？',['拼接字符串','参数化查询/预编译绑定值','仅删除单引号','仅隐藏报错'],1,'值使用参数绑定。表名、列名等标识符通常不能用值占位符，应通过受控白名单选择。');
+add('建模与安全','订单金额推荐使用？',['FLOAT','DECIMAL(p,s)，并明确币种与舍入规则','VARCHAR 随意存','INT 不记录单位'],1,'金额要求可控精度；也可用整数最小货币单位，但要明确单位与范围。');
+add('建模与安全','外键能帮助保证什么？',['所有查询速度','引用完整性','自动创建业务报表','跨系统强一致'],1,'订单的 customer_id 应指向存在的客户。删除行为需要显式设计 RESTRICT、CASCADE 等策略。');
+add('建模与安全','MySQL UNIQUE 可空列允许多个 NULL 吗？',['通常允许','从不允许','仅一个 NULL','NULL 自动转空串'],0,'NULL 不等同普通值；若业务要求必须有且唯一，还应加 NOT NULL。');
+add('建模与安全','MySQL CHECK 约束从哪个版本开始实际执行约束检查？',['所有旧版本','8.0.16','5.0','从不执行'],1,'旧版可能解析但忽略 CHECK。MySQL 8.0.16+ 执行检查，且 UNKNOWN 不会像 FALSE 一样违反 CHECK，非空还需 NOT NULL。');
+add('建模与安全','上线新增索引前，应做哪些检查？',['代表性数据上的执行计划和耗时','写入开销、磁盘与 DDL 锁影响','只看题库分数','重复索引与业务负载'],[0,1,3],'用真实负载验证收益；评估发布窗口、回退方案和元数据锁等待。');
+fs.writeFileSync('quiz-bank.json',JSON.stringify(bank,null,2));
+console.log('Question count:',bank.length);

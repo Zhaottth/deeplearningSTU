@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MySQL 入门 · 终极题库（193题）</title>
+<style>
+:root{--bg:#f5f6f8;--card:#fff;--ink:#222;--sub:#777;--line:#e3e6ea;--brand:#2f6fed;
+--brand2:#eaf1ff;--ok:#1e8e3e;--okbg:#e9f7ef;--err:#c0392b;--errbg:#fdecea;--warnbg:#fff8e6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 "Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);padding:10px 16px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+h1{font-size:18px;margin:0 10px 0 0}
+h1 small{color:var(--sub);font-weight:400;font-size:12.5px}
+select,button{padding:6px 11px;border:1px solid var(--line);background:#fff;border-radius:8px;font-size:13px;cursor:pointer}
+button:hover{background:var(--brand2);border-color:var(--brand)}
+button.primary{background:var(--brand);color:#fff;border-color:var(--brand)}
+button.primary:hover{filter:brightness(1.08)}
+.stat{font-size:13px;color:var(--sub)}
+.stat b{color:var(--brand);font-size:15px}
+#bar{height:5px;background:#e9edf3;border-radius:3px;margin-top:8px;overflow:hidden}
+#bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#2f6fed,#52c41a);transition:.3s}
+#sheet{display:flex;gap:4px;flex-wrap:wrap;margin-top:8px;max-height:96px;overflow:auto}
+#sheet b{width:28px;height:26px;line-height:26px;text-align:center;font-size:12px;font-weight:600;
+border:1px solid var(--line);border-radius:6px;background:#fafbfc;cursor:pointer;color:#555}
+#sheet b.done{background:#e8f0ff;border-color:#b9d0ff;color:var(--brand)}
+#sheet b.right{background:var(--okbg);border-color:#9ad3ad;color:var(--ok)}
+#sheet b.wrong{background:var(--errbg);border-color:#f0b1a8;color:var(--err)}
+main{max-width:960px;margin:0 auto;padding:16px}
+#result{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:16px;display:none}
+#result h2{margin:0 0 8px;font-size:17px}
+.score{font-size:26px;font-weight:700;color:var(--brand)}
+.topic-stat{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.topic-stat span{font-size:12.5px;background:#f4f6f9;border:1px solid var(--line);border-radius:20px;padding:2px 10px}
+.q{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 16px;margin-bottom:12px}
+.qhead{display:flex;gap:8px;align-items:center;margin-bottom:6px;flex-wrap:wrap}
+.no{width:26px;height:26px;line-height:26px;text-align:center;background:var(--brand);color:#fff;border-radius:6px;font-size:13px;font-weight:700}
+.tag{font-size:12px;background:var(--brand2);color:var(--brand);padding:1px 8px;border-radius:20px}
+.ty{font-size:12px;color:var(--sub);border:1px solid var(--line);padding:1px 8px;border-radius:20px}
+.stem{margin:4px 0 8px;white-space:pre-wrap}
+.opt{display:block;margin:5px 0;padding:7px 11px;border:1px solid var(--line);border-radius:8px;cursor:pointer;font-size:14px}
+.opt:hover{background:var(--brand2)}
+.opt.sel{background:var(--brand2);border-color:var(--brand)}
+.opt.ok{background:var(--okbg);border-color:#9ad3ad}
+.opt.bad{background:var(--errbg);border-color:#f0b1a8}
+input.txt{width:100%;padding:8px 11px;border:1px solid var(--line);border-radius:8px;font-family:Consolas,monospace;font-size:14px}
+input.txt:focus{outline:none;border-color:var(--brand)}
+.fb{margin-top:8px;font-size:14px;border-left:4px solid #ccc;padding:7px 12px;background:#fafbfc;border-radius:0 8px 8px 0;display:none}
+.fb.show{display:block}
+.fb.good{border-color:var(--ok);background:var(--okbg)}
+.fb.bad{border-color:var(--err);background:var(--errbg)}
+.fb code{background:#f0f2f5;padding:1px 5px;border-radius:4px;font-family:Consolas,monospace;color:#b5283f}
+.mini{margin-top:6px}
+footer{text-align:center;color:var(--sub);font-size:12.5px;padding:24px}
+</style>
+</head>
+<body>
+<header>
+  <div class="row">
+    <h1>MySQL 入门 · 终极题库<small id="cnt"></small></h1>
+    <select id="mode">
+      <option value="practice">练习模式（即时判）</option>
+      <option value="exam">考试模式（交卷后判）</option>
+    </select>
+    <button class="primary" id="submit">交卷 / 查看成绩</button>
+    <button id="shuffle">乱序</button>
+    <button id="redo">只做错题</button>
+    <button id="showall">显示全部</button>
+    <button id="reset">重做全部</button>
+    <span class="stat">已答 <b id="done">0</b> / <span id="total">0</span></span>
+    <span class="stat">用时 <b id="timer">00:00</b></span>
+    <button id="clr">清空记录</button>
+  </div>
+  <div id="bar"><i></i></div>
+  <div id="sheet"></div>
+</header>
+
+<main>
+  <div id="result"></div>
+  <div id="list"></div>
+</main>
+<footer>共 <span id="n2"></span> 题 · 覆盖文档全部知识点 + 命令默写 + 纠错题</footer>
+
+<script>
+const BANK=[
+{topic:"数据库概述",type:"s",q:"数据库的本质是？",o:["内存中的一块缓存","一个文件系统","一段云存储服务","一张二维表"],a:[1],e:"数据库是存储数据的仓库，本质是一个<b>文件系统</b>。"},
+{topic:"数据库概述",type:"m",q:"下列属于<b>关系型数据库</b>的有哪些？",o:["MySQL","Oracle","Redis","MongoDB"],a:[0,1],e:"关系型：MySQL、Oracle、DB2、SQL Server、SQLite。Redis/MongoDB 属于非关系型。"},
+{topic:"数据库概述",type:"m",q:"下列属于<b>非关系型数据库（NoSQL）</b>的有哪些？",o:["HBase","Redis","MongoDB","SQL Server"],a:[0,1,2],e:"NoSQL 举例：HBase、Redis、MongoDB；SQL Server 是关系型。"},
+{topic:"数据库概述",type:"s",q:"NoSQL 的全称是？",o:["Not Only SQL","No SQL","New SQL","Not Object SQL"],a:[0],e:"NoSQL = <b>Not Only SQL</b>（不仅仅是 SQL）。"},
+{topic:"数据库概述",type:"j",q:"关系型数据库强调以二维表格的形式存储数据。",a:[0],e:"关系型必须遵循 SQL 规范，以<b>二维表格</b>形式存储。"},
+{topic:"数据库概述",type:"s",q:"非关系型数据库强调以什么形式存储数据？",o:["key-value","二维表","XML","链表"],a:[0],e:"非关系型强调 <b>key-value</b> 形式存储。"},
+{topic:"连接MySQL",type:"s",q:"关于 MySQL 登录，下面说法正确的是？",o:["mysql -uroot -p123456 是回车后再输入密码","mysql -uroot -p 是回车后再输入密码（隐藏显示）","-h 后面只能写主机名，不能写 IP","localhost 和 127.0.0.1 都必须在命令里写出来"],a:[1],e:"方式2：<code>mysql -u用户名 -p</code> 回车后再输密码最安全；-h 可写 127.0.0.1；本机可省略。"},
+{topic:"连接MySQL",type:"s",q:"下面哪个<b>不是</b>退出 MySQL 的方式？",o:["exit","quit","\\q","bye"],a:[3],e:"登出三选一：<code>exit</code> / <code>quit</code> / <code>\\q</code>，mac、linux 还可 ctrl+d、ctrl+c。"},
+{topic:"连接MySQL",type:"j",q:"localhost 和 127.0.0.1 都代表本机，连接本机时 -h 可以省略。",a:[0],e:"正确。<code>mysql -uroot -p</code> 默认连本机。"},
+{topic:"连接MySQL",type:"f",q:"Windows 下查看本机 IP 地址的命令是？（mac/linux 用 ifconfig）",a:["ipconfig"],e:"Windows：<code>ipconfig</code>；mac/linux：<code>ifconfig</code>。"},
+{topic:"SQL分类",type:"m",q:"下列关键字中属于 <b>DDL（数据定义语言）</b>的有哪些？",o:["create","drop","alter","insert"],a:[0,1,2],e:"DDL 用来定义数据库对象（库、表、字段）：create / drop / alter。insert 属于 DML。"},
+{topic:"SQL分类",type:"m",q:"下列关键字中属于 <b>DML（数据操作语言）</b>的有哪些？",o:["insert","delete","update","select"],a:[0,1,2],e:"DML 对表中<b>记录</b>进行更新：insert / delete / update。select 属于 DQL。"},
+{topic:"SQL分类",type:"s",q:"关于 DQL，下面说法正确的是？",o:["是官方定义的第四类语言","不是官方定义，是程序员自己归类，关键字为 select、from、where","专门用来操作事务","用来定义访问权限和创建用户"],a:[1],e:"<b>DQL 不是官方定义</b>的语言；DCL 管权限，TCL 管事务。"},
+{topic:"SQL分类",type:"s",q:"DCL 的作用是？",o:["定义数据库的访问权限和安全级别，及创建用户","查询表中记录","操作数据库事务","创建数据库和表"],a:[0],e:"DCL = 数据控制语言：权限、安全级别、创建用户。"},
+{topic:"SQL分类",type:"j",q:"TCL 是专门操作数据库事务的语言（如银行转账这类多个操作批量进行的场景）。",a:[0],e:"正确，TCL 用于事务控制。"},
+{topic:"SQL分类",type:"s",q:"“SQL 是普通话，MySQL、Oracle 是方言”这句话想说明什么？",o:["SQL 只能在 MySQL 中使用","SQL 是所有关系型数据库都要遵循的规范，各数据库还有自己独有的内容","方言是错误用法","两者毫无关系"],a:[1],e:"SQL 是通用规范（99% 通用），各数据库的独有内容叫方言（1%）。"},
+{topic:"通用语法",type:"s",q:"SQL 语句以什么结尾？",o:["句号","分号","逗号","换行"],a:[1],e:"以<b>分号</b>结尾，可单行或多行书写。"},
+{topic:"通用语法",type:"s",q:"关于注释，正确的是？",o:["/**/ 是多行注释，区域内可随意换行","-- 后面可以不加空格","# 是多行注释","-- 是多行注释"],a:[0],e:"<code>/**/</code> 多行；<code>--</code> 和 <code>#</code> 单行，且 <b>-- 后必须有一个空格</b>。"},
+{topic:"通用语法",type:"j",q:"MySQL 的 SQL 语句区分大小写。",a:[1],e:"<b>不区分</b>大小写，关键字建议大写（切换快捷键 ctrl+shift+u）。"},
+{topic:"通用语法",type:"f",q:"关键字大小写切换的快捷键是？",a:["ctrl+shift+u"],e:"<code>ctrl + shift + u</code> 大小写切换。"},
+{topic:"通用语法",type:"s",q:"单行注释的快捷键是？",o:["ctrl + /","ctrl + shift + /","ctrl + d","ctrl + z"],a:[0],e:"单行 <code>ctrl+/</code>；多行 <code>ctrl+shift+/</code>；复制一行 <code>ctrl+d</code>。"},
+{topic:"通用语法",type:"m",q:"关于 SQL 通用语法，正确的是？",o:["可以单行或多行书写，以分号结尾","可使用空格和缩进增强可读性","不区分大小写，关键字建议使用大写","必须一行写完否则报错"],a:[0,1,2],e:"前三条都是通用语法的原文要求。"},
+{topic:"库操作",type:"f",q:"查看<b>当前正在使用</b>的数据库，命令是？",a:["select database();","select database()"],e:"<code>SELECT DATABASE();</code>"},
+{topic:"库操作",type:"s",q:"创建数据库 day03，且已存在时不报错，应写？",o:["create database day03;","create database if not exists day03;","create if database day03;","create database day03 if exists;"],a:[1],e:"<code>create database [if not exists] 库名;</code>"},
+{topic:"库操作",type:"s",q:"删除数据库的安全写法（不存在也不报错）是？",o:["drop database day03","drop database if exists day03;","delete database day03;","drop if exists database;"],a:[1],e:"<code>drop database [if exists] 库名;</code>"},
+{topic:"库操作",type:"s",q:"查看某个库的建库语句，用？",o:["show databases;","show create database 库名;","desc database 库名;","select database();"],a:[1],e:"<code>show create database 库名;</code>"},
+{topic:"库操作",type:"m",q:"下面属于“数据库（库）级别”操作的语句有哪些？",o:["use 库名;","show databases;","show tables;","drop database 库名;"],a:[0,1,3],e:"<code>show tables;</code> 是表级别操作。"},
+{topic:"数据类型",type:"s",q:"char(10) 中存入 '12345'（5 个字符）会怎样？",o:["直接报错","被截断为 5 位","不足 10 位，用空格补齐到 10 位","自动变成 varchar"],a:[2],e:"char 是<b>固长</b>，不足用空格补齐；varchar 是可变长。"},
+{topic:"数据类型",type:"s",q:"varchar 的特点是？",o:["固定长度","可变长，实际存多少占多少","只能存数字","最大只能 10 个字符"],a:[1],e:"varchar 可变长字符，char 固长字符。"},
+{topic:"数据类型",type:"s",q:"int 不够用时，应该改用？",o:["bigint","smallint","float","varchar"],a:[0],e:"int 默认长度 11，不够用换 <b>bigint</b>。"},
+{topic:"数据类型",type:"s",q:"int 的默认长度是？",o:["8","11","20","32"],a:[1],e:"int 默认长度 11。"},
+{topic:"数据类型",type:"s",q:"decimal(11,2) 表示？",o:["11 位整数 + 2 位小数","一共 11 位数字，其中 2 位是小数位","整数最多 11 位，没有小数","长度为 11 的整数"],a:[1],e:"decimal(总位数, 小数位数)，默认写法是 decimal(11,0)。"},
+{topic:"数据类型",type:"m",q:"关于日期时间类型，正确的是？",o:["date 只有年月日","datetime 年月日时分秒","timestamp 是时间戳","date 包含时分秒"],a:[0,1,2],e:"date 只有年月日，datetime 精确到秒，timestamp 时间戳（了解）。"},
+{topic:"数据类型",type:"j",q:"float / double 存在精度问题，对精度要求高的场景更适合用 decimal。",a:[0],e:"正确，笔记明确写到 float、double 有精度问题。"},
+{topic:"表操作",type:"s",q:"创建表使用的语句是？",o:["create database 表名","create table 表名(...)","alter table 表名","new table 表名"],a:[1],e:"<code>create table [if not exists] 表名(字段 类型 [约束], ...);</code>"},
+{topic:"表操作",type:"s",q:"修改表名的正确写法是？",o:["rename table 旧表名 to 新表名;","alter table 旧表名 rename 新表名;","change table 旧表名 to 新表名;","move table 旧表名 to 新表名;"],a:[0],e:"<code>rename table 旧表名 to 新表名;</code>"},
+{topic:"表操作",type:"s",q:"查看某张表的建表语句，用？",o:["show tables;","show create table 表名;","desc 表名;","select table();"],a:[1],e:"<code>show create table 表名;</code>；<code>desc 表名;</code> 只看字段结构。"},
+{topic:"表操作",type:"m",q:"执行 show create table 时，可以看到 MySQL 自动帮我们做了哪些事？",o:["表名、字段名自动加反引号","int 自动加默认长度 11","所有字段值设置为默认 null","自动选择存储引擎并设置默认编码"],a:[0,1,2,3],e:"六点：反引号、int 默认 11、默认 null、字符串默认编码、默认存储引擎（innodb/myisam）、整表默认编码。"},
+{topic:"表操作",type:"s",q:"查看当前库中所有表，用？",o:["show databases;","show tables;","desc tables;","select tables;"],a:[1],e:"<code>show tables;</code>"},
+{topic:"表操作",type:"f",q:"删除表、且表不存在时也不报错，怎么写？（用“表名”占位）",a:["drop table if exists 表名;","drop table if exists 表名"],e:"<code>drop table [if exists] 表名;</code>"},
+{topic:"字段操作",type:"s",q:"给表添加一个字段，正确写法是？",o:["alter table 表名 add 字段名 字段类型;","update table 表名 add 字段名;","alter 表名 add 字段名;","insert into 表名 add 字段名;"],a:[0],e:"<code>alter table 表名 add [column] 字段名 类型 [约束];</code>"},
+{topic:"字段操作",type:"s",q:"删除表中某个字段，正确写法是？",o:["alter table 表名 drop 字段名;","delete from 表名 drop 字段名;","alter table 表名 remove 字段名;","drop 字段名 from 表名;"],a:[0],e:"<code>alter table 表名 drop [column] 字段名;</code>"},
+{topic:"字段操作",type:"s",q:"既要改字段名、又要改字段类型，应该用？",o:["modify","change","rename","update"],a:[1],e:"<code>alter table 表名 change 旧字段名 新字段名 新类型;</code>"},
+{topic:"字段操作",type:"s",q:"只想修改字段类型（不改字段名），可以用？（了解即可）",o:["modify","change","add","drop"],a:[0],e:"<code>alter table 表名 modify 字段名 类型;</code>；实际开发中记 change 就够用了。"},
+{topic:"字段操作",type:"f",q:"查看表字段结构的命令是？（用“表名”占位）",a:["desc 表名;","desc 表名"],e:"<code>desc 表名;</code>"},
+{topic:"字段操作",type:"s",q:"字段名恰好是关键字（如 desc）时怎么办？",o:["必须改名才能用","用反引号把字段名包起来","用双引号包起来","MySQL 中无法使用"],a:[1],e:"用<b>反引号</b>：<code>alter table stu add `desc` varchar(100);</code>"},
+{topic:"字段操作",type:"j",q:"操作表中的字段，本质就是在修改表。",a:[0],e:"正确，所以字段操作都用 <code>alter table</code>。"},
+{topic:"记录操作",type:"m",q:"关于 insert，下面说法正确的有哪些？",o:["具体值要和前面的字段名、顺序一一对应","不写字段名表示插入所有字段","插入多条记录时，values 后多条数据用逗号分隔","多条记录之间必须用分号分隔"],a:[0,1,2],e:"多条记录用<b>逗号</b>分隔，整条语句末尾才用分号。"},
+{topic:"记录操作",type:"s",q:"update 表名 set age=12;（不加 where）会怎样？",o:["报错不执行","只修改第一条","把该字段的所有数据都改成 12","什么也不改"],a:[2],e:"不加 where = 修改<b>全表</b>该字段，工具会弹黄警告，慎用！"},
+{topic:"记录操作",type:"s",q:"delete from 表名;（不加 where）会怎样？",o:["删除第一条记录","删除表中所有数据","报错","把表结构一起删掉"],a:[1],e:"删除<b>所有数据</b>但保留表结构；删表结构是 <code>drop table</code>。"},
+{topic:"记录操作",type:"s",q:"官方推荐用来清空整表数据的是？",o:["delete from 表名;","truncate 表名;","drop table 表名;","remove from 表名;"],a:[1],e:"<code>truncate [table] 表名;</code> 不弹警告，清空数据官方推荐。"},
+{topic:"记录操作",type:"m",q:"关于 update，正确的是？",o:["update 表名 set a=1, b=2 where ...","set 后多个字段用逗号分隔","where 可以省略，但会影响全表","一次 update 只能修改一个字段"],a:[0,1,2],e:"一次可改多个字段，用逗号分隔。"},
+{topic:"记录操作",type:"f",q:"写出：删除 student 表中 id 为 1 的记录（完整语句）",a:["delete from student where id = 1","delete from student where id=1"],e:"<code>DELETE FROM student WHERE id = 1;</code>"},
+{topic:"记录操作",type:"s",q:"insert into student values (1,'张三',18); 说法正确的是？",o:["只插入了 name 字段","等价于插入所有字段，值的顺序必须与表字段顺序一致","一定会报错","一次只能插入一条"],a:[1],e:"不指定字段名 = 指定所有字段，顺序必须一一对应。"},
+{topic:"记录操作",type:"s",q:"想一次插入两条记录，正确的是？",o:["insert into student(name) values ('李四'),('王五');","insert into student(name) values ('李四');('王五');","insert into student(name) values ('李四' and '王五');","insert student(name) values ('李四'),('王五');"],a:[0],e:"values 后多组值用逗号分隔；into 不能省。"},
+{topic:"约束",type:"s",q:"表中添加约束的作用是？",o:["加快查询速度","限制数据的插入和删除，避免无效数据、冗余数据","美化表结构","自动备份数据"],a:[1],e:"约束作用：<b>限制数据的插入和删除</b>。"},
+{topic:"约束",type:"s",q:"一个表中主键的个数是？",o:["0 个","1 个","2 个","任意多个"],a:[1],e:"<b>一个表中只能有一个主键</b>（非空、唯一、默认可以有多个）。"},
+{topic:"约束",type:"j",q:"“主键 = 唯一 + 非空，所以 唯一 + 非空 就等于主键”这句话对吗？",a:[1],e:"<b>错</b>。主键 = 唯一 + 非空，但反过来不成立，主键还有自己的特殊作用。"},
+{topic:"约束",type:"m",q:"一个表中可以有<b>多个</b>的约束有哪些？",o:["非空约束 not null","唯一约束 unique","默认约束 default","主键约束 primary key"],a:[0,1,2],e:"主键只能有一个，其余都可以有多个。"},
+{topic:"约束",type:"s",q:"主键约束的关键字是？",o:["unique","primary key","not null","foreign key"],a:[1],e:"<code>primary key</code>，特点：非空且唯一。"},
+{topic:"约束",type:"s",q:"插入重复的主键值，报错信息是？",o:["Duplicate entry '1' for key 'PRIMARY'","Column 'id' cannot be null","Unknown column 'id'","Table doesn't exist"],a:[0],e:"主键冲突：<code>Duplicate entry '1' for key 'PRIMARY'</code>。"},
+{topic:"约束",type:"s",q:"给主键插入 null，报错信息是？",o:["Column 'id' cannot be null","Duplicate entry","Access denied","You have an error in your SQL syntax"],a:[0],e:"<code>Column 'id' cannot be null</code>。"},
+{topic:"约束",type:"s",q:"主键自增的关键字是？",o:["auto_increment","increment","auto_increase","identity"],a:[0],e:"<code>auto_increment</code>，默认从 1 开始每次 +1。"},
+{topic:"约束",type:"m",q:"关于主键自增，正确的是？",o:["默认从 1 开始，每次自动 +1","字段类型需要是整数类型","插入时该字段写 null 或 0，表示使用自增","自增可以完全脱离主键单独存在"],a:[0,1,2],e:"单独加自增的前提是<b>表中已经有主键</b>，不能脱离主键。"},
+{topic:"约束",type:"j",q:"要彻底删除某字段的主键（含自增），需要：先 change 去掉自增 → 再 drop primary key → 最后 change 去掉非空。",a:[0],e:"正确。只用 change 删不干净；只用 drop 只删掉唯一，非空还在。"},
+{topic:"约束",type:"s",q:"delete 清空整表后，自增顺序会？",o:["重置为 1","保留，下次继续往后自增","变成 0","随机"],a:[1],e:"delete：<b>自增保留</b>，接着删前的值继续。"},
+{topic:"约束",type:"s",q:"truncate 清空整表后，自增顺序会？",o:["保留","重置，下次从 1 重新开始","保持不变但报错","变成 null"],a:[1],e:"truncate：<b>自增重置</b>，从 1 重新开始。"},
+{topic:"约束",type:"j",q:"delete from 表名; 在工具里会弹黄警告，truncate 表名; 不会弹警告。",a:[0],e:"正确，这也是官方推荐 truncate 清空数据的原因之一。"},
+{topic:"约束",type:"s",q:"非空约束的关键字是？",o:["not null","null not","no null","not empty"],a:[0],e:"<code>not null</code>：限制值不能为 null。"},
+{topic:"约束",type:"s",q:"删除唯一约束的语句是？",o:["drop unique 表名;","drop index 索引名 on 表名;","alter table 表名 drop unique;","delete unique from 表名;"],a:[1],e:"唯一约束本质就是唯一索引，删索引即可：<code>drop index age on stu5;</code>"},
+{topic:"约束",type:"j",q:"唯一约束的本质就是唯一索引。",a:[0],e:"正确，加 unique 会自动建唯一索引（索引名默认等于字段名）。"},
+{topic:"约束",type:"s",q:"默认约束的关键字是？",o:["default","default value","defaults","def"],a:[0],e:"<code>default</code>，不给值时使用提前设置好的默认值。"},
+{topic:"约束",type:"m",q:"下面适合加唯一约束的字段有哪些？",o:["用户名","身份证号","手机号","性别"],a:[0,1,2],e:"笔记举例：用户名、身份证、手机号；性别更适合默认值约束。"},
+{topic:"约束",type:"s",q:"建表后给 stu7 的 name 字段添加默认值 'admin'，正确写法是？",o:["alter table stu7 change name name varchar(100) default 'admin';","alter table stu7 add default 'admin' for name;","update stu7 set name default 'admin';","alter table stu7 modify default name 'admin';"],a:[0],e:"用 <code>change</code> 重定义字段并带上 default；去掉 default 再 change 一次即可删除。"},
+{topic:"写命令",type:"f",q:"创建数据库 day03，已存在时不报错：",a:["create database if not exists day03","create database if not exists day03;"],e:"<code>CREATE DATABASE IF NOT EXISTS day03;</code>"},
+{topic:"写命令",type:"f",q:"使用（切换）数据库 day01_db：",a:["use day01_db"],e:"<code>USE day01_db;</code>"},
+{topic:"写命令",type:"f",q:"给 stu 表添加一个 double 类型的 weight 字段：",a:["alter table stu add weight double"],e:"<code>ALTER TABLE stu ADD weight DOUBLE;</code>"},
+{topic:"写命令",type:"f",q:"把 stu 表的 birthday 字段改名为 bir，类型改为 datetime：",a:["alter table stu change birthday bir datetime"],e:"<code>ALTER TABLE stu CHANGE birthday bir DATETIME;</code>"},
+{topic:"写命令",type:"f",q:"把 student 表中“李四”的年龄改为 28：",a:["update student set age = 28 where name = '李四'","update student set age=28 where name='李四'"],e:"<code>UPDATE student SET age = 28 WHERE name = '李四';</code>"},
+{topic:"写命令",type:"f",q:"把“王五”和“赵六”的年龄都改为 39：",a:["update student set age = 39 where name = '王五' or name = '赵六'","update student set age=39 where name='王五' or name='赵六'"],e:"用 <code>or</code> 连接两个条件。"},
+{topic:"写命令",type:"f",q:"删除 student 表中 id 为 2 或 3 的记录：",a:["delete from student where id = 2 or id = 3","delete from student where id=2 or id=3"],e:"<code>DELETE FROM student WHERE id = 2 OR id = 3;</code>"},
+{topic:"写命令",type:"f",q:"建表时定义一个主键自增的 id 字段（写括号里的那一句）：",a:["id int primary key auto_increment","id int primary key auto_increment,"],e:"<code>id int PRIMARY KEY AUTO_INCREMENT,</code>"},
+{topic:"写命令",type:"f",q:"清空 stu3 表的所有数据并重置自增：",a:["truncate stu3","truncate table stu3"],e:"<code>TRUNCATE TABLE stu3;</code>"},
+{topic:"写命令",type:"f",q:"删除 stu5 表上名为 age 的唯一索引：",a:["drop index age on stu5"],e:"<code>DROP INDEX age ON stu5;</code>"},
+{topic:"写命令",type:"f",q:"向 student 表的 name 字段一次插入 '李四'、'王五' 两条记录：",a:["insert into student(name) values ('李四'),('王五')"],e:"<code>INSERT INTO student(name) VALUES ('李四'),('王五');</code>"},
+/* ===== 以下为新增扩充题 ===== */
+{topic:"数据库概述",type:"s",q:"下列不属于关系型数据库的是？",o:["MySQL","Oracle","Redis","SQLite"],a:[2],e:"Redis 是非关系型（NoSQL）；MySQL、Oracle、SQLite 都是关系型。"},
+{topic:"数据库概述",type:"s",q:"下列不属于非关系型数据库（NoSQL）的是？",o:["HBase","Redis","MongoDB","MySQL"],a:[3],e:"MySQL 是关系型数据库，其余三项是 NoSQL。"},
+{topic:"数据库概述",type:"m",q:"关于关系型数据库，正确的是？",o:["必须遵循 SQL 规范","以二维表格形式存储数据","以 key-value 为主","属于 NoSQL"],a:[0,1],e:"关系型：遵循 SQL 规范、二维表格；NoSQL 才是 key-value。"},
+{topic:"连接MySQL",type:"s",q:"mysql -h 127.0.0.1 -uroot -p 中的 -h 参数表示？",o:["主机地址（IP/主机名）","用户名","密码","端口号"],a:[0],e:"-h host 主机；-u 用户名；-p 密码。"},
+{topic:"连接MySQL",type:"s",q:"关于 mysql -uroot -p123456 这种明文密码登录方式，说法正确的是？",o:["最推荐，安全","密码会暴露在命令历史中，不安全","和回车输密码完全一样","必须这样写"],a:[1],e:"方式1明文不安全，推荐方式2：mysql -uroot -p 回车后隐藏输入。"},
+{topic:"SQL分类",type:"s",q:"create 关键字属于哪一类 SQL？",o:["DDL 数据定义语言","DML 数据操作语言","DQL 数据查询语言","DCL 数据控制语言"],a:[0],e:"DDL：create / drop / alter。"},
+{topic:"SQL分类",type:"s",q:"select 关键字属于哪一类 SQL？",o:["DDL","DML","DQL","DCL"],a:[2],e:"DQL（程序员归类，非官方）：select / from / where。"},
+{topic:"SQL分类",type:"s",q:"事务控制语言的缩写是？",o:["DDL","DML","DCL","TCL"],a:[3],e:"TCL：事务控制语言，如 commit、rollback。"},
+{topic:"通用语法",type:"s",q:"ctrl + shift + / 快捷键的作用是？",o:["单行注释","多行注释","大小写切换","复制一行"],a:[1],e:"多行注释：ctrl+shift+/；单行注释：ctrl+/。"},
+{topic:"通用语法",type:"s",q:"ctrl + d 快捷键的作用是？",o:["撤销","反撤销","粘贴","复制一行"],a:[3],e:"ctrl+d 复制一行；ctrl+z 撤销；ctrl+shift+z 反撤销。"},
+{topic:"通用语法",type:"s",q:"MySQL 中 # 号注释是？",o:["多行注释","单行注释","文档注释","无效语法"],a:[1],e:"# 是单行注释；-- 也是单行注释（后必须空格）。"},
+{topic:"通用语法",type:"m",q:"关于 SQL 注释，正确的是？",o:["/**/ 是多行注释","-- 后面必须有一个空格","# 是单行注释","/**/ 内不能换行"],a:[0,1,2],e:"三种注释：/**/ 多行可换行；-- 和 # 单行，-- 后必须空格。"},
+{topic:"库操作",type:"s",q:"查看 MySQL 中所有的数据库，使用？",o:["show tables;","show databases;","select database();","desc databases;"],a:[1],e:"<code>show databases;</code> 看所有库；<code>select database();</code> 看当前库。"},
+{topic:"库操作",type:"s",q:"use 数据库名; 语句的作用是？",o:["创建数据库","删除数据库","使用/切换数据库","查看当前数据库"],a:[2],e:"use 用于切换当前操作的数据库。"},
+{topic:"数据类型",type:"s",q:"存储长度不固定的文章标题，适合用？",o:["char","varchar","int","decimal"],a:[1],e:"varchar 可变长；char 固长，用空格补齐。"},
+{topic:"数据类型",type:"s",q:"存储固定为 1 个字符的性别‘男/女’，可用？",o:["varchar(1)","char(1)","int","decimal"],a:[1],e:"char(1) 固长，适合固定长度；varchar(1) 也可但不典型。"},
+{topic:"数据类型",type:"s",q:"存储价格 19.99 且要求精确，应使用？",o:["float","double","decimal","int"],a:[2],e:"decimal 无精度问题；float/double 有精度问题。"},
+{topic:"数据类型",type:"s",q:"存储‘年-月-日’形式的出生日期，应使用？",o:["date","datetime","time","year"],a:[0],e:"date 只有年月日；datetime 含时分秒。"},
+{topic:"数据类型",type:"s",q:"存储‘2023-10-01 12:30:00’这样精确到秒的时间，应使用？",o:["date","datetime","timestamp","year"],a:[1],e:"datetime 年月日时分秒。"},
+{topic:"表操作",type:"s",q:"create table 语句属于哪类 SQL？",o:["DDL","DML","DQL","DCL"],a:[0],e:"建表是定义数据库对象，属于 DDL。"},
+{topic:"表操作",type:"s",q:"drop table 表名; 会？",o:["只删除数据","只删除表结构","删除表结构和其中所有数据","重命名表"],a:[2],e:"drop table 删除整张表（结构+数据）；delete/truncate 只删数据。"},
+{topic:"字段操作",type:"s",q:"添加字段使用的关键字是？",o:["add","drop","change","modify"],a:[0],e:"alter table 表名 add 字段名 类型;"},
+{topic:"字段操作",type:"s",q:"删除字段使用的关键字是？",o:["add","drop","change","modify"],a:[1],e:"alter table 表名 drop 字段名;"},
+{topic:"字段操作",type:"s",q:"查看表字段结构（字段名、类型、约束等）使用？",o:["show tables;","desc 表名;","show create table 表名;","select 表名;"],a:[1],e:"<code>desc 表名;</code> 查看字段结构；show create table 看建表语句。"},
+{topic:"记录操作",type:"s",q:"insert 语句属于哪类 SQL？",o:["DDL","DML","DQL","DCL"],a:[1],e:"insert 是对记录进行增加，属于 DML。"},
+{topic:"记录操作",type:"s",q:"update 语句属于哪类 SQL？",o:["DDL","DML","DQL","DCL"],a:[1],e:"update 修改记录，属于 DML。"},
+{topic:"记录操作",type:"s",q:"delete 语句属于哪类 SQL？",o:["DDL","DML","DQL","DCL"],a:[1],e:"delete 删除记录，属于 DML。"},
+{topic:"记录操作",type:"s",q:"truncate 语句通常归为哪类 SQL？",o:["DDL","DML","DQL","DCL"],a:[0],e:"truncate 会重置自增、提交隐式事务，属于 DDL。"},
+{topic:"记录操作",type:"s",q:"只想给表中部分字段插入数据时，应该？",o:["省略字段名","在表名后写明要插入的字段名","只能插入所有字段","用 update 代替"],a:[1],e:"指定字段名：insert into 表名(字段1,字段2) values(...)。"},
+{topic:"约束",type:"s",q:"限制字段值不能重复，应使用？",o:["primary key","not null","unique","default"],a:[2],e:"unique 唯一约束：不能重复；primary key 既不能空也不能重复。"},
+{topic:"约束",type:"s",q:"限制字段值不能为空，应使用？",o:["primary key","not null","unique","default"],a:[1],e:"not null 非空约束。"},
+{topic:"约束",type:"s",q:"希望不给值时字段自动填‘未知’，应使用？",o:["primary key","not null","unique","default"],a:[3],e:"default 默认约束：default '未知'。"},
+{topic:"约束",type:"s",q:"哪个约束同时保证“非空且唯一”？",o:["primary key","not null","unique","default"],a:[0],e:"主键 primary key = 唯一 + 非空。"},
+{topic:"约束",type:"s",q:"主键自增 auto_increment 默认从哪个数字开始？",o:["0","1","2","100"],a:[1],e:"默认从 1 开始，每次 +1。"},
+{topic:"约束",type:"s",q:"插入记录时，自增字段可以写什么来表示使用自增？",o:["只能写 null","只能写 0","null 或 0","必须写具体数字"],a:[2],e:"该字段写 null 或 0 都表示使用自增序列。"},
+{topic:"约束",type:"s",q:"删除唯一约束，本质上是删除？",o:["主键","外键","唯一索引","整表"],a:[2],e:"<code>drop index 索引名 on 表名;</code> 唯一约束即唯一索引。"},
+{topic:"约束",type:"s",q:"建表后给字段添加默认值，通常使用哪个关键字重定义字段？",o:["add","change","modify","drop"],a:[1],e:"alter table 表名 change 字段名 字段名 类型 default 值;"},
+{topic:"约束",type:"s",q:"设置自增 auto_increment 的字段，类型必须是？",o:["任意类型","整数类型","字符串类型","日期类型"],a:[1],e:"自增要求字段为整数类型（int/bigint 等）。"},
+{topic:"SQL分类",type:"m",q:"DDL（数据定义语言）包含哪些关键字？",o:["create","drop","alter","insert"],a:[0,1,2],e:"DDL：create/drop/alter，用来定义库、表、字段。"},
+{topic:"SQL分类",type:"m",q:"DML（数据操作语言）包含哪些关键字？",o:["insert","delete","update","select"],a:[0,1,2],e:"DML：insert/delete/update；select 属于 DQL。"},
+{topic:"数据类型",type:"m",q:"下列属于字符串类型的有？",o:["varchar","char","int","decimal"],a:[0,1],e:"varchar、char 是字符串；int 整数，decimal 高精度小数。"},
+{topic:"数据类型",type:"m",q:"下列属于日期时间类型的有？",o:["date","datetime","timestamp","varchar"],a:[0,1,2],e:"date、datetime、timestamp（时间戳，了解）。"},
+{topic:"表操作",type:"m",q:"下列可以查看表相关信息的语句有？",o:["show tables;","show create table 表名;","desc 表名;","show databases;"],a:[0,1,2],e:"show tables 看所有表；show create table 看建表语句；desc 看字段结构。"},
+{topic:"字段操作",type:"m",q:"修改字段时可以使用的关键字有？",o:["add","drop","change","modify"],a:[2,3],e:"change 改字段名+类型；modify 只改类型；add 加字段，drop 删字段。"},
+{topic:"记录操作",type:"m",q:"下列可以删除表中数据的语句有？",o:["delete from 表名;","truncate 表名;","drop table 表名;","update 表名 set age=20;"],a:[0,1],e:"delete 和 truncate 只删数据（truncate 还重置自增）；drop 删表结构；update 改数据。"},
+{topic:"记录操作",type:"m",q:"下列属于 DDL（数据定义语言）的语句有？",o:["create","drop","alter","truncate"],a:[0,1,2,3],e:"create/drop/alter 是 DDL；truncate 通常也归为 DDL。"},
+{topic:"约束",type:"m",q:"关于主键 primary key 的特性，正确的是？",o:["值不能为空","值不能重复","一个表可以有多个主键","主键 = 唯一 + 非空"],a:[0,1,3],e:"主键非空且唯一，一个表只能有一个；unique+not null 不一定主键。"},
+{topic:"约束",type:"m",q:"关于 delete 和 truncate，正确的是？",o:["都能删除表中所有数据","都保留表结构","delete 保留自增、truncate 重置自增","都会删除表结构"],a:[0,1,2],e:"共同点：都删所有数据、都保留表结构；不同点：delete 保留自增，truncate 重置自增。"},
+{topic:"约束",type:"m",q:"下列适合使用 default 默认约束的字段有？",o:["性别","注册日期","主键 id","身份证号"],a:[0,1],e:"笔记举例：性别、日期适合默认值；主键用 primary key，身份证用 unique。"},
+{topic:"数据库概述",type:"j",q:"MySQL 是关系型数据库。",a:[0],e:"正确，MySQL 是最流行的关系型数据库管理系统之一。"},
+{topic:"数据库概述",type:"j",q:"Redis 是关系型数据库。",a:[1],e:"错误，Redis 是非关系型（NoSQL）数据库。"},
+{topic:"通用语法",type:"j",q:"SQL 语句必须以分号结尾才能执行。",a:[0],e:"正确，以分号结尾，可单行或多行书写。"},
+{topic:"通用语法",type:"j",q:"-- 是单行注释，且 -- 后面可以不加空格。",a:[1],e:"错误，-- 后面必须有一个空格才生效。"},
+{topic:"通用语法",type:"j",q:"MySQL 的 SQL 关键字必须大写，否则会报错。",a:[1],e:"错误，不区分大小写，只是建议关键字大写。"},
+{topic:"库操作",type:"j",q:"create database 用于创建数据库。",a:[0],e:"正确。"},
+{topic:"库操作",type:"j",q:"drop database 会删除数据库以及其中的所有表。",a:[0],e:"正确，删库会连带其中的表和数据一起删除，慎用。"},
+{topic:"库操作",type:"j",q:"use 数据库名; 可以查看当前正在使用的数据库。",a:[1],e:"错误，use 是切换数据库；查看当前库用 <code>select database();</code>。"},
+{topic:"数据类型",type:"j",q:"char 是可变长字符串类型。",a:[1],e:"错误，char 是固长；varchar 才是可变长。"},
+{topic:"数据类型",type:"j",q:"varchar(10) 存储 'abc' 时，实际只占 3 个字符长度。",a:[0],e:"正确，varchar 可变长，存多少占多少。"},
+{topic:"数据类型",type:"j",q:"int 类型字段可以存储小数。",a:[1],e:"错误，int 是整数类型，不能存小数；小数用 decimal/float/double。"},
+{topic:"数据类型",type:"j",q:"decimal 适合存储金额等要求精确的数值。",a:[0],e:"正确，float/double 有精度问题。"},
+{topic:"数据类型",type:"j",q:"datetime 类型包含时分秒。",a:[0],e:"正确，date 只有年月日，datetime 有年月日时分秒。"},
+{topic:"表操作",type:"j",q:"创建表时，多个字段之间用逗号分隔。",a:[0],e:"正确，最后一个字段后不能有逗号。"},
+{topic:"字段操作",type:"j",q:"alter table ... change 可以修改字段名。",a:[0],e:"正确，change 旧字段名 新字段名 类型。"},
+{topic:"字段操作",type:"j",q:"alter table ... modify 只能修改字段名，不能修改类型。",a:[1],e:"错误，modify 只修改字段类型，不能改字段名；change 才能改字段名。"},
+{topic:"字段操作",type:"j",q:"desc 表名; 可以查看表的字段结构。",a:[0],e:"正确。"},
+{topic:"记录操作",type:"j",q:"insert 语句中，values 后的值必须和前面字段名的顺序一一对应。",a:[0],e:"正确。"},
+{topic:"记录操作",type:"j",q:"insert 一次只能插入一条记录。",a:[1],e:"错误，values 后可以用逗号分隔插入多条记录。"},
+{topic:"记录操作",type:"j",q:"delete from 表名; 会删除表结构。",a:[1],e:"错误，delete 只删除数据，保留表结构；drop table 才删结构。"},
+{topic:"记录操作",type:"j",q:"truncate 表名; 只清空数据，不会删除表结构。",a:[0],e:"正确。"},
+{topic:"约束",type:"j",q:"delete 清空表后，自增顺序会重置为 1。",a:[1],e:"错误，delete 保留自增；truncate 才会重置自增。"},
+{topic:"约束",type:"j",q:"一个表中可以有多个主键。",a:[1],e:"错误，一个表只能有一个主键。"},
+{topic:"约束",type:"j",q:"主键字段允许插入 null 值。",a:[1],e:"错误，主键不能为空，插入 null 会报 Column 'id' cannot be null。"},
+{topic:"约束",type:"j",q:"默认约束 default 在不给字段值时生效。",a:[0],e:"正确，不指定该字段就使用默认值。"},
+{topic:"约束",type:"j",q:"唯一约束 unique 会自动创建唯一索引。",a:[0],e:"正确，删除唯一约束就是删除唯一索引。"},
+{topic:"约束",type:"j",q:"auto_increment 自增字段的类型必须是整数类型。",a:[0],e:"正确，如 int、bigint。"},
+{topic:"约束",type:"j",q:"SQL 中 database 表示数据库，table 表示表，column 表示列/字段。",a:[0],e:"正确。"},
+{topic:"写命令",type:"f",q:"查看当前正在使用的数据库（写完整语句）",a:["select database()","select database();"],e:"<code>SELECT DATABASE();</code>"},
+{topic:"写命令",type:"f",q:"查看 MySQL 中所有数据库",a:["show databases","show databases;"],e:"<code>SHOW DATABASES;</code>"},
+{topic:"写命令",type:"f",q:"查看某库的建库语句（用“库名”占位）",a:["show create database 库名","show create database 库名;"],e:"<code>SHOW CREATE DATABASE 库名;</code>"},
+{topic:"写命令",type:"f",q:"创建表 student，包含 id int 和 name varchar(100) 两个字段（写 create table 语句）",a:["create table student(id int, name varchar(100))","create table student (id int, name varchar(100));"],e:"<code>CREATE TABLE student(id INT, name VARCHAR(100));</code>"},
+{topic:"写命令",type:"f",q:"安全删除 student 表（不存在也不报错）",a:["drop table if exists student","drop table if exists student;"],e:"<code>DROP TABLE IF EXISTS student;</code>"},
+{topic:"写命令",type:"f",q:"把表 student 改名为 stu",a:["rename table student to stu","rename table student to stu;"],e:"<code>RENAME TABLE student TO stu;</code>"},
+{topic:"写命令",type:"f",q:"查看 student 表的字段结构",a:["desc student","desc student;"],e:"<code>DESC student;</code>"},
+{topic:"写命令",type:"f",q:"给 student 表添加字段 address varchar(200)",a:["alter table student add address varchar(200)","alter table student add address varchar(200);"],e:"<code>ALTER TABLE student ADD address VARCHAR(200);</code>"},
+{topic:"写命令",type:"f",q:"删除 student 表的 address 字段",a:["alter table student drop address","alter table student drop address;"],e:"<code>ALTER TABLE student DROP address;</code>"},
+{topic:"写命令",type:"f",q:"用 modify 把 student 表 name 字段改为 varchar(50)",a:["alter table student modify name varchar(50)","alter table student modify name varchar(50);"],e:"<code>ALTER TABLE student MODIFY name VARCHAR(50);</code>"},
+{topic:"写命令",type:"f",q:"向 student 表全字段插入一条记录 (1,'张三',18)",a:["insert into student values (1,'张三',18)","insert into student values(1,'张三',18)"],e:"<code>INSERT INTO student VALUES (1,'张三',18);</code>"},
+{topic:"写命令",type:"f",q:"向 student 表的 name 字段插入 '赵六'",a:["insert into student(name) values ('赵六')"],e:"<code>INSERT INTO student(name) VALUES ('赵六');</code>"},
+{topic:"写命令",type:"f",q:"把 student 表中所有人的年龄改为 20（不加 where）",a:["update student set age = 20","update student set age=20"],e:"<code>UPDATE student SET age = 20;</code> 会改全表，慎用！"},
+{topic:"写命令",type:"f",q:"删除 student 表中 name 为 '张三' 的记录",a:["delete from student where name = '张三'","delete from student where name='张三'"],e:"<code>DELETE FROM student WHERE name = '张三';</code>"},
+{topic:"写命令",type:"f",q:"建表时定义 id 为主键（写括号内字段定义）",a:["id int primary key","id int primary key,"],e:"<code>id INT PRIMARY KEY,</code>"},
+{topic:"写命令",type:"f",q:"建表时定义 name varchar(100) 且非空",a:["name varchar(100) not null","name varchar(100) not null,"],e:"<code>name VARCHAR(100) NOT NULL,</code>"},
+{topic:"写命令",type:"f",q:"建表时定义 phone varchar(20) 唯一",a:["phone varchar(20) unique","phone varchar(20) unique,"],e:"<code>phone VARCHAR(20) UNIQUE,</code>"},
+{topic:"写命令",type:"f",q:"建表时定义 gender varchar(10) 默认 '男'",a:["gender varchar(10) default '男'","gender varchar(10) default '男',"],e:"<code>gender VARCHAR(10) DEFAULT '男',</code>"},
+{topic:"写命令",type:"f",q:"建表后给 stu7 的 pwd 字段添加默认值 '123456'（change 写法）",a:["alter table stu7 change pwd pwd varchar(100) default '123456'","alter table stu7 change pwd pwd varchar(100) default '123456';"],e:"<code>ALTER TABLE stu7 CHANGE pwd pwd VARCHAR(100) DEFAULT '123456';</code>"},
+{topic:"写命令",type:"f",q:"删除 stu7 的 pwd 字段的默认值",a:["alter table stu7 change pwd pwd varchar(100)","alter table stu7 change pwd pwd varchar(100);"],e:"去掉 default 再 change 一次即可。"},
+{topic:"写命令",type:"f",q:"删除 stu 表的主键（drop primary key 那一步）",a:["alter table stu drop primary key","alter table stu drop primary key;"],e:"<code>ALTER TABLE stu DROP PRIMARY KEY;</code>"},
+{topic:"写命令",type:"f",q:"先删除 stu3 表 id 字段的自增（change 去掉 auto_increment）",a:["alter table stu3 change id id int","alter table stu3 change id id int;"],e:"<code>ALTER TABLE stu3 CHANGE id id INT;</code>"},
+{topic:"写命令",type:"f",q:"创建数据库 test_db 并使用它（两句，用分号分隔）",a:["create database test_db; use test_db","create database test_db;use test_db"],e:"<code>CREATE DATABASE test_db; USE test_db;</code>"},
+{topic:"写命令",type:"f",q:"查看 student 表的建表语句",a:["show create table student","show create table student;"],e:"<code>SHOW CREATE TABLE student;</code>"},
+{topic:"写命令",type:"f",q:"MySQL 命令行退出命令（任写一个：exit / quit / \\q）",a:["exit","quit","\\q"],e:"三选一均可；mac/linux 还可 ctrl+d、ctrl+c。"},
+{topic:"写命令",type:"f",q:"纠错：insert into student(name) value ('张三');（value 应为 values）",a:["insert into student(name) values ('张三')","insert into student(name) values('张三')"],e:"正确写法：<code>INSERT INTO student(name) VALUES ('张三');</code>"},
+{topic:"写命令",type:"f",q:"纠错：update student set age=20 where id==1;（SQL 中等号用 =）",a:["update student set age = 20 where id = 1","update student set age=20 where id=1"],e:"SQL 判断相等用 <code>=</code>，不是 <code>==</code>。"},
+{topic:"写命令",type:"f",q:"纠错：delete student where id=1;（缺少 from）",a:["delete from student where id = 1","delete from student where id=1"],e:"正确：<code>DELETE FROM student WHERE id = 1;</code>"},
+{topic:"写命令",type:"f",q:"纠错：create table t (id int primary key; name varchar(10));（字段间应用逗号）",a:["create table t (id int primary key, name varchar(10));","create table t (id int primary key, name varchar(10))"],e:"字段之间用逗号分隔，整条语句末尾才用分号。"}
+];
+
+const LIST_KEY="mysqlQuiz.ultimate.v1";
+BANK.forEach((q,i)=>{q.id=i; if(q.type==="j"){q.o=["正确","错误"];}});
+let order=BANK.map((_,i)=>i);
+let ANS=load()||{};
+let SUBMIT=false;
+const $=s=>document.querySelector(s);
+const norm=s=>String(s==null?"":s).replace(/\s+/g,"").replace(/[;；]/g,"").replace(/`/g,"").replace(/['"]/g,"").toLowerCase();
+
+function load(){try{return JSON.parse(localStorage.getItem(LIST_KEY))}catch(e){return null}}
+function save(){try{localStorage.setItem(LIST_KEY,JSON.stringify(ANS))}catch(e){}}
+
+function eq(a,b){a=[].concat(a).slice().sort();b=[].concat(b).slice().sort();
+  return a.length===b.length&&a.every((x,i)=>x===b[i]);}
+
+function isRight(q){
+  const u=ANS[q.id];
+  if(u===undefined||u===null||u==="")return false;
+  if(q.type==="f"){
+    const nu=norm(u);
+    return q.a.some(x=>{const nx=norm(x);
+      return nx===nu || (nu.length>=10&&(nx.indexOf(nu)>-1||nu.indexOf(nx)>-1));});
+  }
+  if(q.type==="m")return eq(u,q.a);
+  return Number(u)===Number(q.a[0]);
+}
+function answered(q){const u=ANS[q.id];
+  if(u===undefined||u===null||u==="")return false;
+  if(Array.isArray(u))return u.length>0; return true;}
+
+function render(){
+  const list=$("#list"); list.innerHTML="";
+  order.forEach((idx,n)=>{
+    const q=BANK[idx];
+    const d=document.createElement("div");
+    d.className="q"; d.id="q"+q.id;
+    const ty={s:"单选",m:"多选",j:"判断",f:"填空/写命令"}[q.type];
+    let body="";
+    if(q.type==="f"){
+      body=`<input class="txt" placeholder="在这里输入答案…" value="${(ANS[q.id]||"")}">
+            <div class="mini"><button data-check="${q.id}">对答案</button></div>`;
+    }else{
+      body=q.o.map((o,i)=>
+        `<label class="opt" data-q="${q.id}" data-i="${i}">
+           <input type="${q.type==="m"?"checkbox":"radio"}" name="q${q.id}" style="margin-right:8px"
+           ${isSel(q,i)?"checked":""}>${String.fromCharCode(65+i)}. ${o}</label>`).join("");
+    }
+    d.innerHTML=`<div class="qhead"><span class="no">${n+1}</span>
+        <span class="tag">${q.topic}</span><span class="ty">${ty}</span></div>
+      <div class="stem">${q.stem||q.q}</div>${body}
+      <div class="fb"><b class="r"></b><div class="ex"></div></div>`;
+    list.appendChild(d);
+  });
+  bind(); refresh();
+}
+function isSel(q,i){const u=ANS[q.id];
+  if(q.type==="m")return Array.isArray(u)&&u.indexOf(i)>-1;
+  return Number(u)===i;}
+
+function bind(){
+  document.querySelectorAll(".opt input").forEach(inp=>{
+    inp.addEventListener("change",()=>{
+      const el=inp.closest(".opt");
+      const qid=+el.dataset.q, i=+el.dataset.i, q=BANK[qid];
+      if(q.type==="m"){
+        let u=Array.isArray(ANS[qid])?ANS[qid].slice():[];
+        const p=u.indexOf(i); p>-1?u.splice(p,1):u.push(i); ANS[qid]=u;
+      }else{ ANS[qid]=i; }
+      save(); paint(qid);
+      if($("#mode").value==="practice") grade(qid,true);
+      refresh();
+    });
+  });
+  document.querySelectorAll("input.txt").forEach(el=>{
+    el.addEventListener("input",()=>{
+      const d=el.closest(".q"); const qid=+d.querySelector(".no").dataset.qid;
+      ANS[qid]=el.value; save(); refresh();
+    });
+  });
+  document.querySelectorAll("button[data-check]").forEach(b=>{
+    b.addEventListener("click",()=>grade(+b.dataset.check,true));
+  });
+  order.forEach((idx)=>{
+    const d=document.getElementById("q"+idx);
+    if(d){const no=d.querySelector(".no"); if(no)no.dataset.qid=idx;}
+  });
+}
+
+function paint(qid){
+  const q=BANK[qid], d=document.getElementById("q"+qid); if(!d)return;
+  const u=ANS[qid];
+  if(q.type==="f")return;
+  d.querySelectorAll(".opt").forEach(el=>{
+    const i=+el.dataset.i; el.classList.remove("sel","ok","bad");
+    const sel=q.type==="m"?Array.isArray(u)&&u.indexOf(i)>-1:Number(u)===i;
+    if(sel)el.classList.add("sel");
+    if(SUBMIT||d.dataset.graded==="1"){
+      if(q.a.indexOf(i)>-1)el.classList.add("ok");
+      else if(sel)el.classList.add("bad");
+    }
+  });
+}
+function grade(qid,force){
+  const q=BANK[qid], d=document.getElementById("q"+qid); if(!d)return;
+  if(!answered(q)&&!force)return;
+  const fb=d.querySelector(".fb"), ok=isRight(q);
+  fb.classList.add("show"); fb.classList.toggle("good",ok); fb.classList.toggle("bad",!ok);
+  fb.querySelector(".r").textContent=ok?"✓ 回答正确":"✗ 回答错误";
+  let right="";
+  if(q.type==="f")right="参考答案：<code>"+q.a[0]+"</code>";
+  else right="正确答案："+q.a.map(i=>String.fromCharCode(65+i)+". "+q.o[i]).join("，");
+  fb.querySelector(".ex").innerHTML=(ok?"":"<div>"+right+"</div>")+"<div style='margin-top:4px'>解析："+q.e+"</div>";
+  d.dataset.graded="1"; paint(qid);
+}
+function gradeAll(){
+  SUBMIT=true; let right=0,tot=0; const stat={};
+  order.forEach(idx=>{const q=BANK[idx]; grade(idx,true);
+    if(answered(q)){tot++; if(isRight(q))right++;}
+    stat[q.topic]=stat[q.topic]||[0,0];
+    if(answered(q)){stat[q.topic][1]++; if(isRight(q))stat[q.topic][0]++;}
+  });
+  const r=$("#result"); r.style.display="block";
+  let s="<h2>成绩</h2><div><span class='score'>"+right+"</span> / "+order.length+
+    " 题正确　正确率 <b>"+(order.length?Math.round(right/order.length*100):0)+"%</b>　（已作答 "+tot+" 题，用时 "+ $("#timer").textContent +"）</div>";
+  s+="<div class='topic-stat'>";
+  for(const k in stat){const [a,b]=stat[k];
+    s+="<span>"+k+"："+a+"/"+b+"</span>";}
+  s+="</div><div class='mini'><button onclick='redoWrong()'>只重做错题</button> <button onclick='window.scrollTo(0,0)'>回到顶部</button></div>";
+  r.innerHTML=s; window.scrollTo(0,0); refresh();
+}
+function redoWrong(){
+  const wrong=order.filter(i=>!isRight(BANK[i]));
+  if(!wrong.length){alert("没有错题，全对！");return;}
+  wrong.forEach(i=>{delete ANS[i];});
+  order=wrong; SUBMIT=false; $("#result").style.display="none";
+  render(); window.scrollTo(0,0);
+}
+function refresh(){
+  let done=0; order.forEach(i=>{if(answered(BANK[i]))done++;});
+  $("#done").textContent=done; $("#total").textContent=order.length;
+  $("#bar").firstElementChild.style.width=(order.length?done/order.length*100:0)+"%";
+  const sh=$("#sheet"); sh.innerHTML="";
+  order.forEach((idx,n)=>{
+    const q=BANK[idx], b=document.createElement("b"); b.textContent=n+1;
+    const d=document.getElementById("q"+idx);
+    const graded = d && d.dataset.graded==="1";
+    if(SUBMIT||graded){
+      if(isRight(q))b.className="right"; else if(answered(q))b.className="wrong";
+    }else if(answered(q))b.className="done";
+    b.onclick=()=>{const t=document.getElementById("q"+idx); if(t)t.scrollIntoView({behavior:"smooth",block:"center"});};
+    sh.appendChild(b);
+  });
+}
+$("#mode").onchange=()=>{if($("#mode").value==="exam"){$("#result").style.display="none";SUBMIT=false;render();}else{render();}};
+$("#submit").onclick=gradeAll;
+$("#shuffle").onclick=()=>{
+  const arr=BANK.map((_,i)=>i);
+  for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]];}
+  order=arr; SUBMIT=false; $("#result").style.display="none"; render(); window.scrollTo(0,0);};
+$("#redo").onclick=redoWrong;
+$("#showall").onclick=()=>{order=BANK.map((_,i)=>i);render();};
+$("#reset").onclick=()=>{if(!confirm("清空本题所有作答？"))return;ANS={};save();SUBMIT=false;
+  $("#result").style.display="none";order=BANK.map((_,i)=>i);render();};
+$("#clr").onclick=()=>{if(!confirm("清空本地保存的答题记录？"))return;localStorage.removeItem(LIST_KEY);ANS={};render();};
+$("#cnt").textContent="（共 "+BANK.length+" 题）";
+$("#n2").textContent=BANK.length;
+
+let t0=Date.now();
+setInterval(()=>{const s=Math.floor((Date.now()-t0)/1000);
+  const tm=$("#timer"); if(tm)tm.textContent=String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0");},1000);
+
+render();
+</script>
+</body>
+</html>

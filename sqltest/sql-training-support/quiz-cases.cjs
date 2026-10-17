@@ -1,0 +1,44 @@
+const fs=require('node:fs');
+process.chdir(__dirname);
+const sql=`-- MySQL 8.0.16+，请在独立练习环境运行。首次导入使用。
+-- 不删除已有表；若已导入，请勿重复执行 INSERT。
+CREATE DATABASE IF NOT EXISTS sql_training_lab CHARACTER SET utf8mb4;
+USE sql_training_lab;
+CREATE TABLE customers (
+  id INT PRIMARY KEY,
+  name VARCHAR(50) NOT NULL
+);
+CREATE TABLE orders (
+  id INT PRIMARY KEY,
+  customer_id INT NOT NULL,
+  amount DECIMAL(10,2) NOT NULL CHECK (amount >= 0),
+  status VARCHAR(10) NOT NULL,
+  created_at DATETIME NOT NULL,
+  FOREIGN KEY (customer_id) REFERENCES customers(id)
+);
+INSERT INTO customers (id,name) VALUES
+  (1,'林晨'),(2,'陈悦'),(3,'王宁'),(4,'周禾');
+INSERT INTO orders (id,customer_id,amount,status,created_at) VALUES
+  (101,1,100.00,'paid','2026-01-01 10:00:00'),
+  (102,1,200.00,'paid','2026-01-02 10:00:00'),
+  (103,1,50.00,'refunded','2026-01-02 12:00:00'),
+  (104,2,200.00,'paid','2026-01-01 11:00:00'),
+  (105,2,200.00,'paid','2026-01-03 09:00:00'),
+  (106,3,80.00,'pending','2026-01-02 10:00:00'),
+  (107,1,200.00,'paid','2026-01-03 09:00:00'),
+  (108,2,50.00,'paid','2026-01-03 09:00:00');
+`;
+const cases=[
+{topic:'筛选与稳定排序',title:'01 · 找到高金额支付订单',task:'查询已支付且金额至少 200 的订单，返回 id、amount，按金额降序、id 升序。',hint:'AND 连接状态和金额条件；相同金额再按唯一 id 排序。',sql:"SELECT id, amount\nFROM orders\nWHERE status = 'paid' AND amount >= 200\nORDER BY amount DESC, id ASC;",cols:['id','amount'],rows:[[102,200],[104,200],[105,200],[107,200]],explain:'订单 103 已退款、106 待支付，不能混入收入统计。排序包含 id，保证金额相同时结果稳定。',extra:'把筛选改为 2026 年 1 月的已支付订单，使用日期半开区间。'},
+{topic:'聚合与 HAVING',title:'02 · 谁是高价值客户？',task:'统计每位客户已支付总额，返回 customer_id、revenue，仅保留总额至少 450 的客户，按总额降序、客户 id 升序。',hint:'WHERE 先过滤 paid；GROUP BY 后 HAVING 过滤 SUM。',sql:"SELECT customer_id, SUM(amount) AS revenue\nFROM orders\nWHERE status = 'paid'\nGROUP BY customer_id\nHAVING SUM(amount) >= 450\nORDER BY revenue DESC, customer_id;",cols:['customer_id','revenue'],rows:[[1,500],[2,450]],explain:'客户 1 的退款订单不计入已支付总额。这里采用状态口径，不是扣退款金额的现金流口径。',extra:'增加订单数、客单价指标，并解释 AVG 的分母。'},
+{topic:'LEFT JOIN 与空值',title:'03 · 所有客户都要出现在报表里',task:'返回全部客户 id、name、paid_count、revenue；没有已支付订单显示 0。按客户 id 升序。',hint:'paid 条件放在 ON；COUNT(o.id)；用 COALESCE 处理 SUM。',sql:"SELECT c.id, c.name, COUNT(o.id) AS paid_count,\n       COALESCE(SUM(o.amount), 0) AS revenue\nFROM customers c\nLEFT JOIN orders o\n  ON o.customer_id = c.id AND o.status = 'paid'\nGROUP BY c.id, c.name\nORDER BY c.id;",cols:['id','name','paid_count','revenue'],rows:[[1,'林晨',3,500],[2,'陈悦',3,450],[3,'王宁',0,0],[4,'周禾',0,0]],explain:'COUNT(*) 会把无匹配客户的 NULL 扩展行也计为 1；把状态条件放在 WHERE 则会丢失客户 3、4。',extra:'新增一个有多笔退款、没有支付订单的客户，验证它仍然出现。'},
+{topic:'NOT EXISTS',title:'04 · 找出从未下单的客户',task:'返回从未产生任何订单的客户 id、name，按 id 升序。注意：只有待支付订单，也算下过单。',hint:'检查是否存在任何关联订单，不过滤订单状态。',sql:'SELECT c.id, c.name\nFROM customers c\nWHERE NOT EXISTS (\n  SELECT 1 FROM orders o WHERE o.customer_id = c.id\n)\nORDER BY c.id;',cols:['id','name'],rows:[[4,'周禾']],explain:'客户 3 虽未支付，但已经有订单，不能归类为从未下单。业务措辞决定 SQL 条件。',extra:'改为“从未支付”的客户，预期结果应增加客户 3。'},
+{topic:'ROW_NUMBER 与 CTE',title:'05 · 每位客户最近的一笔支付',task:'返回有已支付订单的客户的 customer_id、id、amount。按 created_at 降序取最新一笔，同时间取较大 id；最终按客户 id 排序。',hint:'先在每个客户窗口内排名，再在外层筛 rn=1。',sql:"WITH ranked AS (\n  SELECT customer_id, id, amount,\n    ROW_NUMBER() OVER (\n      PARTITION BY customer_id\n      ORDER BY created_at DESC, id DESC\n    ) AS rn\n  FROM orders WHERE status = 'paid'\n)\nSELECT customer_id, id, amount\nFROM ranked WHERE rn = 1\nORDER BY customer_id;",cols:['customer_id','id','amount'],rows:[[1,107,200],[2,108,50]],explain:'客户 2 的订单 105 与 108 同时间，按 id 较大选择 108。只取 MAX(created_at) 再关联会得到两行。',extra:'改成每位客户最近两笔，说明 ROW_NUMBER 与 DENSE_RANK 会不会给出同样数量。'},
+{topic:'先聚合，再窗口',title:'06 · 每日收入与累计收入',task:'按支付订单 created_at 的日期统计 day、revenue 和累计 running_revenue，按日期升序。这里日期按样例 DATETIME 的字面日期。',hint:'CTE 先算每日 SUM；外层窗口再累计每日收入。',sql:"WITH daily AS (\n  SELECT DATE(created_at) AS day, SUM(amount) AS revenue\n  FROM orders WHERE status = 'paid'\n  GROUP BY DATE(created_at)\n)\nSELECT day, revenue,\n  SUM(revenue) OVER (\n    ORDER BY day ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW\n  ) AS running_revenue\nFROM daily ORDER BY day;",cols:['day','revenue','running_revenue'],rows:[['2026-01-01',300,300],['2026-01-02',200,500],['2026-01-03',450,950]],explain:'先把粒度变成每天一行，再累计。没有支付记录的日期不会自动出现，完整日历报表需要日期维表或递归 CTE 补齐。',extra:'增加一个没有订单的日期，设计日期序列 LEFT JOIN 补零。'},
+{topic:'DENSE_RANK 与并列',title:'07 · 每个客户金额最高的两个档位',task:'查询每位客户已支付订单中金额排名前两档的全部订单，返回 customer_id、id、amount、amount_rank。按客户 id、排名、订单 id 升序。',hint:'两个金额档位包含并列，应使用 DENSE_RANK，不是只保留两行。',sql:"WITH ranked AS (\n  SELECT customer_id, id, amount,\n    DENSE_RANK() OVER (\n      PARTITION BY customer_id ORDER BY amount DESC\n    ) AS amount_rank\n  FROM orders WHERE status = 'paid'\n)\nSELECT customer_id, id, amount, amount_rank\nFROM ranked WHERE amount_rank <= 2\nORDER BY customer_id, amount_rank, id;",cols:['customer_id','id','amount','amount_rank'],rows:[[1,102,200,1],[1,107,200,1],[1,101,100,2],[2,104,200,1],[2,105,200,1],[2,108,50,2]],explain:'不要在该窗口 ORDER BY 中加入 id，否则同金额不再并列。外层 ORDER BY 再用 id 固定展示顺序。',extra:'把 DENSE_RANK 换成 RANK 与 ROW_NUMBER，分别预测结果并运行对照。'},
+{topic:'LAG 与差值分析',title:'08 · 对比每位客户前一笔消费',task:'对已支付订单输出 customer_id、id、amount、previous_amount、delta；第一笔的前值与差值为 NULL。按客户、created_at、id 升序。',hint:'LAG 在客户窗口内取前值，用外层查询计算差值。',sql:"WITH compared AS (\n  SELECT customer_id, id, amount, created_at,\n    LAG(amount) OVER (\n      PARTITION BY customer_id ORDER BY created_at, id\n    ) AS previous_amount\n  FROM orders WHERE status = 'paid'\n)\nSELECT customer_id, id, amount, previous_amount,\n       amount - previous_amount AS delta\nFROM compared\nORDER BY customer_id, created_at, id;",cols:['customer_id','id','amount','previous_amount','delta'],rows:[[1,101,100,'NULL','NULL'],[1,102,200,100,100],[1,107,200,200,0],[2,104,200,'NULL','NULL'],[2,105,200,200,0],[2,108,50,200,-150]],explain:'NULL 表示没有前一笔，不宜默认当作 0 消费。排序中加入 id 确保同时间订单的先后稳定。',extra:'计算相对变化比例，并用 NULLIF(previous_amount,0) 防止除以零。'}
+];
+const bank=JSON.parse(fs.readFileSync('quiz-bank.json','utf8'));
+let html=fs.readFileSync('quiz-shell.html','utf8').replace('__BANK__',JSON.stringify(bank).replace(/</g,'\\u003c')).replace('__DATA_SQL__',JSON.stringify(sql)).replace('__CASES__',JSON.stringify(cases));
+fs.writeFileSync('../1.html',html);fs.writeFileSync('../sql-training-data.sql',sql);fs.writeFileSync('../sql-training-solutions.sql','USE sql_training_lab;\n\n'+cases.map((c,i)=>'-- '+(i+1)+'. '+c.title+'\n'+c.sql).join('\n\n'));
+fs.writeFileSync('quiz-cases.json',JSON.stringify(cases));console.log('Built standalone 1.html:',Buffer.byteLength(html),'bytes');

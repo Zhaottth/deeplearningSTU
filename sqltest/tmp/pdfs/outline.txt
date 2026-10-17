@@ -1,0 +1,2587 @@
+=== PAGE 1 ===
+，来黑马程序员零基础学
+培养能落地、懂业务、
+强技术的大模型开发工程师V8.0
+课
+程
+大
+纲
+普通本科亦可触达的高薪赛道
+
+=== PAGE 2 ===
+完整的
+学习地图
+算法强基 + 应⽤为王
+主流平台全覆盖
+模块化项⽬周期
+从本地部署到云
+原⽣
+Vibe Coding
+提示词⼯程
+Ollama/vllm
+本地模型起步
+Docker+Kafka+Redis
+企业级部署逐步进阶
+Coze/Dify智能体项⽬
+ RAG系统
+ 模型训练
+Agent开发
+ ⼤模型推理优化
+编程基础 应⽤开发 算法进阶
+RAG应⽤
+ 智能体开发
+ 多模态算法
+Langfuse
+⽣产环境平滑过度
+聚焦企业级应⽤落地，同时夯实算法根基，避免“调包侠”困境，培养能开发、懂原理、可优化的综合型⼈才。
+Transformer
+原理解析 ⼤模型微调
+五⼤热⻔⽅向，精准狙击企业需求
+课程匹配AI时代主流的⼤模型开发岗位，破解企业五⼤AI落地痛点
+优势2
+体系化AI进阶学习路径，覆盖AI开发全链路
+从VibeCoding⼀Python核⼼⼀数据分析⼀机器学习⼀深度学习⼀NLP⼀智能体⼀⼤模型微调⼀多模态⼀前沿热
+点⼀就业冲刺，覆盖AI全底层链路
+优势1
+⿊⻢重磅推出AI⼤模型开发V8.0课程
+普通本科亦能触达的⾼薪赛道 
+多Agent⽅向
+RAG⽅向
+智能体⽅向
+构建企业级多智能体
+系统，解决多场景⼤
+模型应⽤开发落地，
+实现智能体分⼯、状
+态流转与任务拆解
+构建企业级检索
+增强系统，解决
+模型幻觉问题，
+实现精准问答
+基于Coze/Dify开发
+企业级智能体，解
+决业务⾃动化需求
+⼤模型微调⽅向
+聚焦⽣产落地，以
+DeepSpeed+LoRA/
+QLoRA微调+GPTQ量
+化技术优化任务性能，
+结合vLLM量化部署满
+⾜企业定制模型需求
+多模态⼤模型⽅向
+聚焦多模态应⽤场景，解
+决多种模态数据融合、⽣
+成的任务，如视觉问答、
+图⽂⽣成、语⾳识别与合
+成等，满⾜企业对多模态
+模型定制需求
+Vibe Coding × Harness 强强融合，课程与市场零时差
+掌握下⼀代智能开发范式，技能⼀步到位不脱节，以最新技术栈赋能实战，打造核⼼竞争⼒
+优势3
+独⽴开发企业级Harness，对接企业系统
+课程教授如何利⽤ Harness 理念，让⼤模型具备“⼿”和
+“眼”，⾃主调⽤搜索、数据库、API 等外部⼯具，构建真
+正的Agentic Workﬂow（智能体⼯作流）。
+⼈机协作的“指挥官"思维
+学员将掌握 Prompt Engineering进阶版(Context 
+Management)、AI代码审查、以及多智能体协作管理，成
+为 AI时代的技术指挥官。
+⽤户：“帮我分析上周的销售数据并⽣成报表”
+语法记忆Harness智能体核⼼
+数据查询⼯具
+⾃研企业级 OpenClaw 框架 构建 Agentic Workﬂow 开发范式与⾏业趋势对⻬Agent Harness ⼯程
+数据库 图标引擎
+可视化绘图⼯具
+单兵作战
+⼿动 Debug
+⼯具链设计
+多智能体编排
+⾃然语⾔编程
+开源模型调优
+AI 代码审查
+传统技能
+ Vibe × OpenClaw技能
+重复造轮⼦
+与头部科技企业深度共建，打造“零距离”就业竞争⼒
+⼤⼚ × 企业联合打磨：萃取前沿实战技术，打造经实战验证、直击实际问题的⾼效课程
+优势4
+企业级技术标准
+联合讯⻜星⽕、腾讯云、阿⾥云等⼤
+⼚打磨课程，萃取前沿实战经验，内
+容均经实战验证、直击问题核⼼。
+顶级资源赋能
+依托阿⾥ PAI、腾讯云等平台提
+供 GPU 算⼒⽀持，降低硬件⻔
+槛，直通⼯程师同款技术环境。
+⼤模型权威证书
+与科⼤讯⻜联⼿打造四⼤认证证书 ——
+Prompt ⼯程师认证、微调⼯程师认证、
+智能体⼯程师认证及RAG⼯程师认证。
+每年更新15%以上核⼼模块
+保障学习内容的前沿性
+与适配性
+合作企业
+企业级多场景项⽬库，让你成为解决复杂问题的实战专家
+深度融合电商、物流、新媒体、⼈⼒资源等企业真实业务场景，构建覆盖多⾏业、多场景的综合性技术栈体系
+优势5
+⿊⻢直聘⼤模型搜索推荐
+⼤模型让海量”职位“搜索更精准
+⼈资
+NEW
+旅⾏智能助⼿
+⼤模型让出⾏更加⾼效和便捷
+旅游
+SmartRecruit简历推荐
+⼤模型让HR简历匹配更精准
+⼈资
+ 微博⽂本信息抽取
+让⼤模型回答业务问题更精准
+新媒体
+EduRAG智慧问答系统
+让垂类领域⼤模型回答更精准
+教育
+电商商品聚合多模态
+”千万级“电商商品知识图谱构建
+电商
+NEW
+EduAgent智能教育助⼿
+构建企业级教育AI Agent系统
+教育
+NEW
+HeiMaClaw
+企业级通⽤Hermes⽣产线助⼿
+通⽤
+NEW
+蜂窝头条⽂本分类
+模型训练，让算法更懂数据
+资讯
+中医知识图谱
+构建医疗领域多智能体系统
+医疗
+数智通智能分析系统
+⼤模型助⼒提升数据分析效率
+电商
+NEW
+⼯业级智能服务平台
+让5个AI专家24⼩时守护您的云服务
+⼯业
+基于Coze的智能⾯试助⼿
+低代码平台助⼒更快落地业务智能体
+教育
+星灿⼤模型
+构建⽣产级的多模态系统
+教育
+NEW
+1616 个企业级项⽬实战
+44 ⼤解决⽅案
+ 66 ⼤⾏业领域覆盖
+星通 * 通⽤智能体
+⼤模型帮你办公、数据分析
+通⽤
+NEW
+传智教育旗下⾼端IT教育品牌 ，来黑马程序员零基础学
+
+=== PAGE 3 ===
+AI⼤模型开发V8.0课程
+⼤模型开发⼊⻔
+智能体平台开发
+ Vibe Coding开发
+ 医疗问诊智能体
+聊天机器⼈搭建 赠送
+ ⼤模型语⾔进阶
+18天1
+⼤模型智能体⾼级开发
+20天
+LangGraph框架
+AI⼯程基座：企业级开发⼯具链与落地综合实战
+【项⽬】中医知识图谱Agent项⽬
+【项⽬】EduAgent多智能体项⽬
+5
+2选1
+【项⽬】星通通⽤智能体项⽬ 2选1 3选1
+【项⽬】SmartVoloyge智能旅游多Agent项⽬ 3选1
+【项⽬】SmartCloud云服务系统 3选1
+【项⽬】从Vibe Coding到SDD规范驱动交付实战
+【项⽬】HeiMaClaw系统级Agent实战
+【项⽬】智能语⾳分析Agent项⽬（语智析） 赠送
+赠送【项⽬】智能营销Agent项⽬（种草机）
+【项⽬】Hermes⾼阶实战
+⼤模型智能体平台开发
+8天提示词⼯程
+智能体平台开发实战
+2
+ 【项⽬】基于Coze的智能⾯试助⼿项⽬（⾯试通）
+【项⽬】基于Dify的电商智能分析项⽬（数智通）
+⼤模型核⼼开发技术
+20天3
+⼤模型RAG应⽤开发
+8天LangChain框架
+DevOps的RAG开发综合实战
+4
+⼤模型应⽤开发 26天
+⼤模型智能体定制开发 48天
+机器学习
+ 深度学习与Pytorch框架
+ Transformer基础
+【项⽬】蜂窝头条⽂本分类项⽬
+【RAG项⽬】EduRAG项⽬
+【RAG项⽬】SmartRecruit RAG项⽬
+全模态⼤模型（赠送）
+赠送8
+⼤模型算法开发 16天
+全模态⼤模型（赠送） 赠送
+⼤模型核⼼专题
+赠送⼤模型蒸馏实战专题
+⾼数专题
+ 算法专题
+ 就业⾯试加强专题
+DeepSeek核⼼专题
+ 基于RHLF的强化学习7
+图像分析基础
+⼤模型微调开发
+16天6
+⼤模型微调开发基础
+ 【项⽬】微博⽂本信息抽取和摘要项⽬
+【项⽬】星灿全模态基础及项⽬
+【项⽬】电商商品聚合多模态⼤模型项⽬ 2选1
+【项⽬】⿊⻢直聘⼤模型搜索推荐项⽬ 2选1
+2选1
+2选1
+传智教育旗下⾼端IT教育品牌 ，来黑马程序员零基础学
+
+=== PAGE 4 ===
+阶段1：⼤模型开发⼊⻔
+课时：18天
+涵盖核⼼基础知识 ：覆盖⼤语⾔模型、Prompt、Agent、RAG、WorkFlow、Python 
+及 Vibe Coding等核⼼技术，建⽴完整的⼤模型应⽤开发基础
+注重实践操作：通过Coze智能体、Python编程案例和AI项⽬实战，将理论知识应⽤到
+实际开发中，逐步提升动⼿能⼒和问题解决能⼒
+强化项⽬开发能⼒：围绕医疗问诊系统完成需求分析、⼤模型接⼊、知识库、前后端开
+发、测试和部署，培养完整的AI应⽤开发能⼒
+课程亮点
+理解⼤语⾔模型基本原理
+熟悉主流⼤模型及应⽤场景
+掌握Prompt提示词设计⽅法
+理解Agent、RAG、Workﬂow
+掌握Coze智能体开发
+掌握知识库与RAG应⽤
+掌握插件与⼯具调⽤
+掌握⼯作流编排与应⽤
+掌握Python基础语法
+掌握流程控制与容器操作
+掌握函数的定义与调⽤
+掌握⽂件及异常处理
+理解Vibe Coding开发模式
+熟悉AI编程⼯具使⽤
+掌握⼤模型与知识库接⼊
+能够完成基础AI项⽬开发
+能⼒⽬标
+AI⼤模型概述
+什么是⼤语⾔模型（LLM）；⼤模型能做什么（⽂本⽣成、对话、推理、翻
+译、摘要）；主流⼤模型介绍（GPT系列、Claude、通义千问、⽂⼼⼀⾔、
+DeepSeek等）；⼤模型的边界与局限（幻觉、知识截⽌、上下⽂窗⼝）
+⼤模型应⽤
+形态
+API调⽤模式；聊天对话模式；智能体Agent模式；RAG知识库问答模式；多
+模态应⽤模式（⽂⽣图、图⽣⽂、⽂⽣视频）
+⾏业落地场
+景概览
+AI客服、AI教育、AI医疗、AI办公、AI营销、AI编程 等典型案例；从场景到
+产品的转化逻辑
+Coze智能体
+开发
+Coze平台定位（⼀站式AI智能体开发平台）；Coze国内版vs国际版；平台
+核⼼能⼒：Bot创建、知识库、插件、⼯作流、发布多端
+知识库与
+RAG应⽤
+RAG（检索增强⽣成）原理；知识库能解决的问题（突破知识截⽌限制、企
+业私有知识问答、降低幻觉）；知识库搭建与配置；Bot绑定知识库
+Coze智能体
+项⽬
+智能体项⽬需求分析、Bot架构设计、分模块开发、联调测试、最终发布上
+线；多端适配验证；⽤户反馈收集；后续迭代计划
+插件与⼯具
+能⼒
+什么是插件；Coze插件商店；内置官⽅插件（搜索、图⽚识别、链接读取
+等）；第三⽅插件；链接读取插件、搜索插件、代码执⾏插件、图⽚理解插
+件、代码执⾏插件与图⽚理解插件实战
+⼯作流
+WorkFlow
+什么是⼯作流；⼯作流vs简单对话Bot的适⽤场景；可视化编排节点介绍；开
+始节点（输⼊定义）；结束节点（输出设置）；⼤模型节点（LLM调⽤）；
+代码节点（Python/JS）；条件判断节点；变量聚合节点；节点编排实操
+对话式智能
+体搭建
+⻆⾊扮演提示词编写技巧；设定⻆⾊身份、语⽓⻛格、知识边界；对话开场
+⽩设计；提示词调试与迭代优化；上下⽂窗⼝概念；多轮对话记忆机制；对
+话变量设置；上下⽂⻓度管理策略；发布到⾖包；发布到⻜书；发布为API
+接⼝；发布为独⽴⽹⻚链接；微信/钉钉等渠道集成
+技术点
+模块 详细知识点
+基于Coze
+平台的智能
+体开发
+项⽬⼩组实
+战演练
+⼩组分配、任务说明、任务划分、⼩组基于Coze开发智能体、搭建WEB⻚
+⾯、Vibe Coding零代码开发⼩游戏、项⽬答辩
+Coze智能
+体 与 V i b e 
+Coding项
+⽬实战
+⼤模型必备
+Python基础
+学习⼤模型必备Python语⾔；Python解释器和Pycharm开发⼯具安装；注释
+和变量；标识符和关键字以及命名规范；输⼊和输出函数；算数运算，⽐
+较运算，逻辑运算，赋值运算
+⼤模型必备
+Python流程
+语句
+Python的三⼤流程控制语句；if选择结构，while/for循环结构；pass占位语
+句；循环嵌套中的break/continue；双重for循环执⾏流程；99乘法表案
+例；图形打印案例（三⻆形、菱形等）；循环嵌套性能注意事项；猜数字游
+戏开发、⽤户登录验证、带menu菜单程序设计实战
+AI⼤模型语
+⾔基础
+VibeCoding
+理念与准备 VibeCoding是什么；AI编程⼯具链；Claude Code安装与配置
+医疗问诊系
+统项⽬概述 项⽬定位；需求分析；技术架构与项⽬数据流转
+医疗问诊系
+统项⽬上线
+部署
+前后端联调；功能测试；安全测试；体验测试；部署⽅案选型；项⽬总结与
+展示
+医疗问诊系
+统项⽬前后
+端开发
+项⽬结构搭建；⼤模型接⼊；问诊业务逻辑；知识库服务；⽇志与监控；异
+常处理体系；前端交互开发；基于Vue打造前端Web界⾯
+Vibe Coding
+零代码开发
+智慧医疗智
+能体
+课程⼤纲
+大模型应用开发
+Large Model Application Developmen t
+传智教育旗下⾼端IT教育品牌 ，来黑马程序员零基础学
+⼤模型语⾔进阶
+涵盖Python⾯向对象编程、⾼阶语法、⽹络编程及多任务编程，为⼤模型应⽤开发提
+供扎实的编程基础
+课程亮点
+掌握⾯向对象编程思想
+独⽴运⽤⾯向对象思想完成指定需求
+掌握深拷⻉和浅拷⻉代码原理
+独⽴完成⾯向对象版-学⽣管理系统
+掌握闭包, 装饰器的⽤法
+独⽴完成⽹编案例代码实现
+掌握多进程, 多线程相关代码实现
+掌握上下⽂管理器对象的使⽤
+掌握⽣成器, 迭代器的⽤法
+理解正则表达式的相关运⽤
+掌握MySQL基本操作
+掌握Pandas基本操作
+能⼒⽬标
+⾯向对象
+⼊⻔
+⾯向对象和⾯向过程；类和对象的区别；定义类和属性；定义⽅法和魔法⽅
+法；⾯向对象-案例；【实战案例】⾯向对象综合实战案例
+数据库介
+绍、数据库
+的安装使⽤
+数据库基本操作；数据库概念和作⽤；关系型数据库和⾮关系型数据库; 
+MySQL数据类型；数据完整性和约束
+PyMySQL
+详解
+数据库创建；表操作命令；表数据操作命令; where⼦句；分组聚合；连接查
+询；外键的使⽤；PyMySQL安装和使⽤;  sql注⼊
+【实战案例】 ⽤户登录系统
+Redis详解 Redis安装；字符串 (String) 缓存；哈希 (Hash)存储对象；列表 (List)消息
+队列；有序集合 (ZSet)排⾏榜等
+Numpy详解 Numpy基础概念与操作；运算优势；数组的属性；数组的索引；数组的形
+状；数组的运算;  数组的⼴播机制等
+Pandas  
+Matplotlib
+plotlib详解
+Pandas统计分析；Pandas数据整理；Pandas透视表；Pandas+Matplotlib
+可视化(直⽅图/散点图/柱状图/折线图/饼图)  【实战案例】中美⽇GDP数据
+折线图制作
+⾯向对象
+进阶
+继承的使⽤；私有权限；类属性和对象属性；类⽅法和静态⽅法；⾯向对象版 
+-学⽣管理系统；【实战作业】⾯向对象版-学⽣管理系统（采取部分实战）
+闭包+装饰器 深拷⻉, 浅拷⻉详解；闭包详解；装饰器详解；【实战案例】装饰器实战案例
+⽣成器+协程
++正则详解
+⽣成器详解；协程详解; 迭代器详解；正则表达式详解； 【实战案例】正则
+表达式⽂本匹配综合案例
+⽹编+多进
+程⼊⻔
+⽹编相关概述介绍；⽹编案例-客户端发送⽂件到服务器端；并⾏和并发详
+解；多进程-代码实现；【实战案例】⽹编案例-客户端和服务器端交互
+多线程详解 多线程代码实现；守护线程详解；互斥锁详解；线程同步详解；上下⽂管理
+器详解；Json数据⽂件读取和处理；【实战案例】Json数据⽂件读取和处理
+技术点
+模块 详细知识点
+课程⼤纲
+Python⾯
+向对象进阶
+SQL数据库
+Python⾼阶
+语法
+Pandas
+⼤模型必备
+Python容器
+容器的概念与⽤途；Python内置容器类型：str、list、tuple、set、dict；可
+变容器 vs 不可变容器；容器选择决策；索引与切⽚操作
+⼤模型必备
+Python函数
+函数⼊⻔；函数定义和调⽤；函数的参数和返回值；变量作⽤域；函数的多
+种参数；拆包和变量交换；Lambda表达式
+⼤模型必备
+Python⽂件
+和异常处理
+⽂件的读写⼊⻔；中⽂乱码和路径问题；⽂件复制；os模块；with-open语
+法；异常处理⽅式；导⼊包和模块
+⼤模型语⾔
+进阶
+
+=== PAGE 5 ===
+阶段2：⼤模型智能体平台开发
+课时：8天
+⾦融⾏业动态⻛向评估
+基于Zero-shot零样本学习能⼒，通过DeepSeek/QWen/ChatGLM模型对⾦融领域数
+据进⾏分类、信息抽取、⽂本匹配，更好的解决业务问题
+项⽬介绍
+什么是Prompt Engineering
+Prompt Engineering的原理以及实际应⽤的优化技巧
+如何利⽤Prompt Engineering完成实际⾦融业务
+⼤模型发展过程、提示词介绍及撰写介绍、提示词优化⽅法、基于Ollama模型部署完成提
+示词⼯程案例
+主讲知识点
+能够理解和应⽤提示词⼯程原理
+掌握优化技巧并完成⾦融业务场景的实际问题解决
+能⼒⽬标
+提示词撰写解决⽅案
+⽂本分类提示词解决⽅案
+信息抽取提示词解决⽅案
+⽂本匹配提示词解决⽅案
+解决⽅案
+实现如下功能：
+简历修改：基于OCR插件、prompt、数据库查询，实现简历中各类常⻅问题的召回和
+修改建议。以及进阶功能：违禁词过滤、业务背景重复率统计等。辅助学⽣编写更好的
+简历
+⾯试录⾳分析：基于多模态⼤模型实现ASR，基于prompt实现⾯试官、应试者⻆⾊划
+分，最终实现⽂字提取、摘要以及建议，提⾯试⾼录⾳分析的效率
+⾯试题⽣成：基于⿊⻢⾯试宝典使⽤RAG技术结合学⽣的简历，结合简历上的技能点、
+业务背景、毕业时间、专业等信息，⽣成个性化的⾯试题题库
+模拟⾯试：基于简历和⾯试题⽣成流⽔线等功能，基于邢⽼师⾳⾊克隆⾯试官⾳⾊，结
+合ASR模型、TTS模型等技术，实现实时语⾳⾯试
+主讲知识点
+基于Coze的智能⾯试助⼿项⽬（⾯试通）
+基于Coze⼯作流平台，结合LLM、ASR、TTS、RAG等技术，为⿊⻢程序员AI学科学
+⽣构建⾯试全流程智能辅助系统，实现简历修改、⾯试录⾳分析、个性化⾯试题⽣成和
+实时语⾳模拟⾯试等功能
+项⽬介绍
+能够掌握Coze智能体开发范式
+能够独⽴完成多场景智能体应⽤的构建与部署
+能够实现⼯作流⾃动化与业务赋能
+能⼒⽬标
+实现基于插件完成PDF、DOCX等⽂档转⽂本到分析处理的全流程解决⽅案
+实现基于ASR技术实现录⾳⽂件转⽂本到分析处理的全流程解决⽅案
+实现基于知识库结合PDF实现精准内容⽣成的解决⽅案
+实现在⼯作流中读写数据库和知识库的解决⽅案
+实现⽗⼦模式多Agent架构⾃主规划执⾏解决⽅案
+解决⽅案
+业务流程图
+⽂档识别
+⾯试助⼿智能体
+简历评估⼯作流
+ ⾯试录⾳分析⼯作流
+ ⾯试题⽣成⼯作流
+⾯试宝典知识库
+违禁词
+数据库
+真实⾯试题
+数据库
+简历模板
+知识库
+语⾳识别
+知识库检索
+数据库读写
+联⽹搜索
+依赖能⼒
+应⽤商店
+API
+Chat SDK
+发布渠道Coze
+简历模块 录⾳模块 ⾯试题模块
+⾃动路由
+业务流程图
+⽤户输⼊
+意图识别
+使⽤⼤模型
+普通回答
+查询知识库
+进⾏问答
+查询数据库
+进⾏问答
+回复⽤户
+数据层
+普通问答 数据查询任务
+RAG任务
+MySQL数据库
+知识库
+数据层
+Dify平台：模型管理、⼯作流编排、应⽤发布
+Prompt⼯程：提示词设计、约束控制、结构化输出（JSON）
+RAG技术：⽂档分段、Embedding、向量检索、混合检索、重排
+数据库与SQL：MySQL结构设计、⾃然语⾔转SQL、查询优化
+⼯作流设计：多节点流程、分⽀判断、循环控制、代码节点
+⼤模型应⽤：LLM问答、数据分析解释、结果⽣成
+数据可视化：ECharts图表⽣成（折线图/柱状图/饼图）
+系统⼯程：AI应⽤架构设计、多模块集成、业务落地能⼒
+主讲知识点
+基于Dify的电商智能分析项⽬（数智通）
+本项⽬针对电商业务中数据分散（数据库）、规则分散（⽂档）、系统割裂（BI/知识
+库/AI⼯具）以及业务⼈员不会SQL、不会分析数据等痛点，基于Dify构建⼀套电商AI
+智能分析系统，通过融合⼤模型（LLM）、RAG检索和数据库分析能⼒，实现“⾃然语
+⾔提问 → ⾃动查询数据/知识 → 智能分析 → 图表展示”的⼀体化闭环，显著降低数据
+分析⻔槛，提⾼数据利⽤效率和业务决策能⼒
+项⽬介绍
+理解AI数据分析系统从“模型调⽤”到“系统设计”的完整流程
+掌握Dify平台核⼼能⼒（RAG / Agent / Workﬂow）及应⽤开发
+掌握⾃然语⾔转SQL的数据分析实现⽅案
+掌握RAG知识库构建流程（分段、Embedding、检索、⽣成）
+掌握多节点⼯作流编排（判断、分⽀、循环、组合）
+掌握数据分析结果⾃动解释与可视化实现
+具备AI系统整合能⼒（数据库 + 知识库 + ⼤模型 + ⼯作流）
+能⼒⽬标
+数据查询问题：通过LLM⾃动⽣成SQL，实现“不会SQL也能查数据”
+知识分散问题：构建RAG知识库，实现统⼀语义检索与问答
+系统割裂问题：通过Dify⼯作流整合数据分析、知识问答与AI能⼒
+分析能⼒不⾜问题：LLM⾃动对查询结果进⾏总结与解释
+可视化困难问题：⾃动⽣成图表（趋势/对⽐/占⽐）辅助决策
+复杂任务不稳定问题：通过Workﬂow拆解任务，提⾼系统可控性与稳定性
+整体⽅案：构建“查询 + 检索 + 分析 + 可视化”的AI闭环系统
+解决⽅案
+智能体需求拆解 ：针对复杂编程任务，精准定义智能体核⼼职能、应⽤场景、输出标
+准，区分通⽤智能体与专项编程智能体的差异，明确智能体在团队开发中的定位
+智能体分层架构设计：采⽤分层设计思维，搭建「感知层-决策层-执⾏层-输出层」轻
+量化智能体架构，实现任务接收、逻辑判断、指令执⾏、结果输出的完整闭环
+智能体功能模块化拆分 ：将复杂编程需求拆解为独⽴⼦功能模块，如代码语法校验模
+块、逻辑漏洞检测模块、代码优化模块、需求转代码模块、报错解析模块，实现单⼀智
+能体多场景复⽤
+主讲知识点
+锻炼智能体的设计能⼒和提示词编写能⼒，⾸次体验团队协作完成⼀个复杂编程任务，
+并未为后续的实战打下合作基础
+项⽬介绍
+掌握设计⼯作流实现特定业务场景的能⼒，提示词的编写能⼒，⼯作流插件的应⽤能⼒
+能⼒⽬标
+智能体平台开发实战
+传智教育旗下⾼端IT教育品牌 ，来黑马程序员零基础学
+
+=== PAGE 6 ===
+阶段3：⼤模型核⼼开发技术
+课时：20天
+机器学习基础
+系统讲解机器学习是实现⼈⼯智能的核⼼途径。涵盖常⽤的机器学习算法、⼈⼯特征⼯程
+的重要性，以及机器学习的发展历程，通过房价预测、泰坦尼克号⽣存预测等经典案例理
+解机器学习应⽤
+课程亮点：帮助学员建⽴对机器学习整体框架的认知，明确其与深度学习的关系。强调传
+统⽅法依赖⼈⼯设计特征这⼀关键局限，为后续学习深度学习⾃动特征提取做好铺垫
+核⼼算法剖析：线性回归、逻辑回归、决策树、随机森林等经典机器学习算.法
+课程介绍
+能够准确区分AI、ML、DL
+理解数据、算法、算⼒三要素如何协同推动AI发展，知道不同硬件适合的任务类型
+能够从实际数据表中识别特征和标签，并能按⽐例划分训练集和测试集
+能够判断模型是⽋拟合还是过拟合，并给出对应的解决⽅法
+理解泛化能⼒，知道在同等误差下倾向选择更简单的模型
+能够解释KNN的分类和回归流程，理解距离度量和k值的影响
+能够区分归⼀化与标准化的适⽤场景，并能⽤API处理数据
+能够使⽤交叉验证评估模型稳定性，使⽤⽹格搜索⾃动寻找最优超参数
+能够计算TP、FN、FP、TN，并解释精确率和召回率的含义，能根据场景判断优先优
+化哪个指标。能够写出线性回归⽅程，理解损失函数的作⽤
+能够⽐较正规⽅程与梯度下降的优缺点
+能够计算或解释MAE、MSE、RMSE
+能够理解决策树的构建过程，并知道CART树作为集成学习基模型的重要性
+能够解释剪枝的⽬的，并区分预剪枝和后剪枝的优缺点
+能够区分Bagging（并⾏、平权投票、降低⽅差）和Boosting（串⾏、加权投票、降低
+偏差）的核⼼区别
+能够⽤RandomForestClassifier实现分类，并通过⽹格搜索调整参数
+能够解释聚类与分类的区别，理解相似度是聚类的基础
+能够通过肘⽅法图确定最佳K值，并使⽤相关指标评估聚类效果
+能⼒⽬标
+获取数据集
+数据基本处理
+特征⼯程
+机器学习(模型训练)
+模型评估
+模型预测
+解决⽅案
+房价预测案例 鸢尾花分类案例 客户群体聚类分析泰坦尼克号⽣存预测案例
+⼈⼯智能（AI）；机器学习（ML）；深度学习（DL）；三者关系；基于规
+则的学习与基于模型的学习的区别
+机器学习三
+要素
+AI、ML、
+DL的定义与
+关系
+数据；算法；算⼒；CPU、GPU、TPU的特点
+四⼤机器学
+习范式 有监督学习（回归/分类）；⽆监督学习（聚类）；半监督学习；强化学习
+机器学习建
+模全流程 获取数据；数据基本处理；特征⼯程；模型训练；模型评估；上线服务
+模型评估与
+优化
+⽋拟合、过拟合的概念及产⽣原因；泛化能⼒与奥卡姆剃⼑原则；KNN算法
+的核⼼思想；交叉验证与⽹格搜索（GridSearchCV）；混淆矩阵、精确
+率、召回率、F1-score
+线性回归与
+优化
+线性回归模型；损失函数（MSE）；正规⽅程法与梯度下降法（全梯度、随
+机梯度、⼩批量梯度、SAG）；评价指标：MAE、MSE、RMSE；L1正则化
+（Lasso回归）；L2正则化（岭回归）
+决策树与集
+成学习
+决策树（CART）的分类与回归原理；决策树剪枝（预剪枝、后剪枝）；集
+成学习思想；Bagging（随机森林）；Boosting（AdaBoost、GBDT、
+XGBoost等）；随机森林的构建⽅法
+聚类算法 聚类算法（⽆监督学习）概念；常⽤⽅法（K-Means、层次聚类、DBSCAN
+等）；K-Means算法实现流程；聚类评估——SSE（误差平⽅和）、肘⽅法
+特征⼯程详解 特征提取；特征预处理；特征降维；特征组合
+核⼼术语定义 样本；特征；标签；训练集；测试集
+技术点
+模块 详细知识点
+课程⼤纲
+机器学习概述
+机器学习的
+主要步骤
+经典机器学习
+算法
+问题定义与可⾏性分析
+数据采集与预处理
+模型选型与设计（MLP，CNN，RNN）
+模型训练与调优
+评估与验证
+解决⽅案
+深度学习与Pytorch框架
+全连接神经⽹络电商产品价格预测 电商产品价格预测卷积神经⽹络图像识别案例 循环神经⽹格歌词⽣成案例
+系统讲解深度学习原理与PyTorch框架实战，包括张量操作、⾃动微分、神经⽹络搭建、
+激活函数、损失函数与优化算法。深⼊CNN卷积池化、RNN序列建模，完整实现图像分
+类（CIFAR-10）和⽂本⽣成（歌词⽣成）两⼤项⽬
+课程亮点：理论与实践⾼度融合，每个知识点都配有PyTorch代码。案例覆盖计算机视觉
+与⾃然语⾔处理两⼤领域，从数据预处理到模型训练、评估、调优全流程动⼿实操。同时
+讲解Dropout、BN等正则化技巧及Adam等现代优化器，培养解决实际⼯程问题的能⼒
+课程介绍
+掌握深度学习原理与PyTorch框架的实操能⼒
+能熟练创建和操作张量，使⽤⾃动微分计算梯度
+能搭建全连接⽹络解决分类问题，正确选择激活函数、损失函数和优化器，应⽤正则化
+缓解过拟合
+能设计CNN完成图像分类，理解卷积、池化、步⻓、填充对特征图的影响
+能处理⽂本数据，构建词表并使⽤词嵌⼊，利⽤RNN实现⽂本⽣成
+具备模型训练、评估、调优及保存加载的⼯程能⼒，可独⽴完成从数据准备到模型部署
+的完整项⽬
+能⼒⽬标
+深度学习概念；深度学习发展史；与机器学习的关系
+神经⽹络
+结构
+深度学习
+概览
+神经元构成；输⼊层；隐藏层；输出层；参数初始化⽅法
+学习率衰减
+与正则化 学习率衰减；Dropout（随机失活）；BN（批归⼀化）
+激活函数 Sigmoid；tanh；ReLU；SoftMax
+损失函数 交叉熵；MAE；MSE；smoothL1
+优化算法 SGD（随机梯度下降）；Momentum（动量）；Adam（⾃适应矩估计）
+卷积神经⽹络 卷积层；池化层；特征图计算；完成CIFAR-10图像分类
+循环神经⽹络 词嵌⼊；RNN原理；周杰伦歌词⽣成任
+技术点
+模块 详细知识点
+课程⼤纲
+深度学习架构
+神经⽹络优化
+⽅法
+经典⽹络架构
+张量的核⼼
+操作
+张量的创建；类型转换；数值计算；索引操作；形状变换；张量的拼接；⾃
+动微分
+神经⽹络的
+构建 Pytorch构建神经⽹络；Pytorch案例实战
+pytorch环境
+配置 Pytorch安装与环境配置；张量的概念
+Pytorch框架
+数据清洗与标签编码
+划分训练集、验证集、测试集
+使⽤BERT分词器将⽂本转为token ids与attention mask
+加载预训练BERT模型并添加分类头
+配置优化器（AdamW）、学习率（2e-5）、损失函数（交叉熵）
+模型微调训练（3-10轮，batch_size=16/32）
+验证集评估（准确率、F1分数）
+早停与模型保存
+导出模型并部署推理
+解决⽅案
+Transformer基础
+课程体系完整、循序渐进。深⼊讲解⾃注意⼒、位置编码、MLM、NSP等核⼼机制。覆
+盖ALBERT、RoBERTa、DistilBERT等主流BERT优化变体。聚焦迁移学习微调，提供完
+整实践流程与代码。案例驱动，涵盖典型NLP任务，包括 RNN/LSTM/Transformer/
+BERT/GPT/T5 完整预训练模型原理
+课程介绍
+基于bert的⽂本分类案例 基于transformer的机器翻译案例
+理解词向量的表示原理及其在NLP中的作⽤
+掌握Transformer的核⼼机制（⾃注意⼒、位置编码）及实现细节
+熟练使⽤BERT模型进⾏⽂本分类、相似度计算等常⻅任务
+了解多种BERT优化模型的优缺点及适⽤场景
+独⽴完成预训练模型在下游任务上的迁移学习微调
+具备搭建现代NLP应⽤的基础能⼒
+能⼒⽬标
+什么是⾃然语⾔处理NLP；⾃然语⾔处理NLP的发展史；⾃然语⾔处理应⽤
+场景
+⽂本预处理
+⾃然语⾔处
+理（NLP）
+⼊⻔
+什么是⽂本预处理；⽂本处理的基本⽅法；⽂本张量的表示⽅法；⽂本数据
+分析；⽂本特征处理
+RNN及其变体 什么是RNN；RNN模型作⽤及类别；传统RNN；LSTM；GRU
+迁移学习 Fasttext；迁移学习；NLP中常⽤预训练模型；Transformers库的使⽤
+Transformer 什么是transformer；transformer的作⽤；transformer模型架构；
+transformer优势
+技术点
+模块 详细知识点
+课程⼤纲
+NLP⼊⻔
+经典⽹络架构
+迁移学习
+随机森林（集成学习）
+基线模型（FastText）
+BERT优化
+模型量化、剪枝、知识蒸馏
+基于⼤模型⽂本分类
+主讲知识点
+蜂窝头条⽂本分类项⽬
+NewsCompass投满分项⽬是结合今⽇头条真实场景下的海量数据, 快速搭建随机森林
+和FastText的基线模型, 以验证商业化落地的可⾏性. 更多聚焦在深度学习的优化⽅法
+上, 搭建基于BERT的初版微调模型, 应⽤量化,剪枝,预训练模型微调,知识蒸馏等多种⼿
+段,反复迭代,反复优化模型的离线效果,在线效果
+项⽬介绍
+海量⽂本快速分类基线模型解决⽅案
+基于预训练模型优化的解决⽅案
+模型量化优化的解决⽅案
+模型剪枝优化的解决⽅案
+模型知识蒸馏优化的解决⽅案
+主流迁移学习模型微调优化的解决⽅案
+解决⽅案
+基于⼤规模业务留存数据构建快速⽂本分类系统
+快速搭建短⽂本精准分类模型
+基于随机森林和FastText搭建快速基线模型, 验证业务通道的能⼒
+基于BERT的迁移学习优化模型搭建的能⼒
+实现神经⽹络量化的优化与测试
+实现神经⽹络剪枝的优化与测试
+实现神经⽹络知识蒸馏的优化与测试
+更多主流预训练模型的优化与深度模型剖析
+BERT模型在⽣成式任务和⼯程优化上的深⼊扩展
+能⼒⽬标
+准确率
+ 召回率
+ F1-score效果评估
+模型量化
+ 模型剪枝
+ 模型蒸馏模型压缩
+主流新闻⽹站
+ 社交媒体平台
+ ⾃媒体平台数据源
+集成学习
+ FastText
+ BERT
+ 模型调优模型选择
+数据清洗
+ ⽂本分词
+ Stop words
+ Embeddiog数据预处理
+技术架构
+传智教育旗下⾼端IT教育品牌 ，来黑马程序员零基础学
+大模型智能体定制开发
+Large model intelligent agent customization and development
+
+
+=== PAGE 7 ===
+阶段4：⼤模型RAG应⽤开发
+课时：8天
+LangChain作为AI开发必不可少的基础框架
+掌握⼤模型核⼼开发框架LangChain的使⽤，该框架贯穿后续课程，⼏乎⼤部分的项⽬
+都需要依赖该框架，是AI开发的基⽯
+课程亮点
+理解LangChain框架的定位和基本概念
+掌握LangChain框架models的使⽤
+掌握LangChain框架chain的使⽤
+掌握LangChain框架prompt的使⽤
+掌握LangChain框架indexes的使⽤
+掌握LangChain框架记忆的使⽤
+能⼒⽬标
+LLM⼤模型
+封装
+1. LLM 基类：输⼊⽂本输出⽂本，传统⼤模型调⽤接⼝封装
+2. ChatModel聊天模型：消息结构（System、Human、AI Message），对
+话格式封装
+3.模型集成：OpenAI、通义千问、本地开源模型 (Ollama、LlamaCpp)
+4.模型参数配置：temperature、top_p、max_tokens、stop词、流式输出
+stream
+Embedding 
+向量嵌⼊
+1. Embedding接⼝：⽂本向量化，⽂档Embedding、查询Embedding区别
+2. 开源 / 闭源 Embedding 模型接⼊
+3. 批量⽂本嵌⼊、⽂本分⽚后向量化
+4. 向量维度、相似度计算（余弦相似度）
+P r o m p t 
+T e m p l a t e 
+提示模板
+1. 基础 PromptTemplate：变量占位符`{变量}`，字符串模板渲染
+2. ChatPromptTemplate：多⻆⾊消息模板组合 (System / Human / AI)
+3. Partial 局部变量预填充
+4. from_messages 快速构建聊天模板
+F e w ‐ S h o t 
+少样本提示
+1. FewShotPromptTemplate 少样本模板
+2. Example 样本示例
+Tools ⼯具
+1. BaseTool ⼯具基类：name、description、_run 执⾏逻辑
+2. 内置⼯具：搜索⼯具、计算器、PythonREPL 代码执⾏
+3. ⾃定义⼯具 @tool 装饰器快速定义
+输 出 解 析 
+O u t p u t 
+Parsers
+1. BaseOutputParser 基类，解析⼤模型返回⽂本
+2. PydanticOutputParser：结构化输出 JSON，绑定数据模型
+3. JsonOutputParser、CommaSeparatedListOutputParser
+4. 格式化提示词注⼊，告诉模型输出格式
+技术点
+模块 详细知识点
+课程⼤纲
+⼤模型模型
+层 Models
+提示词⼯程
+层 Prompts
+Agent代理
+1. Agent核⼼逻辑：思考(Thought)→⾏动(Action)→观察(Observation) 
+ReAct框架
+2. ReAct Agent、OpenAI Function Calling Agent
+3. AgentExecutor代理执⾏器，循环执⾏思考调⽤⼯具
+4. ⼯具选择、⼯具错误处理
+⼯具与智能
+代理 Agents
+（⾃主调⽤
+⼯具）
+EduRAG项⽬
+企业级标准RAG解决⽅案。基于IT职业教育⾏业答疑⼤模型抽取RAG解决⽅案，通过项
+⽬学习完成企业级RAG系统完整流程搭建与测试及优化。从智能查询路由设计、数据处
+理与多源集成、模型微调到后端服务与前端开发以及Docker企业级部署，完成全栈
+RAG系统构建
+项⽬介绍
+了解LangChain基本概念、明确LangChain主要组件的作⽤、了解LangChain常⻅的使⽤
+场景
+掌握基于LangChain+ChatGLM-6B模型实现本地知识库的问答实现原理+过程
+RAG系统开发与优化：掌握从数据分⽚到答案⽣成的RAG全流程，熟练应⽤ HyDE、⼦
+查询等检索增强策略提升系统性能
+⼤模型应⽤实践：能够集成LLM（如 OllamaLLM）并设计⾼效Prompt，解决知识问答中
+的业务定制化需求
+智能查询路由设计：实现规则、相似度和LLM三层路由，精准分发查询并优化复杂意图
+识别效率
+后端服务与前端开发：使⽤FastAPI开发⾼并发API并通过Gradio构建交互界⾯，满⾜企
+业级服务与⽤户体验要求
+数据处理与多源集成：熟练处理结构化与⾮结构化数据，结合MySQL和向量搜索打造⾼
+效知识检索系统
+企业级问题解决能⼒：通过⽇志调试和⾼并发设计，具备定制化开发与性能优化的实战
+技能，适配智能客服等场景
+能⼒⽬标
+业务流程图
+⽤户输⼊query
+MySQL数据库检索
+RAG系统检索
+直接返回对应的答案
+阈值<0.85
+阈值＞0.85
+不存在
+存在
+本地⽂档
+⽂档切分
+Documents的Embedding
+存⼊Milvus数据库
+ 数据库检索
+将字符串向量化（Embedding）
+LLM
+result
+Documents
+query
+得到top-K相关的doc query+doc拼接
+智能问答系统架构：FAQ系统与RAG系统的区别与应⽤场景
+数据库技术：MySQL表查询；Redis键值存储与缓存机制；Milvus向量数据库的架构与
+索引类型
+检索算法：BM25算法原理；密集向量&稀疏向量混合检索；重排序的作⽤
+query的意图识别+改写：BERT分类器的训练与推理；LLM的调⽤与提示设计；查询分
+类与动态检索策略的实现逻辑
+企业级开发实践：模块化代码设计与代码复⽤；配置⽂件（conf ig.ini）与环境变量管
+理；⽇志系统设计与错误处理
+主讲知识点
+数据库查询优化：BM25+Redis缓存解决⽅案
+语义检索：混合检索粗排+重排序精排解决⽅案
+查询分类：BERT意图识别解决⽅案
+动态检索策略：LLM驱动查询改写解决⽅案
+答案⽣成：LLM+RAG提示模板解决⽅案
+性能优化：基于Redis的三级缓存解决⽅案
+⽇志与监控：统⼀⽇志系统（logging）解决⽅案
+配置管理：项⾃配置化解决⽅案
+项⽬部署：Docker企业级部署解决⽅案
+解决⽅案
+RAG项⽬
+SmartRecruit RAG项⽬
+项⽬基于向量数据库和LLM构建⼀个端到端、可⽔平扩展的检索增强⽣成（RAG）系
+统，⽀持对异构简历（PDF/DOCX/JPG/PNG）进⾏⾃动解析、结构化、语义索引与
+多轮对话式推荐。系统以向量数据库为核⼼存储，以LLM为推理中枢，以Agent框架为
+调度单元，⾯向企业HR及猎头平台提供秒级、可追溯、可解释的候选⼈推荐服务
+项⽬介绍
+掌握⽂档智能处理、向量化索引、RAG系统开发
+掌握Agent框架应⽤
+能够完成可扩展的简历推荐系统部署
+能⼒⽬标
+业务流程图
+⽤户输⼊
+招聘需求
+/追问/
+上传简历
+提取结构化筛选条件
+count/gender/
+experience_min等
+读取上次候选⼈列表
+last_candidates
+通⽤HR问答链
+预设回复
+意图分类
+追问类型？
+输⼊/会话层 意图识别&路由
+查询改写
+REWRITE_PROMPT→LLM
+混合检索+重排序
+hybrid_search_with_rerank
+过滤结构化条件
+gender/age/experience
+获取完整简历内容
+MongoDB
+格式化上下⽂
+_fomat_docs
+答案⽣成
+ANSWER_PROMPT→LLM→JSON
+核⼼RAG检索&⽣成链
+在last_candidates中⼆次过滤
+基于last_candidates回答
+或说明⽆法回答
+返回JSON结构
+response+candidates
+⽣成⾃然语⾔+
+过滤后列表
+追问处理分⽀
+输出
+recruitment/reﬁnement
+Milvus dense+sparse
++CrossEncoder rerank
+筛选型
+问答型/其他
+follow_up_question
+general_job_inquiry
+chit_chat/meta/fallback
+配置管理与项⽬初始化：使⽤Pydantic统⼀管理系统参数（数据库、模型路径、切块参
+数等），避免硬编码，确保全局配置安全可验证
+⽂档处理与切块 ：实现多格式简历加载、⽂件哈希去重、LLM结构化信息提取（姓
+名、性别、年龄、⼯作年限）以及⽗块-⼦块分层切分，⽀持图⽚OCR提取
+向量存储与混合检索 ：基于Milvus（稠密+稀疏向量）+Elasticsearch（BM25全⽂搜
+索+MongoDB（元数据存储），结合CrossEncoder重排序和doc_hash去重，实现⾼
+效混合检索与过滤
+RAG链构建与⽣成 ：使⽤LangChain构建异步查询改写、检索上下⽂格式化与LLM⽣
+成链，⽀持结构化JSON推荐输出
+智能Agent意图优化：实现意图识别、招聘参数提取、追问处理与对话历史管理，路由
+不同场景（招聘需求、闲聊、追问等）
+Web应⽤与数据初始化 ：基于Streamlit开发聊天交互、简历上传、候选⼈卡⽚展示与
+在线查看功能，实现端到端⽤户体验
+主讲知识点
+基于LangChain+OpenAI实现异构简历（PDF/DOCX/JPG/PNG）智能解析与结构化
+提取
+使⽤Milvus+BGEM3混合嵌⼊+ElasticSearch实现⾼级向量索引与多路召回
+构建⽀持参数过滤、查询重写与历史对话的异步RAG链⽣成JSON候选⼈推荐
+基于SmartRecruitAgent框架实现意图识别、多轮追问与上下⽂候选⼈筛选的智能代理
+集成Streamlit前端与Milvus/MongoDB/Elasticsearch多数据库持久化的DevOps配置
+使⽤Ragas框架对RAG系统进⾏端到端Faithfulness/Answer Relevancy/Context 
+Precision评估优化
+解决⽅案
+以⼩组为单位组建DevOps团队并进⾏⻆⾊划分，组建开发团队：产品经理、前端、后
+端、算法、测试⻆⾊，并拆分任务
+基于jira等⼯具，实现功能设计、需求迭代、BUG维护
+基于git等⼯具实现代码托管，并实现CI/CD全流程
+基于以上⼯具，实现选题和⾃命题需求开发，完成DevOps流程闭环并汇报
+主讲知识点
+模拟企业真实的开发流程，感受不同⻆⾊的⼯作划分，习惯⻆⾊互相搭配实现RAG需求
+完整开发
+项⽬介绍
+能够掌握DevOps的全流程，理解每个⻆⾊的分⼯，⼊职后能够快速融⼊团队
+能⼒⽬标
+DevOps的RAG开发综合实战
+传智教育旗下⾼端IT教育品牌 ，来黑马程序员零基础学
+
+=== PAGE 8 ===
+系统架构设计：理解EduAgent的五层架构（前端→API⽹关→Orchestrator→Agent执
+⾏层→公共能⼒层→MCP→数据存储），掌握分层职责与数据流向
+四⼤Agent状态机实现 ：分别构建智能问答（RAG+多轮记忆）、试卷批改（三轨并⾏ 
++HitL）、简历审查（六维度并⾏）、模拟⾯试（四阶段状态机），熟练使⽤ 
+LangGraph的StateGraph、节点、边、并⾏发送（Send）等核⼼API
+意图识别与动态路由：基于MiniLM分类器+LLM 兜底实现请求分级（单Agent直达 / 
+多Agent串联 / 澄清对话），通过LangGraph条件边动态编排执⾏链路
+公共能⼒层封装 ：实现LLM Factory（DeepSeek-V3/Coder-V2切换）、BGE-
+Reranker进程内精排、Milvus分层知识库检索、对话记忆（MemorySaver/
+AsyncPostgresSaver）等共享组件
+MCP⼯具统⼀接⼊：理解MCP协议，实现知识库检索、代码沙箱（Judge0）、数据库
+操作、⽂件解析、外部搜索等MCP Server，并在LangGraph Agent中通过MCP Client 
+标准化调⽤
+教师端Human-in-the-Loop ：使⽤LangGraph的interrupt()和Command实现试卷批
+改的教师确认节点，⽀持暂停、修改、恢复，并集成企业微信通知
+主讲知识点
+EduAgent多智能体项⽬
+基于LangChain、LangGraph和FastAPI构建。系统提供智能问答、代码审查、个性化
+学习路径规划和职业咨询等核⼼功能，旨在为在线教育场景提供全⽅位的AI辅助教学解
+决⽅案
+项⽬介绍
+基础设施：⼀键docker-compose启动全环境，PostgreSQL、Milvus、Redis、MinIO、
+Judge0 全部就绪
+公共能⼒层：LLM Factory多模型路由、BGE-Reranker精排、MiniLM意图分类，全部可
+独⽴调⽤
+四⼤Agent：智能问答、试卷批改、简历审查、模拟⾯试，端到端流程完整跑通，异常处
+理与降级策略覆盖到位
+前端集成：Vue3界⾯与后端API全⾯对接，SSE流式输出流畅，三级⻆⾊权限路由隔离
+完整
+集成测试：核⼼流程覆盖率达标，三层兜底降级机制验证通过，并发压测⽆崩溃
+能⼒⽬标
+教育场景多租户数据隔离解决⽅案 ：所有PostgreSQL表预埋tenant_id，Milvus 
+Collection按租户namespace隔离，⽀持多班级、多课程独⽴运营
+⾼精度RAG冷启动与持续迭代解决⽅案 ：初始知识库由课程资料清洗⼊库，检索链路
+采⽤混合召回+精排+置信度过滤，低置信度问答⾃动进⼊补充队列，教师在线添加后
+热更新知识库
+复杂批改任务的三轨并⾏加速解决⽅案：试卷批改Agent中，客观题规则引擎、简答题
+LLM分组并⾏、代码题Judge0执⾏+LLM评估三条轨道通过asyncio.gather并发执⾏，
+整体批改耗时降低60%以上
+Human-in-the-Loop教师确认解决⽅案 ：利⽤LangGraph的interrupt()挂起批改结
+果，教师登录后逐题确认或修改，通过Command恢复图执⾏，并集成企业微信机器⼈
+⾃动推送待确认通知
+国产模型低成本切换与降级解决⽅案 ：LLM Factory封装DeepSeek-V3（通⽤）和 
+DeepSeek-Coder-V2（代码），⽀持配置热切换；三层兜底机制（重试→降级模型 
+→ 预设回复）保障LLM服务异常时的系统可⽤性
+本地开发到⽣产环境的平滑迁移解决⽅案 ： 本 地 使 ⽤ D o c k e r C o m p o s e + 
+MemorySaver+MinIO，⽣产环境仅需修改配置（AsyncPostgresSaver、阿⾥云 RDS/
+OSS、K8s 部署），业务代码零改动，⽀持⼀键迁移
+解决⽅案
+业务流程图
+学⽣⽤户
+ 学⽣接⼝
+学习路径⼯
+作流
+多Agent协作
+⼯作流
+智能路由
+(Router)
+聊天接⼝
+作业接⼝
+仪表盘接⼝
+Web界⾯
+(React/Tailwind)
+⽤户接⼊层 后端核⼼
+知识检索服务
+代码沙箱服务
+画像管理服务
+缓存服务
+微服务
+Milvus/ChromaDB
+Docker Env
+PostgreSQL
+Redis
+持久化存储
+通义千问(Qwen)
+OpenAI(GPT-4)
+外部服务&LLM
+⼯作流引擎
+职业规划
+Agent
+学习路径
+Agent
+代码审查
+Agent
+智能问答
+Agent
+Agent Pool
+编排与智能体
+基础设施&存储
+基于Langchain DeepAgents，完善⽂件管理与任务规划
+通过⽣图模型与VLM增加图⽂能⼒
+通过若⼲MCP扩展Agent能⼒
+通过Skill-creator与⽂件管理增加制作Skill并⽴即⽣效的能⼒
+通过Docker完善项⽬部署
+解决⽅案
+构建智能代理中枢：实现⼯具调⽤、⾃主任务规划及深度上下⽂理解
+实现全模态覆盖：⽀持主流办公⽂档（PDF/Word/Excel/PPT）及图⽚的双向处理
+集成实时信息检索：通过Tavily API实现联⽹搜索，确保信息的时效性与准确性
+提供企业级架构：⽀持多⽤户、多会话，提供完善的监控与追踪能⼒
+能⼒⽬标
+业务流程图
+星通通⽤智能体项⽬
+通⽤智能体作为该领域的⾼阶形态，其开发能⼒可为各类垂直场景的智能体构建提供坚
+实基础与技术范式。本项⽬基于Langchain 1.0框架，集成了MCP协议、多模态处理及
+联⽹搜索等前沿技术，是理解和构建复杂智能体平台的实战标杆。项⽬旨在构建⼀个基
+于LangChain⽣态的通⽤Agent平台，实现⾃主任务规划、多模态交互及联⽹搜索功
+能，⽀持多⽤户并发，具备极强的扩展性
+项⽬介绍
+⽤户Query
+后端⽂件系统
+LLM
+任务规划
+⼯具
+⼯具节点（⽂件操
+作、联⽹搜索、终端
+操作、图⽚⽣成等）
+LLM
+⼦Agent（ppt，
+excel）
+最终回复
+Mnlio
+PostgreSQL
+⽤户⽂件上传
+若有⽂件则存于
+反复调⽤直⾄⽤户需求完成
+反复调⽤以
+追踪任务
+图⽚(若有）
+视觉理解
+⽂本⽂件
+⽣成的⽂件
+存储历史记录
+上传
+⽣成下载连接
+获取历史记录
+LangChain1.0：核⼼基座，整个项⽬是⼀个Langchain1.0框架下的⼯程，提供项⽬架
+构，Agent基座，中间件编排，⼦Agent编排等
+LangSmith：可视化观测⽇志与调试项⽬，使Agent可在⾼效的体系下调试。
+Tavily Search：联⽹搜索集成，使Agent可获取实时信息
+SiliconFlow API ：多模型服务接⼊，提供了LLM、VLM及图像⽣成能⼒的统⼀接⼊，
+且有免费额度，因此该项⽬得以在基于免费资源开发
+MinIO：对象存储，通过对象存储，传递Agent制作的⽂件给⽤户
+Agent Chat UI ：开箱即⽤的前端界⾯，与LangChain⼯程⽆缝衔接，使得Agent可以
+有⼀个直观的可视化界⾯
+Docker：项⽬整合与部署，整合⼯程与数据库依赖，使项⽬最终可以⼀键部署
+MCP：连接外部⼯具，连接了Excel-mcp, Tavily Search,ppt-mcp等⼯具，丰富
+Agent的能⼒
+PostgreSQL：关系型数据库，存储历史对话与状态信息等LangChain⽣产级⼯程指定
+数据库, 现有协议使得开发⾼效
+主讲知识点
+Agentic Workﬂow（2选1）
+传智教育旗下⾼端IT教育品牌 ，来黑马程序员零基础学
+阶段5：⼤模型智能体⾼级开发
+课时：20天
+本模块将LangGraph（⼯作流编排框架）与LangFuse（链路追踪⼯具） 组合教学，形
+成“构建 + 观测”的完整闭环。学员不仅学会⽤LangGraph将AI Agent拆解为可控制的
+图结构（节点、边、状态、并⾏），还能通过LangFuse实时追踪每⼀步的输⼊、输
+出、耗时与Token消耗，彻底解决AI应⽤“⿊盒”难调试的痛点
+课程亮点
+使⽤LangGraph设计并实现具备状态管理、条件分⽀、并⾏执⾏、断点恢复的复杂AI 
+⼯作流
+理解并应⽤Reducer机制解决并⾏节点状态冲突问题
+区分条件边与Command的适⽤场景，并能根据需求灵活选择
+独⽴部署并配置LangFuse本地服务，为AI Agent接⼊链路追踪
+通过LangFuse控制台分析Agent执⾏过程，定位性能瓶颈、Prompt问题、检索错误或 
+Token消耗异常
+在团队项⽬中集成LangFuse回调，实现⽣产级可观测性，提升AI应⽤的调试与优化效率
+能⼒⽬标
+核⼼概念
+状态管理与
+Reducer机制
+理解Graph（⼯作流框架）、State（状态容器，TypedDict定义）、Node
+（执⾏单元，函数接收State返回更新）、Edge（连接与流向，含普通边和
+条件边）、Checkpoint（检查点持久化）
+使⽤Annotated类型标注字段的更新策略（如add_messages⽤于消息列表
+追加，operator.add⽤于数值累加），解决并⾏节点并发更新同⼀字段的冲
+突问题
+图构建API
+掌握StateGraph类的使⽤，通过add_node添加节点函数，
+add_edge(START, node)和add_edge(node, END)定义流转，
+add_conditional_edges绑定路由函数与路径映射表，实现动态分⽀
+Command
+命令式控制
+检查点持久化
+与会话恢复
+节点直接返回Command(goto="node_name") 动态指定下⼀步，⽀持并⾏
+执⾏多个节点（goto传⼊列表），相⽐条件边更灵活，适合复杂动态流程
+使⽤SqliteSaver（或MemorySaver）作为checkpointer，通过thread_id区
+分会话，invoke时传⼊conﬁg⾃动保存状态，⽀持中断后恢复执⾏
+并⾏执⾏模式
+状态聚合：多个节点更新同⼀字段时通过Reducer合并
+分⽀并⾏：⼀个节点连接多个后继节点，LangGraph⾃动并⾏执⾏
+分⽀节点数量不同的并⾏处理：通过将多个前驱节点指向同⼀后继节点
+（add_edge(["B2", "C"], "D")）实现等待合并
+条件并⾏：add_conditional_edges配合返回列表的路由函数，动态决定并
+⾏执⾏哪些节点
+技术点
+模块 详细知识点
+课程⼤纲
+LangGraph
+框架
+核⼼概念
+部署与配置
+集成⽅式
+Trace（⼀次完整Agent执⾏）、Span（执⾏中的每个步骤，如节点调⽤、
+LLM请求）、Session（同⼀会话的多条Trace归组）、User（按学员ID过滤）
+通过Docker启动LangFuse服务（端⼝3001），⾸次使⽤需注册本地账号并⽣
+成API  Key（Public  Key+Secret  Key），在.env.local中配置  
+LANGFUSE_PUBLIC_KEY、LANGFUSE_SECRET_KEY、LANGFUSE_HOST
+使⽤langfuse.callback.CallbackHandler创建Handler，通过LangChain的
+Callback机制注⼊conﬁg["callbacks"]，LangGraph的ainvoke⾃动追踪每个
+节点的输⼊、输出、耗时、Token消耗
+Langfuse
+框架
+多轮对话状态保持解决⽅案 ：利⽤LangGraph内置的add_messages Reducer和 
+MemorySaver检查点，实现对话历史⾃动累积与滑动窗⼝压缩，⽆需⼿写缓存逻辑
+复杂业务流程的分步编排解决⽅案：将教育场景的四⼤Agent（问答、批改、简历、⾯
+试）拆解为独⽴的StateGraph，每个节点聚焦单⼀职责（如检索、精排、⽣成），通
+过边定义执⾏顺序，代码可读性和可维护性⼤幅提升
+AI Agent⿊盒问题可观测性解决⽅案 ：Agent API⼊⼝⾃动创建LangFuse Handler并
+注⼊LangGraph conﬁg，⽆需修改任何业务节点代码，即可在控制台查看每⼀轮检索
+的查询词、召回的⽂档⽚段、LLM的完整Prompt和输出、各节点耗时
+多租户追踪数据隔离解决⽅案 ：通过user_id和session_id参数区分不同学员和会话，
+LangFuse控制台⽀持按学员过滤，⽅便教师或开发者针对特定学员排查问题
+Token消耗与成本监控解决⽅案 ：LangFuse⾃动统计每次LLM调⽤的输⼊/输出 
+Token数，并提供聚合图表，帮助团队评估每⽉API成本，发现Prompt过⻓或异常⾼消
+耗的请求
+解决⽅案
+
+=== PAGE 9 ===
+利⽤爬⾍⾃动采集中药、⽅剂、功效、症状、疾病等原始⽂本
+使⽤⼤语⾔模型（DeepSeek）+ LangChain进⾏实体与关系抽取
+构建Neo4j图数据库与 Faiss 向量检索双引擎，实现结构化查询与语义匹配
+基于LangGraph搭建多智能体协同系统，管理复杂问答流程
+提供基于Streamlit的⽹⻚端交互式问答界⾯
+⾃动⽣成⼩红书⻛格图⽂内容，并实现⼀键发布，实现从“知识获取”到“内容传播”的
+闭环
+主讲知识点
+中医知识图谱Agent项⽬
+“草本通” 项⽬致⼒于解决中医药知识难以理解、碎⽚化严重、检索效率低 等问题，通过
+爬⾍、DeepSeek+LangChain实体抽取、Neo4j图谱构建与LangGraph多智能体协同，
+打造⼀个可理解、可对话、可传播、可拓展的智能知识服务平台。系统融合多种AI技
+术，⽀持从数据采集到语义问答、图谱构建、再到内容⽣成与平台发布的完整AI闭环
+项⽬介绍
+掌握知识图谱构建、多智能体流程调度
+掌握⽣成式应⽤开发
+能够具备垂直领域知识智能化平台的搭
+建能⼒
+能⼒⽬标
+业务流程图
+数据
+⽹络数据
+requests爬⾍
+BeautifulSoup
+解析html⻚⾯
+图谱构造
+⼤模型抽取实
+体，关系，属性
+neo4j知识图谱
+⼩红书⽂案输出
+fastapi
+ Streamlit前端
+ 本草通·中医知
+识问答系统
+⼩红书图⽚输出
+⼤模型输出
+END节点
+⼩红书⾃动发布：
+playwright
+⽣成markdown
+⽤户输⼊抽取实体
+⽤户输⼊实体，进⾏
+向量数据库的名称
+执⾏cypher查询语句，
+对图谱进⾏查询（R)
+将拿到的查询结果输⼊
+给⼤模型进⾏回答输出
+（AG）
+根据⽤户的体温，匹
+配的实体，图谱结
+构，⾃动⽣成cypher
+语句
+是
+模型微调
+Faiss
+向量存储
+智能体⼯作流（Langgraph）
+Streamlit呈现
+START节点
+是否有发⼩
+红书的意图
+是否有中医有关系
+的意图识别
+检测⽂案和
+图⽚是否成功
+检测cypher
+语句是否合法
+查询
+匹配
+⽆关系
+多源中医药数据爬取与联合任务数据预处理适配知识图谱构建的解决⽅案
+基于Neo4j + FAISS的中医药知识图谱检索增强（RAG）解决⽅案
+基于LangGraph的中医药智能问答与多意图⼯作流编排解决⽅案
+基于FastAPI实现LangGraph智能体流式API接⼝开发的解决⽅案
+基于LlamaFactory微调⼤模型进⾏实体关系⽣成的解决⽅案
+解决⽅案
+LLM 路由服务器（意图识别）
+天⽓代理服务器（查询天⽓数据库）
+票务代理服务器（查询票务数据库）
+MCP⼯具服务器（数据库接⼝）
+数据采集脚本
+Streamlit前端客户端
+主讲知识点
+SmartVoloyge智能旅游多Agent项⽬
+SmartVoyage是⼀个智能旅⾏助⼿系统，使⽤A2A(Agent-to-Agent)协议构建多代理
+协作框架，⽀持⽤户查询天⽓和票务信息。系统包括LLM路由服务器（意图识别）、天
+⽓代理服务器（查询天⽓数据库）、票务代理服务器（查询票务数据库）、MCP⼯具
+服务器（数据库接⼝）、数据采集脚本和前端客户端。⽤户输⼊查询（如“北京天⽓”或
+“北京到上海⽕⻋票”），系统通过LLM路由到合适代理，代理⽣成SQL查询MCP数据
+库，返回结果显示在界⾯
+项⽬介绍
+能够掌握A2A多代理框架开发
+掌握意图识别与数据库查询技能
+能够完成交互式旅⾏助⼿系统的构建
+能⼒⽬标
+基于Python-a2a协议实现多代理A2A协作框架
+使⽤LangChain+DeepSeek构建LLM路由服务器意图识别与动态路由
+实现MCP⼯具服务器标准化MySQL查询接⼝
+天⽓代理服务器LangChain SQL⽣成与MCP实时天⽓数据库查询集成
+票务代理服务器多类型动态SQL⽣成与结果友好格式化
+基于Streamlit开发A2A多代理实时交互前端客户端
+解决⽅案
+业务流程图
+⽤户输⼊
+query
+JSON输出
+JSON结果 JSON结果
+Streamlit会话状态
+messages/history
+AI Agent Router
+localhost：6666
+Weather Query Agent
+localhost：5005
+Ticket Query Agent
+localhost：5006
+MCP Client→Weather MCP
+localhost：6001 
+MySQL
+weather_data
+MySQL
+train_tickets/ﬂight_tickets/
+concert_tickets
+MCP Client→Ticket MCP
+localhost：6002
+LLM总结
+summarize_weather_prompt
+拼接最终回复→Streamlit显示
+LLM总结
+summarize_ticket_prompt
+意图识别链
+intent_prompt
+→LLM
+SmartVoyage旅⾏助⼿系统
+Streamlit前端
+多意图拆分
+分发 分发
+意图/槽位判定
+weather/ﬂight/
+concert/
+attraction
+路由与后端代理⽹络
+SmartCloud云服务系统
+项⽬基于LangChain、LangGraph和FastMCP等⼯业级框架，实现了5个专业AI智能体
+的协同⼯作系统，覆盖云服务全⽣命周期⽀持。项⽬集成了意图识别、追问检测、分布
+式缓存、多模态处理及A2A跨系统协作等前沿技术，是理解和构建⽣产级AI应⽤的实战
+标杆
+项⽬介绍
+AI架构设计能⼒ :掌握微服务架构下的AI系统设计，解耦⼤脑（Agent）与⼿脚
+（Tools）
+RAG系统构建能⼒: 精通Milvus+Elasticsearch混合检索架构，实现⾼精度知识问答
+Agent编排能⼒: 熟练使⽤LangGraph构建ReAct、Saga等复杂Agent模式
+协议集成能⼒: 掌握MCP(Anthropic)和A2A(Google)两⼤前沿协议，实现⼯具标准化与
+跨系统协作
+意图识别优化能⼒: 实现"规则引擎+⼩模型+⼤模型"的分级意图识别，平衡成本与体验
+分布式事务处理能⼒: 在Agent系统中落地Saga模式，保障数据⼀致性
+全链路监控能⼒: 使⽤Phoenix和LangSmith进⾏LLM应⽤的调试、评测与监控
+多模态应⽤开发能⼒: 集成⽂⽣图、⽂⽣⽂⼯作流，打造全能型助⼿
+全栈开发能⼒: 独⽴完成从后端API到前端React交互的完整开发
+能⼒⽬标
+业务流程图
+Orchestrator 路由服务器（意图识别与动态路由）
+Product_Tech_Agent（产品技术咨询 Agent）
+Finance_Order_Agent（财务账单查询 Agent）
+ICP_Service_Agent（备案与合规服务 Agent）
+Deep_Research_Agent（深度研究与报告⽣成 Agent）
+Ops_Marketing_Agent（营销推⼴与内容⽣成 Agent）
+MCP ⼯具服务器（Base Tools / RAG Tools / Dify Tools）
+Agentic RAG服务（混合检索与知识增强）
+A2A协议通信层（跨 Agent 协作）
+三级智能缓存与Saga分布式事务层
+全链路监控与可观测性层（Phoenix + LangSmith + Grafana）
+主讲知识点
+基于Multi-Agent协作与Agentic RAG技术构建⼯业级云服务智能客服系统的解决⽅案
+实现MCP+A2A协议的多智能体A2A协作框架的解决⽅案
+使⽤LangChain+LangGraph构建LLM路由服务器意图识别与动态路由的解决⽅案
+实现基于FastMCP协议标准化MySQL查询接⼝的⼯具服务器解决⽅案
+基于RAG+MCP调⽤实现融合知识库与业务API的上下⽂增强解决⽅案
+实现向量数据库（Milvus+BM25（Elasticsearch）双检索的知识库增强⽣成解决⽅案
+实现动态更新知识库的RAG服务⾃动化迭代解决⽅案
+实现双层级智能缓存（Redis L1+会话 L2）的⾼性能响应加速解决⽅案
+⽀持Saga分布式事务保障的多数据库（MySQL+MongoDB）对话持久化⼀致性解决⽅案
+集成Deep Research能⼒的⾃主调研与⾏业分析报告⾃动⽣成解决⽅案
+实现系统级别（Prometheus+Grafana+cAdvisor）与业务级别（Phoenix+ 
+LangSmith）全链路监控的智能运维解决⽅案
+解决⽅案
+Web User
+(React+Vite):5173
+Intent 
+Recognition 
+(Rule + LLM)
+FastAPI 
+Gateway
+Uniﬁed Cache 
+Manager
+Admin User
+(Streamlit):8501
+⽤户接⼊层
+Smart
+Orchestrator
+LangGraph 
+State Engine
+ProductTech Agent
+Marketing Agen
+Finance Agen
+ICP Service Agen
+Deep Research Agen
+后端核⼼
+后端核⼼
+Base Tools 
+Server (:8005)
+RAG Tools 
+Server (:8006)
+Dify Tools 
+Server (:8007)
+MCP 服务层
+Model APls
+(Qwen/
+DashScope)
+Invoke-RAG 
+Pipeline (Hybrid 
+Search)
+Dify Platform 
+(Workﬂows/Chat)
+LangSmith Cloud 
+(Trace/Eval)
+Heima Cloud Agent
+(GPU Services)
+外部服务&RAG
+Phoenix AI 
+Monitor (:6006)
+Grafana Dashboard 
+(:3001)
+Prometheus DB 
+(:9090)
+cAdvisor Exporter 
+(:8082)
+Attu Mivus UI 
+(:8001)
+MySQL
+ Redis
+ MongoDB
+ Milvus
+ ElasticSearch
+ Phoenix
+可观测性与运维
+HTTP/SSE
+Trace
+Trace
+Invoke
+APIWebhook
+Pull
+Scrape
+MCP/SSE
+MCP/SSE
+MCP/SSE
+Manage
+Agent Loop（3选1）
+传智教育旗下⾼端IT教育品牌 ，来黑马程序员零基础学
+
+=== PAGE 10 ===
+编程抽象演进与AI编程范式（Vibe Coding → Agentic Engineering）
+AI编程⼯具链与Agent协同策略（Cursor、Claude Code、Trae、OpenClaw）
+Agentic Engineering与多智能体协同开发
+企业级AI项⽬⼯程化规范体系（standards v2.0框架）
+数据智能分析与机器学习全流程案例实战（银⾏营销预测系统）
+交互式Web前端与复杂游戏逻辑实现案例实战（⽹⻚三消乐）
+⽣产级CI/CD与容器化DevOps交付体系（GitHub Actions+Docker多阶段构建+ 
+Secrets安全远程部署）
+OpenClaw多渠道Agent平台实战
+主讲知识点
+基于Claude Code + Trae的Agentic Engineering多智能体协同开发解决⽅案
+基于standards v2.0框架的企业级AI项⽬⼯程化治理与⾃动化交付解决⽅案
+基于Claude Code Agentic开发的⾦融营销预测端到端MLOps全流程解决⽅案
+基于GitHub Actions + Docker的⽣产级CI/CD与容器化DevOps交付解决⽅案
+基于OpenClaw的私有化多渠道Agent平台构建与⻜书集成解决⽅案
+解决⽅案
+从Vibe Coding到SDD规范驱动交付实战
+本课程以Claude Code+Trae+OpenClaw为核⼼⼯具链，系统构建从Vibe Coding到
+Agentic Engineering的⽣产级AI开发体系。学员通过standardsv2.0企业级⼯程化框
+架，完成两⼤真实业务项⽬：
+基于阿⾥云天池真实数据集的⾦融营销预测系统（端到端MLOps全流程）；浏览器端
+⾼性能⽹⻚三消游戏（实时交互引擎）
+全程落地GitHub Actions+Docker⽣产级CI/CD流⽔线，实现从意图定义到Multi-
+Agent协同开发、再到⾃动化安全交付的完整⼯业闭环
+项⽬介绍
+掌握Agentic Engineering⽅法论，成为智能体全栈Owner
+熟练使⽤Claude Code + Trae实现多智能体协同开发
+精通standards v2.0框架，快速完成企业级项⽬⼯程化治理
+完成⾦融场景端到端MLOps全流程（数据探索→模型训练→FastAPI⽣产部署）
+掌握浏览器端⾼性能实时交互系统开发能⼒
+独⽴搭建GitHub Actions + Docker⽣产级CI/CD与容器化交付流⽔线
+完成OpenClaw私有化多渠道Agent平台构建与⻜书集成
+能⼒⽬标
+技术架构
+Al Coding基础辅助编码
+ Vibe Coding氛围式编码
+ Agentic Engineering智能体⼯程
+可控性：⾼
+代码理解:完全看懂
+可控性:低
+代码理解:通常不深究
+可控性:⾼(流程可控)
+代码理解:掌控整体架构与逻辑
+⼈类主导
+⼩需求⼀>⽣成代码块
+⾃⼰看懂并修改逻辑
+放⻜⾃我
+模糊Vibe提示
+AI⼀次性输出⼤量代码
+追求速度与感觉
+通常不审查细节
+规范驱动
+Blueprint规划+ Multi-Agent编排
+Tool Use + Self-Reﬂection + Validation
+全链路⾃主闭环
+⼈类担任架构师与Owner
+AI编程演进路径2023-2026
+OpenClaw架构与应⽤实战
+OpenClaw项⽬是真正的⽣产级开源AI Agent⽹关，远超“聊天机器⼈壳⼦”，其核⼼竞
+争⼒在于完整实现了Agent记忆能⼒（Memory+RAG）、系统物理交互（Sandbox 
+Tools）、⾃迭代防死循环（tool-loop-detection+compaction）以及Multi-Agent协
+同（Subagent spawn）
+项⽬采⽤Monorepo（pnpm-workspace）结构，TypeScript开发，内置Pi-
+embedded-runner原⼦执⾏引擎，⽀持Feishu、Slack、WhatsApp等⼗余个渠道⽆缝
+接⼊。通过LanceDB本地向量库+混合检索+时间衰减算法，实现真正可⽤的⻓期记
+忆；所有Tool执⾏均在Docker/Podman沙箱中完成，具备⽂件、⽹络、资源严格隔
+离；⽀持动态Subagent孵化，让复杂任务⾃动拆解；集成MCP协议实现标准化⼯具调
+⽤；⽣产部署⽀持systemd⾃启、Nginx⾼可⽤、Prometheus监控等企业级特性
+该项⽬是理解和构建真实可⽤、⻓期运⾏、⽣产级AI Agent系统的实战标杆，特别适合
+希望掌握从消息接⼊到Agent 执⾏全链路、从开发到运维闭环的开发者
+项⽬介绍
+OpenClaw架构机制理解能⼒：理解OpenClaw整体架构机制，以及Gateway、Routing、
+Agents执⾏、Memory RAG、Sandbox、Subagent等核⼼模块的协同⼯作原理
+⻜书机器⼈配置与使⽤能⼒：熟练通过命令和配置⽂件快速接⼊并配置Feishu机器⼈，
+实现消息标准化接⼊与实际业务交互
+Skill查询安装与⾃定义扩展能⼒：学会通过ClawHub查询安装Skill，同时掌握⾃定义创建 
+Skill 包（SKILL.md+tools/+prompts/）扩展Agent能⼒
+能⼒⽬标
+技术架构
+⻜书-extensions/feishu/index.ts
+Discord - src/discorc
+WeChat/WhatsApp-src/web
+Slack- src/slack
+Telegram-src/telegram
+Signal-src/signal
+iMessage-src/message
+消息渠道
+ Gateay
+ Hooks
+ Routing
+Agents
+ Context
+ Skills
+ Sandbox
+Google Chat-extensions/googlechat
+ IRC/Matrix/MSTeams…
+Gateway接收层
+消息钩⼦- src/hooks/message-hooks.ts
+ 内部钩⼦- src/hooks/intemnal-hooks.ts
+钩⼦安装-srchooks/instal.ts
+ Gateway Hooks- src/gateway/hooks.ts
+Hooks钩⼦系统
+路由解析- srcr/routing/resolve-route.ts
+ Session 绑定-src/routing/bindings.ts
+Account ID 解析-src/routing/account-id.ts
+ 路由决策：选择⽬标Agent
+Routing路由层
+上下⽂构建器- src/context-engine/legacy.ts
+ Bootstrap⽂件 - AGENTS.md/MEMORY.md等
+Session历史 - attempt.ts
+ RAG向量检索-memory-search.ts
+Context Engine
+上下⽂引擎
+技能安装- src/agents/skills-install.ts
+ Workspace Skills - src/agents/skills.ts
+ClawHub技能市场-clawhub.com
+Skills技能系统
+WebSocket⻓连接（主要⽅式）
+src/gateway/server/ws-connection.ts
+ Event Bus 发布器 -src/gateway/server- broadcast.ts
+HTTP短连接(辅助⽅式)
+src/gateway/server/http-listen.ts
+ 认证与授权- src/gateway/auth.ts
+Agents 
+执⾏核⼼(HEART)
+原⼦执⾏单元（Atomic Runner）-src/agents/
+piembedded-runner.ts
+ Workspace 加载器 - src/agents/workspace.ts
+Tool 执⾏引擎- src/agents/pi-tools.ts
+ Subagent 注册中⼼-src/agents/subagent-registry.ts
+系统提示词构建-src/agents/system-prompt.ts
+ Sandbox沙箱隔离-⽂件系统策略/安全边界
+消息渠道插件层
+（Message Channels）
+Gateway 接收层（WebSocket + HTTP 统⼀⼊⼝与 Event Bus）
+Multi-Channel 消息插件层（Feishu / Slack / WhatsApp / Discord 等适配器）
+Routing 路由层（resolve-route.ts + 多租户 Session 隔离）
+Agents 执⾏核⼼层（Pi-embedded-runner + Subagent 注册与孵化）
+Memory ⻓期记忆与 RAG 增强层（LanceDB + hybrid 混合检索）
+Context Engine 上下⽂引擎（静态 Workspace + 动态 Session + RAG 融合）
+Hooks 扩展钩⼦系统（前置/后置消息处理）
+Skills 插件化技能系统（ClawHub 市场 + SKILL.md 动态加载）
+Sandbox 安全沙箱执⾏层（Podman/Docker 隔离）
+主讲知识点
+通过OpenClaw⼀键部署多消息渠道标准化接⼊并统⼀管理AI Agent的解决⽅案
+通过OpenClaw ClawHub技能市场⼀键安装扩展Agent能⼒的解决⽅案
+通过OpenClaw⾃定义创建并部署专属Skill包（SKILL.md+tools/+prompts/）扩展 
+Agent能⼒的解决⽅案
+通过OpenClaw Sandbox安全执⾏Tool并彻底保障系统与数据安全的解决⽅案
+解决⽅案
+HeiMaClaw系统级Agent实战
+HeiMaClaw×智新电池⼯⼚是⼀套⾯向制造业⼀线⽣产管理的企业级AI Agent落地⽅
+案。系统以HeiMaClaw⽣产级AI Agent平台为⼤脑，承担渠道接⼊、租户权限、Agent 
+编排、记忆审计和沙箱执⾏；以智新电池⼯⼚MCP Server为业务数据源，通过 
+FastMCP暴露产线状态、⼯单进度、班次产量三类业务⼯具，背后由独⽴数据库承载
+真实⽣产数据。两边通过MCP协议桥接，把远端⼯具统⼀注册为平台ToolRegistry中的
+标准⼯具，让班组⻓/⽣产主管在⻜书⾥⽤⾃然语⾔完成产线状态、⼯单进度、班次产
+量等真实业务查询，打通「⾃然语⾔⼊⼝→Agent 编排→MCP ⼯具→业务数据库→智
+能总结回复」的完整落地链路
+项⽬介绍
+学员能够掌握以HeiMaClaw为底座、以MCP业务服务器为数据源的「企业级Agent+业务
+系统」⼀体化落地能⼒，实现MCP⼯具的安全接⼊与⾃动注册，掌握MCP Server注册、
+Agent可⻅性控制与权限策略联动，理解平台六层架构下业务数据「不进⼊平台、只⾛ 
+MCP Tool」的设计边界
+能够独⽴完成业务MCP Server构建、平台对接、⻜书⾃然语⾔⼊⼝验证，并基于审计、
+⻛险等级、租户作⽤域设计企业级安全闭环
+能⼒⽬标
+技术架构
+业务MCP Server冷启动阶段，基于FastMCP框架实现电池⼯⼚业务⼯具开发，使⽤ 
+SQLite承载产线、⼯单、班次三类真实⽣产数据，并通过SSE协议对外暴露标准业务
+⼯具
+HeiMaClaw平台接⼊阶段，安装MCP可选依赖，通过CLI命令完成业务服务器注册，并
+配置企业级元数据（传输⽅式、⻛险等级、租户作⽤域、超时等），再校验远端⼯具列
+表可达
+实现MCP⼯具到ToolRegistry的安全桥接，通过桥接层⾃动拉取远端⼯具列表，采⽤安
+全命名规则⽣成本地⼯具名，并封装调⽤逻辑、归⼀化返回结果，同时携带权限元数据
+下沉到⼯具级别
+实现意图识别与槽位填充，通过CLI把MCP Server启⽤到⽬标Agent，⾃动追加⼯具到
+⽩名单；运⾏时由Agent编排引擎把⾃然语⾔解析为标准⼯具调⽤，⼯具返回数据后再
+由LLM总结为业务话术
+实现租户与权限闭环，每次⼯具调⽤携带租户、⽤户、⻆⾊等上下⽂，由权限策略管理
+器完成租户隔离与响应策略；⽀持全局开关与Agent级⼯具可⻅性动态收敛
+实现⻜书渠道与⽣产部署闭环，完成⻜书⻓连接与回调接⼊，通过多进程启动⽅式，完
+成⽣产环境或智能体应⽤
+主讲知识点
+基于FastMCP实现智新电池⼯⼚业务MCP Server并标准化暴露产线状态、⼯单进度、
+班次产量三类⼯具的解决⽅案 
+基于HeiMaClaw平台MCP可选依赖与桥接层实现远端⼯具⾃动安全注册到 
+ToolRegistry的解决⽅案 
+基于CLI命令完成MCP Server注册、Agent级可⻅性收敛及tools.allowed⽩名单联动的
+解决⽅案 
+基于AgentRunner+UniﬁedExecutionEngine+Planner与LLM完成⾃然语⾔意图识别与
+槽位填充的解决⽅案 
+结合tool_gate与AuthPolicyManager实现租户隔离、权限策略下沉及企业级安全闭环
+的解决⽅案 
+构建“⻜书⾃然语⾔提问→HeiMaClaw Agent编排→安全MCP⼯具调⽤→业务数据库 
+→智能总结回复”的企业级Agent+业务系统⼀体化落地闭环解决⽅案
+解决⽅案
+CLI Console（cli.py）
+Platform Auth Adapter（JWT/OAuth2/Session）
+FastAPI Server（server.py）
+ Event Bus（event_bus.py）
+Webhook Endpoints
+Layer 1
+External Access 
+(外部接⼊层)
+Feishu Adapter（feishu.py）
+ WeCom Adapter（wecom.py)
+Agent Router（router.py)
+ AuthPolicyManager (policy.py)权限+租户检查
+Layer 2
+Channels&Routing
+ (道与路由层)
+Agent Runner(runner.py)
+统⼀⼊⼝+Hooks
+Tool Registry(tools/)
+⼯具注册表
+Uniﬁed Execution Engine
+DeepAgents + LangGraph
+Planner(planner.py)
+任务分解规划
+Skill Registry(skills/)
+⾼阶能⼒包Layer 3
+Cognitive 
+&Execution Core 
+(认知与执⾏核⼼)
+Memory Manager(memory/)
+ Subagent Spawner(subagent_spawn.py)⼦Agent派⽣
+Session Manager(session.py)
+ Todos Manager(todos/)
+Layer 4
+Memory 
+& Coordination
+ (记忆与协同层)
+Firecracker microVM 硬件级隔离
+ Docker Secure 容器隔离
+ Warm Pool (pool.py)预热池管理
+Snapshot Manager 快照恢复
+ Secure Executor
+Layer 5
+Isolation Sandbox
+(隔离沙箱层
+LLM Providers(llm/)OpenAl/智谱
+ SQLite Storage
+ Monitoring(monitoring/)
+Conﬁg System
+ KVM Support
+Layer 6
+Infrastructure
+ (基础设施层)
+Agent Harness
+传智教育旗下⾼端IT教育品牌 ，来黑马程序员零基础学
+
+=== PAGE 11 ===
+⼤语⾔模型应⽤（LLM调⽤与Prompt设计）
+结构化输出（JSON解析与Pydantic建模）
+LangGraph⼯作流编排与状态管理
+语⾳处理技术（⾳频切分与语⾳识别）
+⽂本处理技术（清洗、切块与去重）
+后端开发（FastAPI接⼝设计与⽂件上传）
+数据库设计（SQLAlchemy与表结构设计）
+系统⼯程能⼒（配置管理与模块化开发）
+多进程并发处理机制
+AI应⽤完整⼯程化落地能⼒
+主讲知识点
+智能语⾳分析Agent项⽬（语智析）
+本项⽬针对传统⾯试复盘过程中存在的效率低、信息分散、难以结构化的问题，设计了
+⼀套基于LLM与LangGraph的智能语⾳分析系统。⽤户上传⾯试录⾳后，系统⾃动完
+成语⾳切分、语⾳转⽂本、⽂本整理、问题与回答抽取、参考答案⽣成、评分与建议输
+出，最终⽣成标准化Markdown复盘报告，并⽀持结果⼊库与前端展示，实现从⾮结构
+化语⾳到结构化分析结果的完整闭环
+项⽬介绍
+理解语⾳类AI项⽬的完整业务流程
+掌握从语⾳数据到结构化数据的处理链路
+掌握LangGraph多节点⼯作流设计⽅法
+掌握⼤模型在信息抽取与分析中的应⽤
+掌握Prompt设计与结构化输出控制
+掌握FastAPI后端接⼝开发能⼒
+掌握SQLAlchemy数据库建模与操作
+具备AI项⽬从模型到系统落地的⼯程能⼒
+能⼒⽬标
+通过⾳频切分解决⻓语⾳处理性能问题
+通过ASR模型实现语⾳到⽂本的转换
+通过⼤模型进⾏⽂本纠错与去重整理
+通过Prompt+Parser实现结构化问答抽取
+通过⼤模型⽣成参考答案与评分分析
+通过统⼀流程输出标准化复盘报告
+通过数据库实现结果持久化与可追溯
+整体构建⾃动化⾯试分析闭环系统
+解决⽅案
+业务流程图
+前端⻚⾯模块 fastapi后端接⼝模块 langgraph⼯作流模块
+主界⾯
+添加录⾳界⾯
+拆分语⾳模块节点
+语⾳转⽂字节点
+语⾳转⽂字整理节点
+抽取⾯试题⽬节点
+提供参考答案节点
+提供⾯试建议节点
+⽣成md⽂档节点
+db_helper脚本
+fastapi接⼝
+⾯试记录表
+ ⾯试详情表
+⾯试详情⻚⾯
+LangGraph：状态图、节点编排、条件分⽀、Agent流程设计
+LangChain：Prompt设计、结构化输出（Pydantic+JSON Parser）
+⼤模型应⽤：⽂本⽣成、多模态⽣成、决策推理（Agent化）
+浏览器⾃动化：Playwright⻚⾯操作、Cookie管理、⾃动发布流程
+AI+RPA融合：从“固定脚本”到“AI驱动⾃动化”
+爬⾍技术：图⽚抓取、数据解析、内容增强
+⼯程化能⼒：配置管理、模块拆分、异步编程、前后端联调
+业务抽象能⼒：将复杂业务流程抽象为标准化数据流与⼯作流
+主讲知识点
+智能营销Agent项⽬（营销通）
+项⽬针对⼩红书内容创作中“选题、写⽂案、找配图、⼿动发布”等流程繁琐、重复劳动
+多的问题，基于LangGraph构建智能⼯作流，通过⼤模型完成⽂案⽣成，结合AI⽣图或
+爬⾍抓图实现配图，并通过校验与Playwright⾃动发布，打通从⽤户输⼊到内容⽣产再
+到平台发布的全流程闭环，实现营销内容的⼀键⾃动化⽣成与执⾏
+项⽬介绍
+理解如何将⼤模型能⼒拆解为多个可执⾏节点（⽣成/校验/执⾏）
+学会构建“⽣成 → 执⾏ → 反馈”的闭环AI系统
+掌握浏览器⾃动化（Playwright）实现真实业务落地
+理解AI Agent从“规则脚本”到“智能决策”的升级路径
+掌握前后端+AI融合的完整⼯程化实现能⼒
+能⼒⽬标
+流程⾃动化：将“选题→⽂案→配图→发布”流程拆解并⾃动执⾏
+⼯作流编排：基于LangGraph实现节点化、可分⽀、可扩展流程
+多模态配图：⽀持“AI⽣成图⽚+爬⾍真实图⽚”双策略提升质量
+发布校验机制：发布前检查标题/内容/图⽚，避免⽆效操作
+⾃动发布能⼒：通过Playwright完成登录、填表、上传、点击发布
+智能⾃动化升级：引⼊“⻚⾯理解+LLM决策”，实现动态操作路径规划
+端到端闭环：输⼊⼀句话→⾃动⽣成并发布 → 输出可视化结果（HTML/Markdown）
+解决⽅案
+业务流程图
+query
+⽂案⽣成节点
+图像⽣成节点
+检测节点
+⾃动发布⼩红书节点
+⽣成md⽂档节点
+结束节点
+⽂案⽣成
+Fastapi后端
+Streamlit前端⻚⾯
+前端显示
+本项⽬直击AI⼯程师“只会调模型、不懂⼯程落地”的痛点，重点攻克服务器操作、环境
+依赖与GPU容器化部署等核⼼难题。通过Python深度⼯程化改造与Docker全链路实
+战，实现AI服务的⼀键上线交付，补⻬从算法原型到⽣产环境的关键能⼒缺⼝
+项⽬介绍
+掌握⽣产级Python⼯程开发与性能优化能⼒
+掌握AI项⽬版本管理与团队协作能⼒
+掌握标准化⽂档交付与项⽬管理能⼒
+掌握Docker容器化与模型部署上线能⼒
+能⼒⽬标
+Linux开发环境搭建解决⽅案
+Python常⻅开发⼯具应⽤
+Git和CI/CD⽅案
+⽂档/管理和协同⽅案
+解决⽅案
+Linux：Shell脚本与SSH⾼阶⽤法，配置跳板机多跳与端⼝转发，将远程GPU服务器
+Jupyter Lab安全映射⾄本地；使⽤tmux保活会话，配合nvidia-smi与netstat完成系统
+监控与排障
+Python：运⽤conda/venv/poetry/uv进⾏环境隔离与包管理；编写pytest单元测试，
+集成代码格式化、类型注解及静态检查⼯具，规范⼯程代码质量
+Git：使⽤git rebase、cherry-pick及stash等命令；分⽀管理、合并策略与冲突解决，
+落实PR提交流程与Code Review规范
+⽂档/管理和协同：规范DocString与类型注解以⽣成Swagger⽂档；Markdown⾼级⽤
+法（LaTeX/Mermaid）；Jira项⽬管理，利⽤Gradio快速构建算法Demo
+Docker：配置NVIDIAContainer Toolkit，编写Dockerﬁle启动vLLM/TGI进⾏⼤模型
+推理；基于docker-compose⼀键编排，拉起包含向量数据库与前后端的AI Agent全
+栈系统
+主讲知识点
+AI⼯程基座：企业级开发⼯具链与落地实战
+智能体开发项⽬实战
+智能体扩展项⽬（赠送）
+传智教育旗下⾼端IT教育品牌 ，来黑马程序员零基础学
+
+=== PAGE 12 ===
+阶段6：⼤模型微调开发
+课时：16天
+深⼊剖析Transformer架构核⼼组件及其实战应⽤，结合PyTorch和Hugging Face实现
+翻译任务
+聚焦预训练模型与微调流程，结合Hugging Face⼯具实现中⽂分类、填空等任务。
+深⼊讲解GPT、DeepSeek、QWen的架构设计与预训练任务，剖析模型运⾏机制，为
+后续微调提供理论基础
+从分词、词向量⼀RNN/LSTM/GRU⼀Seq2Seq+Attention⼀完整Transformer⼆
+BERT/GPT/T5.微调全流程
+完整预训练模型原理拆解，系统讲解中⽂分词、⽂本均衡、多级分类、预训练微调完整⼯程
+课程亮点
+能够理解Transformer的注意⼒机制与架构设计，并掌握基于Transformer的翻译任务
+开发技能
+能够使⽤Hugging Face库对预训练模型进⾏全量微调，完成特定NLP任务
+能够理解主流⼤模型的架构特性与预训练原理，掌握为微调任务选择合适模型的能⼒
+能⼒⽬标
+⼤模型
+Transformer
+架构
+词向量（Word Embedding）；⼤模型Transformer架构的注意⼒机制；⼤
+模型Transformer架构（encoder、decoder、encoder+decoder）；⼤模型
+Transformer翻译任务实战 
+⼤模型迁移
+学习
+迁移学习的预训练模型和微调阶段；NLP中的常⽤预训练模型（BERT、
+GPT-1、GPT-2）；Hugging Face预训练模型仓库；Huggingface 
+Transformers库使⽤（提供了NLP领域预训练语⾔模型结构模型和调⽤框
+架）；基于微调⽅式实现中⽂分类、中⽂填空、句⼦关系等任务
+技术点
+模块 详细知识点
+课程⼤纲
+⼤模型
+Transformer
+架构
+⼤模型主流模
+型运⾏机制
+GPT/DeepSeek/QWen基础；GPT/DeepSeek/QWen架构变化；GPT/
+DeepSeek/QWen的预训练任务；基于DeepSeek/QWen预训练+微调任务
+实战
+⼤模型主流模
+型运⾏机制
+⼤模型迁移
+学习
+项⽬以Qwen/DeepSeek模型为核⼼，通过LoRA和P-Tuning实现微博⽂本信息抽取
++⽂本分类的多任务，通过⼀个⼤模型同时解决多种任务开发和应⽤。借助DeepSpeed
+框架实现训练过程的加速优化。同时采⽤了GPTQ和QLoRA技术对模型进⾏量化处理，
+旨在进⼀步提升模型的推理速度。最终，通过Vllm平台完成了模型的部署，实现了对⽂
+本中关键信息的⾃动化抽取，完成信息抽取的任务
+项⽬介绍
+了解和掌握⼤语⾔模型的基本原理和架构，特别是ChatGLM-6B模型的结构和⼯作机制
+掌握⼤模型LoRA微调技术，通过微调预训练的⼤模型来适应特定任务的需求
+掌握⼤模型P-Tuning微调技术，对⼤模型进⾏⾼效的参数调整，增强其在特定任务上的
+表现
+能够掌握 QLoRA 量化微调与并⾏计算技术，完成⽂本摘要模型的⾼效训练与部署
+能⼒⽬标
+技术架构
+⼈机交互
+ Web开发模型上线
+参数优化
+ 指标制定
+ ⼈⼯评估模型评估
+ChatGLM-6B
+ LORA模型
+ P-Tuing
+格式转换
+ 模板定义
+ 向量表示
+泛娱乐数据集+电商⽤户评论⽂本原始数据
+模型构建
+数据处理
++
++ +
++ +
++ +
+微博⽂本信息抽取和摘要项⽬
+联合任务数据预处理适配模型训练的解决⽅案
+实现ChatGLM-6B+LoRA训练的解决⽅案
+实现ChatGLM-6B+P-Tuning训练的解决⽅案
+基于Flask框架实现模型API接⼝开发的解决⽅案
+⼤模型并⾏计算解决⽅案
+⼤模型量化解决⽅案
+⼤模型部署解决⽅案
+⼤模型推理优化解决⽅案
+解决⽅案
+⼤模型微调开发基础
+理解信息抽取任务以及⽂本分类的业务意义及应⽤场景
+数据预处理：修改数据格式适配⼤模型训练、数据张量的转换等
+Qwen/DeepSeek模型解析，LoRA⽅法讲解、P-Tuning⽅法解析
+基于Qwen/DeepSeek+LoRA⽅法实现模型的训练和评估
+基于Qwen/DeepSeek+P-Tuning⽅法实现模型的训练和评估
+基于Flask框架开发API接⼝，实现模型线上应⽤
+数据集处理、模型构建、模型训练、模型预测
+⼤模型并⾏计算：deepspeed,数据并⾏、流⽔线并⾏、模型并⾏
+⼤模型量化:训练量化⽅法QLora，训练后量化⽅法GPTQ
+模型部署和推理优化框架：vLLM和oLLAMA
+主讲知识点
+数据为中⼼的机器学习，包括基于Krippendorﬀ's alpha的标注质量检测、主动学习和
+使⽤(推理)⼤模型的Incontext Learning(zero-shot/few-shot Learing)进⾏数据与标
+注，解决被学术界忽略但⼯业落地最棘⼿的数据问题
+Huggingface⽣态的深⼊学习，包括⾃定义Dataset/DataCollator、Metric；⾃定义
+PretrainedConﬁg和PreTrainedModel；⾃定义Trainer来实现复杂的指标计算。深⼊介
+绍checkpoint保存机制
+使⽤Optuna来进⾏超参数搜索，⽐常⽤的GridSearch更快，⽐RandomSearch更好，
+同时深⼊探讨⼿动模型调参和主动调参的适⽤场景
+介绍双塔召回模型+交叉精排模型的⼯业级架构，解决两两对⽐复杂度O(n^2)计算爆炸
+的问题。详细介绍度量学习和对⽐学习，包括arcface和InfoNCE-等损失函数以及
+CLIP和SigLiP等多模态模型。同时介绍IVF和HNSW等ANN算法原理和在FAISS的⽤法
+使⽤多种⽅法实现多模态的融合，并且介绍召回模型微调的实⽤技巧：难负样本挖掘、
+数据对称性处理
+介绍多模态⼤模型微调的显存优化技巧，详细介绍LoRA，包括RS-LoRA、
+AdaLoRA、pissa_init和DoRA等改进。同时介绍GaLore和BAdam等内存⾼效的全参数
+微调算法以及梯度累积、FlashAttention、混合精度训练和8-bit / 4-bit 量化优化器等
+节省显存的训练技巧
+深⼊介绍LlamaFactory，修改其代码来实现⾃定义评估指标的计算。详细介绍使⽤
+LlamaFactory微调Qwen3 VL的优化过程
+使⽤Gradio来展示召回与grouping模型，使⽤vLLM实现⼤模型推理，并且介绍常⻅部
+署的优化技巧，包括KV Cache和PagedAttention、GPTQ和AWQ等⼤模型量化算法、
+MQA/GQA/MLA等注意⼒机制优化和推测性解码
+主讲知识点
+基于亚⻢逊电商商品聚合⼤模型项⽬
+项⽬以“电商商品聚合与⽐价”为核⼼业务场景，解决电商场景中多源、异构商品数据的
+标准化处理、⾼精度分类与智能聚合难题
+项⽬介绍
+环境与⼯程搭建能⼒：熟练搭建Linux开发环境，吃透模型微调完整流程，精通PyTorch 
+与HuggingFace⽣态，具备⼯业级算法项⽬搭建基础能⼒
+电商数据处理能⼒：掌握电商商品数据集制作、⼤模型少样本预标注、主动学习降本、
+难负样本挖掘，独⽴完成业务数据清洗与优化
+多模态模型微调能⼒：精通商品分类、向量召回、同款聚合聚类三⼤任务，熟练运⽤对
+⽐学习、度量学习、LoRA⾼效微调，可独⽴微调图⽂多模态模型
+主流算法与⼯具实战能⼒ ：掌握双塔/交叉编码器架构、FAISS向量检索、⾃动超参调
+优，能⽤LlamaFactory实战微调视觉⼤模型，⾃定义训练逻辑与评估指标
+模型推理部署落地能⼒：掌握模型量化、推理加速、注意⼒优化，可快速搭建交互式演
+示项⽬，完成多模态⼤模型从训练、调优到线上部署全流程落地
+能⼒⽬标
+低成本⾼质量数据集构建解决⽅案 
+使⽤Optuna进⾏⾃动超参数寻优解决⽅案 
+多模态⼤模型微调解决⽅案
+多模态⼤模型推理部署解决⽅案
+多模态⼤模型推理优化解决⽅案
+解决⽅案
+技术架构
+数据库
+ 接⼝
+ 爬⾍
+数据来源 问题挑战
+限制
+ 更新数据采集
+知识抽取
+实体链接
+数据清洗
+⼤模型预标注
+数据集划分
+数据准备
+基线模型
+模型调优
+主动学习
+模型训练
+算法指标
+业务指标
+性能指标
+模型评估
+商品分类
+Schema融合
+ 结构化抽取
+ 数据规范化
+数据融合
+ 冲突解决
+ 数据更新
+ 冗余和缺失处理
+评价优化指标
+难负样本挖掘
+数据准备
+模型架构设计
+Optuna超参数优化
+基线模型
+⽣成式训练
+判别式训练
+多模态⼤模型
+商品聚合
+⽂本模型
+图⽚模型
+图⽂多模态模型
+预训练模型
+架构设计
+多模态融合
+对⽐学习
+度量学习
+模型微调
+双塔模型
+Embedding计算
+离线/在线数据更新
+向量召回
+系统服务
+候选召回
+Pytorch
+Tensorﬂow
+HF
+Transformers
+LlamaFactory
+SentenceBert
+Pytorch
+Metric Learning
+⼤模型训练
+⼯具和框架
+vLLM
+TensorRT-LLM
+LLM量化
+KV Cache
+优化
+系统优化
+⼤模型推理
+⼯具和框架
+⼤模型微调综合项⽬（2选1）
+招聘领域⼤模型微调 ：LoRA/QLoRA微调；SFT监督微调；DPO强化学习对⻬；训练
+数据清洗、去重、隐私处理；微调显存优化（ZeRO、梯度检查）
+⼤模型服务化部署 ：vLLM/SGLang推理加速框架；KV Cache缓存机制；模型量化
+（FP16/INT4）；⼤模型服务监控、压测与⾼并发优化
+LangGraph智能体开发：State/Node/Edge 核⼼组件；线性 / 条件 / 循环⼯作流构
+建；⼯具调⽤（Tool Call）；招聘职位实体要素抽取及职位实体图谱构建智能体。
+招聘知识图谱构建：职位实体（岗位、结算⽅式、⼯作类型、⼯作时间等）抽取；实体
+关系泛化与图谱建模；职位要素分类与意图图谱构建；缓存与ES联动更新
+搜索意图识别：⽤户搜索词意图分类；多意图表达识别；⻓尾搜索词优化；意图与职位
+要素匹配策略
+检索系统核⼼技术：Kafka实时数据流处理；近实时职位⼊库与ES检索
+搜索推荐（Sug）：ES Completion Suggester原理；FST数据结构；前端防抖与实时
+推荐；基于实体图谱的搜索词补全
+企业级⼯程实践：模块化设计与代码复⽤；配置与环境管理；⽇志与错误处理；分布式
+部署、负载均衡；Docker/K8s部署思路
+项⽬优化与评估：检索badcase优化；意图识别准确率提升；⻓尾问题处理；模型与检
+索效果评测指标
+就业导向能⼒：⼤模型⾯试考点（Transformer、微调、部署、图谱）；业务场景拆解
+与⽅案设计
+主讲知识点
+⿊⻢直聘⼤模型搜索推荐项⽬
+基于⼈⼒资源招聘⾏业垂直⼤模型与知识图谱融合检索解决⽅案，通过项⽬学习完成企
+业级招聘检索系统全流程开发、部署、测试与优化。从Transformer底层原理、⼤模型 
+SFT+DPO双阶段微调、LangGraph智能体构建、招聘职位实体要素抽取及图谱关系构
+建，结合实时数据⼯程组件写⼊职位实体到检索引擎，完成招聘AI检索系统构建
+项⽬介绍
+招聘领域⼤模型微调能⼒
+⼤模型服务化部署能⼒
+LangGraph 智能体开发能⼒
+招聘知识图谱构建能⼒
+搜索意图识别匹配能⼒
+Kafka+Flink实时数据流处理能⼒
+基于Kafka消息队列实现业务解耦能⼒
+搜索推荐（Sug）构建能⼒：基于实体
+图谱的搜索词补全
+能⼒⽬标
+招聘领域⼤模型 SFT+DPO 双阶段微调解决⽅案
+基于 LangGraph 的招聘智能体与知识图谱构建解决⽅案
+招聘搜索意图识别与实体抽取解决⽅案
+⼤模型 vLLM ⾼性能推理部署解决⽅案
+ElasticSearch+Redis ⾼并发职位检索解决⽅案
+基于实体图谱的搜索词推荐（Sug）解决⽅案
+⼤模型训练显存优化（ZeRO / 梯度检查）解决⽅案
+招聘检索 badcase 治理与相关性优化解决⽅案
+解决⽅案
+业务流程图
+招聘者
+职位发布系统
+职位标题
+VLLM服务
+节点1
+VLLM服务
+节点2
+⼈⼒资源领域
+⼤模型服务节点
+业务⼯况
+梳理
+服务/计算
+资原申请
+EvalScope
+模型服务压测
+VLLM模型
+部署
+模型部署上线
+sft-LoRa
+微调
+强化学习-DPO
+对⻬⼈类偏好
+通⽤领域评测
+专业领域评测
+QWen3-8B基座模型
+LLaMaFacoty微调
+职位数据
+收集
+数据清洗
+simHash去重
+微调样本统计
+检验
+⼈⼒资源领域数据收
+集及语料准备
+业务数据落盘
+⼯作职责
+ 拉取职位缓存
+结果
+请求LLM
+标题实体
+抽取
+3.未命中缓存
+8.解析实体结
+果及分类，更
+新ES字段 6.命中缓存
+直接更新ES
+对应检索字段
+2.命中缓存
+更新对应职位
+ES的结果
+4.返回标题
+实体抽取结果
+7.未命中缓存
+请求LLM进⾏分类
+query/context
+请求检索
+系统
+返回搜索结果
+拉取解析
+结果
+1.拉取标题
+缓存
+各个类型
+实体分类
+岗位详情
+薪资福利
+公司/⽤⼈单位
+求职者
+商业检索系统
+获取query实
+体解析结果
+缓存结果
+职位抽取
+分类结果
+redis
+实体及
+对应分类
+redis
+商业职位上线
+消息
+kafka+ﬂink
+商业ES检索库
+query
+实体抽取
+分类结果
+redis
+基于context
+场景直接
+更新ES封装
+es查询条件
+查询ES
+封装返回结果
+排序(⾮重点)
+5.拉取各个
+实体分类缓存
+传智教育旗下⾼端IT教育品牌 ，来黑马程序员零基础学
+大模型算法开发
+Large model algorithm development
+
+
+=== PAGE 13 ===
+项⽬中引⼊⼤模型蒸馏，通过⾃动化语料清洗与⼤模型蒸馏技术，将DeepSeek-R1的
+复杂问题解决能⼒迁移⾄Qwen-7B，并实现⾼效服务部署。⽬的让⼀个⼩体量
+QWen-7B模型学会像DeepSeek⼀样考虑问题
+课程亮点
+掌握从0起步，全⾃动建⽴和清洗语料集的⽅法和技巧掌握⼤模型硬标签蒸馏理论和实战操作
+掌握⾼效部署⼤模型应⽤的思路和⽅法
+能⼒⽬标
+⼤模型蒸馏
+硬标签蒸馏 全⾃动化地建⽴和清洗语料集；⾼效部署⼤模型服务；0基础建⽴语料集；
+LLaMA-Factory实施硬标签蒸馏 ；vLLM⾼效部署解决⽅案；业务场景扩展
+模型蒸馏实战 DeepSeek-R1能⼒迁移⾄Qwen-7B；模型部署；相关⾯试题
+技术点
+模块 详细知识点
+课程⼤纲
+⼤模型蒸馏实战专题
+深⼊剖析DeepSeek V3模型、DeepSeek Math模型及DeepSeek R1推理模型，根据论
+⽂分析MLA注意⼒机制实现思想、MOE混合专家模型等核⼼实现思想，让⼤家从论⽂
+中掌握DeepSeek核⼼算法思想和优化点
+课程亮点
+学员能够理解DeepSeek模型的核⼼原理与算法思想
+掌握MLA和MOE的实现机制及优化⽅法
+能⼒⽬标
+DeepSeek
+核⼼模型
+深⼊剖析DeepSeek V1模型；DeepSeek V3模型解读；DeepSeek Math模
+型；复刻DeepSeek R1推理模型
+DeepSeek核
+⼼原理解读
+MLA注意⼒机制实现思想；MOE混合专家模型；DeepSeek模型特点；
+DeepSeek论⽂解读
+技术点
+模块 详细知识点
+课程⼤纲
+DeepSeek核⼼专题
+DeepSeek
+核⼼专题
+阶段7：⼤模型核⼼专题（赠送）
+传智教育旗下⾼端IT教育品牌 ，来黑马程序员零基础学
+强化学习基础：强化学习的应⽤场景和基础概念（状态、动作、奖励、策略等），强化
+学习数学核⼼-⻢尔可夫决策过程（MDP）以及⻉尔曼公式与最优⽅程，DQN、
+Actor-Critic、PPO、GRPO等主流深度强化学习算法的原理、实现细节及适⽤场景
+⻢尔可夫决策过程（MDP）、⻉尔曼⽅程、PPO（近端策略优化）、DPO（直接偏好
+优化）的数学原理和从零实现GPT、LLaMA、Qwen、DeepSeek底层架构；包含全参
+微调、LORA/QLoRA、DeepSpeed 分布式训练、RLHF/PPO/DPO 强化学习对⻬全
+流程，通过 RLHF 实战项⽬，训练、对⻬、推理、部署全流程打通
+课程亮点
+系统性掌握强化学习的理论体系，深刻理解MDP、⻉尔曼⽅程等核⼼数学原理
+熟练掌握DQN、Actor-Critic、PPO、GRPO等主流深度强化学习算法的原理、实现细
+节及适⽤场景
+能⼒⽬标
+强化学习
+基础
+强化学习
+算法
+RLHF项
+⽬实战
+强化学习⼊
+⻔；强化学
+习理论核⼼
+强化学习应⽤场景；强化学习架构；强化学习基础概念（状态、动作、状态
+转移、策略、奖励、轨迹、回报、折扣因⼦、回合）、多臂⽼⻁机问题；
+MDP；⻉尔曼公式；⻉尔曼最优⽅程
+强化学习基础
+算法；深度强
+化学习算法
+MC；时序差分(SARSA、Q-learning)；DQN；策略梯度；Actor-Critic架
+构；DPO；PPO；GRPO
+RLHF项⽬
+实战
+监督微调；奖励模型训练；PPO微调⼤模型；GRPO微调⼤模型；强化学习
+优化⼤模型提示词
+技术点
+模块 详细知识点
+课程⼤纲
+基于RHLF的强化学习
+
+=== PAGE 14 ===
+课程以 AI / ⼤模型 / 机器学习的真实需求为导向，系统梳理线性代数、概率论、微积
+分三⼤核⼼数学⽀柱，所有内容均围绕 “AI中怎么⽤、为什么重要” 展开，避免纯理论
+堆砌。课程采⽤Python作为实践载体，从矩阵运算、概率分布、梯度计算到信息论指
+标，尽可能配套Python或者Numpy代码实现与可视化演示，让抽象数学概念变得直观
+可验证
+课程重点拆解机器学习中⾼频⽤到的数学推导，例如线性回归、逻辑回归、反向传播、
+交叉熵损失等，让你能看懂算法原理、理解模型背后的数学逻辑。课程同时对标⼤⼚算
+法岗/AI岗⾯试常考数学题，配套练习与案例，帮你打通“数学→算法→模型”的链路，
+为后续学习机器学习、深度学习和⼤模型打下坚实、可复⽤的数学基础
+课程亮点
+线性代数核⼼概念理解能⼒：深刻理解向量、矩阵等线性代数基础，能看懂并推导 AI 
+算法中的矩阵公式
+概率论与统计建模能⼒：熟练掌握概率分布、期望⽅差、⻉叶斯定理、最⼤似然估计等
+统计⽅法，具备基础统计建模能⼒
+微积分与优化算法理解能⼒：掌握导数、偏导数、梯度、链式法则，理解梯度下降等优
+化算法的数学原理，能看懂并实现简单的优化过程
+AI数学⼯具实战与应⽤能⼒：理解信息论、矩阵求导、反向传播的核⼼逻辑，能看懂机
+器学习模型的数学推导，会⽤Python实现矩阵运算、概率分布与基础数学案例，为后
+续机器学习、深度学习和⼤模型开发提供扎实数学⽀撑
+能⼒⽬标
+线性代数
+基础
+向量与矩阵
+运算 向量 / 矩阵定义与运算、转置 / 逆 / 秩、⾏列式、线性⽅程组求解
+矩阵求导与
+优化 标量 / 向量 / 矩阵求导、反向传播数学原理
+概率论与
+数理统计
+微积分基础
+概率基础与
+分布 概率公理、条件概率 / ⻉叶斯定理、常⻅概率分布（正态 / 伯努利 / 泊松等）
+随机变量与
+统计量
+期望、⽅差、协⽅差、相关系数、⼤数定律与中⼼极限定理/向量/矩阵求
+导、反向传播数学原理
+参数估计 参数估计、最⼤似然估计
+导数与偏导数 导数定义、偏导数、链式法则、多元函数梯度
+积分与优化 定积分 / 不定积分、梯度下降法、极值与凸函数
+泰勒展开与近似 泰勒公式、函数近似、⽜顿法基础
+AI常⽤数学
+基础
+信息论基础 熵、交叉熵、KL 散度、互信息
+综合数学案例 线性回归、逻辑回归数学推导；Python 或Numpy实现矩阵运算与概率分布
+技术点
+模块 详细知识点
+课程⼤纲
+⾼数专题
+课程以Python为核⼼语⾔，从零搭建数据结构与算法的完整知识体系，覆盖线性表、
+链表、树、排序、查找、动态规划等⾼频考点与⼯程常⽤场景。课程内置算法复杂度分
+析、⼿写实现与LeetCode⾼频题闭环训练，所有核⼼数据结构均通过⾃定义代码模拟
+实现，兼顾原理理解与⼯程落地；同时结合真实业务场景拆解算法优化思路，帮助你建
+⽴从「看懂理论」到「⼿写实现」再到「⼯程应⽤」的完整能⼒链路。课程内容对标⼤
+⼚⾯试与⼯业级算法需求，可直接应⽤于算法⾯试、代码优化与复杂业务逻辑实现，是
+夯实编程基础、提升代码质量与解题能⼒的系统训练⽅案
+课程亮点
+数据结构核⼼原理理解能⼒：深刻理解线性表、链表、⼆叉树等基础数据结构的底层实
+现、时间 / 空间复杂度，掌握递归、遍历等核⼼操作的执⾏逻辑与适⽤场景
+常⻅算法实现与优化能⼒：熟练掌握冒泡、快排等排序算法，以及查找、动态规划、贪⼼、
+回溯等⾼频算法的原理与代码实现，能够根据场景选择合适的算法并进⾏复杂度优化
+⼯程级算法实战与解题能⼒：具备⾃定义实现数据结构、⼿写核⼼算法的能⼒，可独⽴
+完成LeetCode⾼频算法题，同时能够将算法思维应⽤到实际开发中，解决性能优化、
+业务逻辑实现等问题
+能⼒⽬标
+数据结构
+ 线性表和链表 算法-时间复杂度详解；顺序表详解；链表详解；递归算法；⾃定义代码-模
+拟链表
+常⻅算法
+排序和查找
+算法
+排序算法详解.（冒泡、选择、插⼊和快排4选2）；查找算法详解；⼆叉树详
+解；⼆叉树遍历；综合案例-⾃定义代码模拟⼆叉树
+核⼼⾼频算法 动态规划、贪⼼、回溯算法；Leetcode核⼼⾼频10题
+技术点
+模块 详细知识点
+课程⼤纲
+算法专题
+覆盖模型部署的核⼼内容，掌握模型部署⽅法和技巧
+回顾常⻅数据结构，能够应对⾯试中⾼频数据结构问题
+能够掌握常⻅算法，包括动态规划、递归及⾼频LeetCode刷题能够完成核⼼机器学习
+与深度学习⾯试题
+覆盖⼤模型核⼼阶段⾯试题
+课程亮点
+学员能够熟练应对⼤模型开发相关⾯试问题，掌握算法、机器学习及服务部署核⼼技
+能，成功通过 AI 技术岗位⾯试。
+能⼒⽬标
+服务化框
+架实战
+深度学习框架
+Pytorch详解
+Flask作⽤与流程；Flask⼊⻔HelloWorld；Flask表单使⽤；Flask服务交付
+(json）；Flask服务封装实战案例
+Gradilo框架
+实战应⽤
+Gradio简介；Gradio安装及基本⽤法；Gradio基本参数
+(InterfacetBlocks）；Gradio应⽤分享；Gradio案例（⽂本分类、图像分类)
+Docker部
+署实战
+Docker部署
+实战
+Docker介绍安装；Docker快速⼊⼿；Docker镜像操作；Docker容器操作；
+Docker⼿动构建镜像；Docker⾃动构建镜像；Docker镜像推送
+⾃然语⾔处理
+核⼼项⽬串讲
+Pandas+机
+器学习+深
+度学习⾼频
+⾯试题讲解
+Pandas回顾；机器学习回顾+⾯试⾼频题讲解；深度学习回顾+⾯试⾼频题
+讲解
+⼤模型核⼼
+项⽬串讲及
+简历优化
+算法⼯程师
+⾼频⾯试题
+讲解
+⼤模型⾼频⾯试题讲解；⼤模型应⽤框架（推理框架+应⽤框架）；项⽬简
+历优化及⾯试话术
+技术点
+模块 详细知识点
+课程⼤纲
+就业⾯试加强专题
+传智教育旗下⾼端IT教育品牌 ，来黑马程序员零基础学
+
+=== PAGE 15 ===
+阶段8：全模态⼤模型
+深⼊讲解CNN、ResNet原理，Yolo V系列⽬标检测算法及Unet、MaskRCNN的图像分
+类与分割技术，结合理论与应⽤场景
+课程亮点
+学员能够掌握CNN、ResNet、Yolo及分割算法的核⼼原理，具备开发图像分类与⽬标
+检测应⽤的能⼒
+能⼒⽬标
+计算机视觉
+背景
+计算机视觉背
+景、任务、发
+展历史介绍
+计算机视觉定义；计算机视觉的任务；计算机视觉的应⽤领域；计算机视觉
+的发展历史
+图像分析特性
+图像特性分
+析与图像处
+理实践
+图像的表示⽅法；图像的IO操作；图像的颜⾊空间；图像的加法；图像混
+合；图像的⼏何变换；图像噪声；图像平滑⽅法
+图像分类
+图像分类任
+务详解与图
+像增强技术
+实践
+图像分类任务详解；图像分类的数据集；图像分类的评估⽅法；常⽤的图像
+增强⽅法；tf.image进⾏图像增强；imagedatagenrator进⾏图像增强；模
+型微调；数据集获取；【案例】图像⼏何颜⾊增强实践
+围像分类的
+经典⽹络结
+构与鲜花分
+类案例实践
+图像分类的CNN⽹络回顾；AlexNet⽹络实践；VGG⽹络架构；GoogLeNet
+详解与实践；Inception系列⽹络；ResNet⽹络结构与实践；残差块和瓶颈
+块；【案例】鲜花分类案例
+图像分割
+图像的语义
+分割详解及
+Unet实现
+VOC语义分
+割案例
+图像分割定义；图像分割的类型；图像分割的开源数据集；图像分割的评估
+指标；unet⽹络结构；语义分割VOC数据集获取；数据集⽣成器；模型构
+建；编码器实践；解码器实践；模型训练；模型预测； 【案例】基于Unet的
+VOC数据的语义分割案例
+图像的实例
+分割详解及
+MaskRCNN
+⽓球实例分
+割案例
+图像实例分割；MaskRCNN的⽹络构成；MaskRCNN的流程；ROIAlign原
+理与实践；⽓球分割数据集的获取；模型训练；损失函数的实践；模型预
+测；【案例】MaskRCNN⽓球实例分割实践
+技术点
+模块 详细知识点
+课程⼤纲
+星灿全模态基础及项⽬
+聚焦当前最前沿的多模态⽣成与理解技术，系统讲解CLIP对⽐学习预训练与Diﬀusion
+扩散模型的核⼼原理，并深⼊剖析Stable Diﬀusion⽂⽣图项⽬的完整⼯作流。同时，
+课程覆盖基于Qwen系列模型的图⽂理解任务，以及如何利⽤ms-SWIFT或
+LlamaFactory框架进⾏⾼效模型微调ViT. CLIP.ClipCap、Diﬀusion、ControlNet、
+LoRA ⻛格微调全流程，图⽂检索/ 图⽂⽣成双项⽬落地
+项⽬介绍
+学员能够掌握CLIP与Diﬀusion的核⼼原理，独⽴搭建Stable Diﬀusion⽂⽣图项⽬，熟练
+运⽤LoRA、ControlNet等控制技术。同时，能够基于Qwen系列模型完成图⽂理解任
+务，并利⽤ms-SWIFT或LlamaFactory框架进⾏⾼效微调，实现从模型训练到部署的完
+整项⽬落地
+能⼒⽬标
+业务流程图
+输⼊模块
+提示词增强模块
+ 图像⽣成模块
+输出模块
+图⽂理解模块
+⽂本⽣成模块
+⽂本
+⽂本
+⽂本
+⽂本
+⽂本
+⽂本
+图像
+图像
+1、输⼊
+-⾃然语⾔
+-图像
+-语⾳
+-视频
+-GLM4-9B
+-Qwen3
+-Baichuan4
+2、⼤预⾔模型
+-GLM-Edge
+-CogVLM2
+-Qwen3-VL
+4、图⽂理解⼤模型
+-⾃然语⾔
+-图像
+-语⾳
+-视频
+5、输出
+-GLM4-9B
+-Qwen3
+-Baichuan4
+2、⼤预⾔模型
+-Stable Diﬀusion
+-FLUX
+3、图像⽣成⼤模型
+多模态基础原理：CLIP、扩散模型、Stable Diﬀusion；跨模态注意⼒、统⼀表征学
+习、模态对⻬机制、⽣成冲突解决
+图像⽣成：前向扩散、反向去噪、⽂本引导⽣成、Transformer；⽂⽣图、图⽣图、
+LoRA微调
+图⽂理解：图⽂联合理解、多模态对话⽣成、视觉问答(VQA)、图⽂对⻬检索；ms-
+swift部署图⽂理解多模态模型
+主讲知识点
+聚焦当前最前沿的多模态⽣成与理解技术，系统讲解CLIP对⽐学习预训练与Diﬀusion
+扩散模型的核⼼原理，并深⼊剖析Stable Diﬀusion⽂⽣图项⽬的完整⼯作流
+课程覆盖基于Qwen系列模型的图⽂理解任务，以及如何利⽤ms-SWIFT或
+LlamaFactory框架进⾏⾼效模型微调
+解决⽅案
+传智教育旗下⾼端IT教育品牌 ，来黑马程序员零基础学
+全模态大模型
+General Multimodal Large Model
+
+
+=== PAGE 16 ===
+北京 | 上海 | ⼴州 | 深圳 | 武汉 | 郑州 | ⻄安 | ⻓沙 | 济南 | 杭州 | 南京 | 成都 | 合肥

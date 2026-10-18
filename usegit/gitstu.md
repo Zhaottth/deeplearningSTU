@@ -6,7 +6,23 @@
 
 对于新手来应该都听说过github，或者说听说过git，但是平时大家在外边的教学班中不一定回使用到
 
-首先记住这张图基本上就能会60%了
+**先告诉大家怎么把这个文件下载下来啊**
+首先打开powershell(注意要安装过git) 然后进入自己的目录，直接git clone就好啦，具体操作如下
+```powershell
+# 进入你存放项目的文件夹
+cd C:\stuprogram
+
+# 从 GitHub 克隆整个项目，包括 Git 提交历史
+git clone https://github.com/Zhaottth/deeplearningSTU.git
+
+# 进入下载好的项目
+cd deeplearningSTU
+
+# 查看历史提交记录
+git log --oneline
+```
+
+先理解一下这张图记住这张图基本上就能会60%了
 
 ```bash
 你用 VS Code 修改文件

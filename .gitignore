@@ -1,0 +1,44 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+
+# Build outputs
+*.pyc
+__pycache__/
+*.class
+*.o
+*.exe
+
+# Environment
+.env
+.env.local
+venv/
+env/
+
+# Large assets (optional - if you want to track images use git-lfs)
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
+# *.mp4
+
+# Backup files
+*.bak
+*.backup

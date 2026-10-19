@@ -56,6 +56,6 @@ LangGraph / Agent / MCP / 多智能体
 
 
 ## 目前更新：
-- **sql的测试题**: sqltest中1.html为sql基础内容，2.html为sql进阶内容为2-5天的题。
-- **finbi笔记**：帆软为做图标软件，后续为了美观需要。
-- **sql笔记**: sql基础知识分天进行上传。
+- **sql 的测试题**: sqltest 中 1.html 为 sql 基础内容，2.html 为 sql 进阶内容为 2-5 天的题。
+- **finbi 笔记**：帆软为做图标软件，后续为了美观需要。
+- **sql 笔记**: sql 基础知识分天进行上传。

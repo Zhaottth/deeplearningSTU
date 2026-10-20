@@ -10,18 +10,29 @@ function run(saved){
  const ctx={document:{querySelector:node,querySelectorAll:()=>[],hidden:false,getElementsByName:()=>[]},localStorage:{getItem:()=>saved?JSON.stringify(saved):null,setItem(){}},window:{addEventListener(){}},setInterval(){},setTimeout(){},console,Blob,URL,confirm:()=>true};
  vm.createContext(ctx);vm.runInContext(source,ctx);
  const evaluate=s=>vm.runInContext(s,ctx);
- assert.equal(evaluate('BANK.length'),400);assert.equal(evaluate('CASES.length'),48);
- assert.equal(evaluate('new Set(BANK.map(q=>q.q)).size'),400);
+ assert.equal(evaluate('BANK.length'),519);assert.equal(evaluate('CASES.length'),48);
+ assert.equal(evaluate('new Set(BANK.map(q=>q.q)).size'),519);
  assert.equal(evaluate('BANK.every(q=>q.a.length>0&&q.a.every(a=>Number.isInteger(a)&&a>=0&&a<q.o.length))'),true);
  assert.equal(evaluate('BANK.every(q=>typeof q.e==="string"&&q.e.trim().length>0)'),true);
- assert.equal(evaluate('BANK.slice(200).every(q=>new Set(q.o).size===4&&q.e.length>60)'),true);
+ assert.equal(evaluate('BANK.slice(200,400).every(q=>new Set(q.o).size===4&&q.e.length>60)'),true);
+ assert.equal(evaluate('BANK.slice(400).every(q=>new Set(q.o).size===4&&q.e.length>=40)'),true);
  evaluate("filter='new';applyFilter()");assert.equal(evaluate('activeIds.length'),80);
- for(const [filter,n] of [['latest',200],['reasoning',120],['systems',80],['concurrency',40],['performance',40]]){
+ for(const [filter,n] of [['latest',200],['reasoning',120],['systems',80],['concurrency',40],['performance',40],['coverage',119]]){
    evaluate(`filter='${filter}';topic='all';query='';applyFilter()`);
    assert.equal(evaluate('activeIds.length'),n);
  }
  evaluate("filter='concurrency';query='死锁';applyFilter()");assert(evaluate('activeIds.length')>0);
  assert.equal(evaluate("activeIds.every(id=>BANK[id].batch==='concurrency')"),true);
+ assert.equal(evaluate('COVERAGE.points.length'),111);
+ assert.equal(evaluate('COVERAGE.points.every(k=>new Set(k.questions).size>=3)'),true);
+ assert.equal(evaluate('BANK.every(q=>q.knowledge.length>=1)'),true);
+ evaluate("switchTab('coverage')");assert.equal(nodes.get('#coverage').hidden,false);
+ assert(nodes.get('#coverage').innerHTML.includes('111 个核心知识点'));
+ assert(nodes.get('#coverage').innerHTML.includes('K111'));
+ evaluate("selectKnowledge('K111')");assert.equal(evaluate('activeIds.length'),3);
+ assert.equal(evaluate("activeIds.every(id=>BANK[id].knowledge.includes('K111'))"),true);
+ assert.equal(nodes.get('#quiz').hidden,false);
+ evaluate("resetView()");assert.equal(evaluate('activeIds.length'),519);
  evaluate("switchTab('engineering')");assert.equal(nodes.get('#engineering').hidden,false);assert(nodes.get('#engineering').innerHTML.includes('P8'));
  evaluate("switchTab('lab')");assert(nodes.get('#lab').innerHTML.includes('实战 48 / 48'));
  assert(nodes.get('#lab').innerHTML.includes('只下载新电商数据'));
@@ -40,4 +51,4 @@ function run(saved){
 run();
 const old={version:2,chapter:2,answers:{0:1},graded:{0:true},stars:{0:true},history:{},drafts:{23:'old SQL'},cases:{23:true},seconds:30};
 const e=run(old);assert.equal(e('state.answers[0]'),1);assert.equal(e('state.drafts[23]'),'old SQL');
-console.log('PASS: syntax, 400 question schemas/explanations, 48 labs, six batch filters, tabs, 200 new answers, wrong-answer grading, export/import validation and legacy progress.');
+console.log('PASS: 519 question schemas/explanations, 111 mapped points with >=3 questions, knowledge navigation, seven batch filters, tabs, grading, export/import validation and legacy progress.');

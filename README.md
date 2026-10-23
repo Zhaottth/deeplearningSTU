@@ -59,3 +59,4 @@ LangGraph / Agent / MCP / 多智能体
 - **sql 的测试题**: sqltest 中 1.html 为 sql 基础内容，2.html 为 sql 进阶内容为 2-5 天的题。同时添加了一些MySQLday06的题目
 - **finbi 笔记**：帆软为做图标软件，后续为了美观需要。
 - **sql 笔记**: sql 基础知识分天进行上传。
+- **python基础**：已经进行上传了课堂笔记，

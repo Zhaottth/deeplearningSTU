@@ -1,0 +1,614 @@
+[
+  {
+    "id": 0,
+    "title": "课程导论",
+    "file": "课程/00_课程导论.html",
+    "original": true
+  },
+  {
+    "id": 1,
+    "title": "关于编程经验的说明",
+    "file": "课程/01_关于编程经验的说明.html",
+    "original": true
+  },
+  {
+    "id": 2,
+    "title": "概率定义",
+    "file": "课程/02_概率定义.html",
+    "original": true
+  },
+  {
+    "id": 3,
+    "title": "概率示例：骰子问题",
+    "file": "课程/03_概率示例：骰子问题.html",
+    "original": true
+  },
+  {
+    "id": 4,
+    "title": "概率补集",
+    "file": "课程/04_概率补集.html",
+    "original": true
+  },
+  {
+    "id": 5,
+    "title": "互斥事件概率求和",
+    "file": "课程/05_互斥事件概率求和.html",
+    "original": true
+  },
+  {
+    "id": 6,
+    "title": "联合事件概率求和",
+    "file": "课程/06_联合事件概率求和.html",
+    "original": true
+  },
+  {
+    "id": 7,
+    "title": "独立性",
+    "file": "课程/07_独立性.html",
+    "original": true
+  },
+  {
+    "id": 8,
+    "title": "生日问题",
+    "file": "课程/08_生日问题.html",
+    "original": true
+  },
+  {
+    "id": 9,
+    "title": "条件概率（第一部分）",
+    "file": "课程/09_条件概率（第一部分）.html",
+    "original": true
+  },
+  {
+    "id": 10,
+    "title": "条件概率（第二部分）",
+    "file": "课程/10_条件概率（第二部分）.html",
+    "original": true
+  },
+  {
+    "id": 11,
+    "title": "贝叶斯定理直观理解",
+    "file": "课程/11_贝叶斯定理直观理解.html",
+    "original": true
+  },
+  {
+    "id": 12,
+    "title": "贝叶斯定理数学公式",
+    "file": "课程/12_贝叶斯定理数学公式.html",
+    "original": true
+  },
+  {
+    "id": 13,
+    "title": "贝叶斯定理垃圾邮件示例",
+    "file": "课程/13_贝叶斯定理垃圾邮件示例.html",
+    "original": true
+  },
+  {
+    "id": 14,
+    "title": "贝叶斯定理先验与后验",
+    "file": "课程/14_贝叶斯定理先验与后验.html",
+    "original": true
+  },
+  {
+    "id": 15,
+    "title": "贝叶斯定理朴素贝叶斯模型",
+    "file": "课程/15_贝叶斯定理朴素贝叶斯模型.html",
+    "original": true
+  },
+  {
+    "id": 16,
+    "title": "机器学习中的概率",
+    "file": "课程/16_机器学习中的概率.html",
+    "original": true
+  },
+  {
+    "id": 17,
+    "title": "随机变量",
+    "file": "课程/17_随机变量.html",
+    "original": true
+  },
+  {
+    "id": 18,
+    "title": "离散概率分布",
+    "file": "课程/18_离散概率分布.html",
+    "original": true
+  },
+  {
+    "id": 19,
+    "title": "二项分布",
+    "file": "课程/19_二项分布.html",
+    "original": true
+  },
+  {
+    "id": 20,
+    "title": "可选：二项式系数",
+    "file": "课程/20_可选：二项式系数.html",
+    "original": true
+  },
+  {
+    "id": 21,
+    "title": "伯努利分布",
+    "file": "课程/21_伯努利分布.html",
+    "original": true
+  },
+  {
+    "id": 22,
+    "title": "连续概率分布",
+    "file": "课程/22_连续概率分布.html",
+    "original": true
+  },
+  {
+    "id": 23,
+    "title": "概率密度函数",
+    "file": "课程/23_概率密度函数.html",
+    "original": true
+  },
+  {
+    "id": 24,
+    "title": "累积分布函数",
+    "file": "课程/24_累积分布函数.html",
+    "original": true
+  },
+  {
+    "id": 25,
+    "title": "均匀分布",
+    "file": "课程/25_均匀分布.html",
+    "original": true
+  },
+  {
+    "id": 26,
+    "title": "正态分布",
+    "file": "课程/26_正态分布.html",
+    "original": true
+  },
+  {
+    "id": 27,
+    "title": "可选：卡方分布",
+    "file": "课程/27_可选：卡方分布.html",
+    "original": true
+  },
+  {
+    "id": 28,
+    "title": "分布抽样",
+    "file": "课程/28_分布抽样.html",
+    "original": true
+  },
+  {
+    "id": 29,
+    "title": "第一周总结",
+    "file": "课程/29_第一周总结.html",
+    "original": true
+  },
+  {
+    "id": 30,
+    "title": "期望值",
+    "file": "课程/30_期望值.html",
+    "original": true
+  },
+  {
+    "id": 31,
+    "title": "其他集中趋势度量：中位数与众数",
+    "file": "课程/31_其他集中趋势度量：中位数与众数.html",
+    "original": true
+  },
+  {
+    "id": 32,
+    "title": "函数期望值",
+    "file": "课程/32_函数期望值.html",
+    "original": true
+  },
+  {
+    "id": 33,
+    "title": "期望值求和",
+    "file": "课程/33_期望值求和.html",
+    "original": true
+  },
+  {
+    "id": 34,
+    "title": "方差",
+    "file": "课程/34_方差.html",
+    "original": true
+  },
+  {
+    "id": 35,
+    "title": "标准差",
+    "file": "课程/35_标准差.html",
+    "original": true
+  },
+  {
+    "id": 36,
+    "title": "高斯分布求和",
+    "file": "课程/36_高斯分布求和.html",
+    "original": true
+  },
+  {
+    "id": 37,
+    "title": "分布标准化",
+    "file": "课程/37_分布标准化.html",
+    "original": true
+  },
+  {
+    "id": 38,
+    "title": "分布矩：偏度与峰度",
+    "file": "课程/38_分布矩：偏度与峰度.html",
+    "original": true
+  },
+  {
+    "id": 39,
+    "title": "偏度分析",
+    "file": "课程/39_偏度分析.html",
+    "original": true
+  },
+  {
+    "id": 40,
+    "title": "峰度分析",
+    "file": "课程/40_峰度分析.html",
+    "original": true
+  },
+  {
+    "id": 41,
+    "title": "分位数与箱线图",
+    "file": "课程/41_分位数与箱线图.html",
+    "original": true
+  },
+  {
+    "id": 42,
+    "title": "数据可视化：箱线图",
+    "file": "课程/42_数据可视化：箱线图.html",
+    "original": true
+  },
+  {
+    "id": 43,
+    "title": "数据可视化：核密度估计",
+    "file": "课程/43_数据可视化：核密度估计.html",
+    "original": true
+  },
+  {
+    "id": 44,
+    "title": "数据可视化：小提琴图",
+    "file": "课程/44_数据可视化：小提琴图.html",
+    "original": true
+  },
+  {
+    "id": 45,
+    "title": "数据可视化：QQ图",
+    "file": "课程/45_数据可视化：QQ图.html",
+    "original": true
+  },
+  {
+    "id": 46,
+    "title": "联合分布：离散（第一部分）",
+    "file": "课程/46_联合分布：离散（第一部分）.html",
+    "original": true
+  },
+  {
+    "id": 47,
+    "title": "联合分布：离散（第二部分）",
+    "file": "课程/47_联合分布：离散（第二部分）.html",
+    "original": true
+  },
+  {
+    "id": 48,
+    "title": "联合分布：连续",
+    "file": "课程/48_联合分布：连续.html",
+    "original": true
+  },
+  {
+    "id": 49,
+    "title": "边缘分布与条件分布",
+    "file": "课程/49_边缘分布与条件分布.html",
+    "original": true
+  },
+  {
+    "id": 50,
+    "title": "条件分布",
+    "file": "课程/50_条件分布.html",
+    "original": true
+  },
+  {
+    "id": 51,
+    "title": "数据集协方差",
+    "file": "课程/51_数据集协方差.html",
+    "original": true
+  },
+  {
+    "id": 52,
+    "title": "概率分布协方差",
+    "file": "课程/52_概率分布协方差.html",
+    "original": true
+  },
+  {
+    "id": 53,
+    "title": "协方差矩阵",
+    "file": "课程/53_协方差矩阵.html",
+    "original": true
+  },
+  {
+    "id": 54,
+    "title": "相关系数",
+    "file": "课程/54_相关系数.html",
+    "original": true
+  },
+  {
+    "id": 55,
+    "title": "多元高斯分布",
+    "file": "课程/55_多元高斯分布.html",
+    "original": true
+  },
+  {
+    "id": 56,
+    "title": "第二周总结",
+    "file": "课程/56_第二周总结.html",
+    "original": true
+  },
+  {
+    "id": 57,
+    "title": "总体与样本",
+    "file": "课程/57_总体与样本.html",
+    "original": true
+  },
+  {
+    "id": 58,
+    "title": "样本均值",
+    "file": "课程/58_样本均值.html",
+    "original": true
+  },
+  {
+    "id": 59,
+    "title": "样本比例",
+    "file": "课程/59_样本比例.html",
+    "original": true
+  },
+  {
+    "id": 60,
+    "title": "样本方差",
+    "file": "课程/60_样本方差.html",
+    "original": true
+  },
+  {
+    "id": 61,
+    "title": "大数定律",
+    "file": "课程/61_大数定律.html",
+    "original": true
+  },
+  {
+    "id": 62,
+    "title": "中心极限定理：离散随机变量",
+    "file": "课程/62_中心极限定理：离散随机变量.html",
+    "original": true
+  },
+  {
+    "id": 63,
+    "title": "中心极限定理：连续随机变量",
+    "file": "课程/63_中心极限定理：连续随机变量.html",
+    "original": true
+  },
+  {
+    "id": 64,
+    "title": "点估计",
+    "file": "课程/64_点估计.html",
+    "original": true
+  },
+  {
+    "id": 65,
+    "title": "极大似然估计动机",
+    "file": "课程/65_极大似然估计动机.html",
+    "original": true
+  },
+  {
+    "id": 66,
+    "title": "MLE伯努利示例",
+    "file": "课程/66_MLE伯努利示例.html",
+    "original": true
+  },
+  {
+    "id": 67,
+    "title": "MLE高斯示例",
+    "file": "课程/67_MLE高斯示例.html",
+    "original": true
+  },
+  {
+    "id": 68,
+    "title": "MLE线性回归",
+    "file": "课程/68_MLE线性回归.html",
+    "original": true
+  },
+  {
+    "id": 69,
+    "title": "正则化",
+    "file": "课程/69_正则化.html",
+    "original": true
+  },
+  {
+    "id": 70,
+    "title": "回归贝叶斯基础",
+    "file": "课程/70_回归贝叶斯基础.html",
+    "original": true
+  },
+  {
+    "id": 71,
+    "title": "贝叶斯统计：频率学派对比",
+    "file": "课程/71_贝叶斯统计：频率学派对比.html",
+    "original": true
+  },
+  {
+    "id": 72,
+    "title": "贝叶斯统计：最大后验估计",
+    "file": "课程/72_贝叶斯统计：最大后验估计.html",
+    "original": true
+  },
+  {
+    "id": 73,
+    "title": "贝叶斯统计：先验更新",
+    "file": "课程/73_贝叶斯统计：先验更新.html",
+    "original": true
+  },
+  {
+    "id": 74,
+    "title": "贝叶斯统计完整案例",
+    "file": "课程/74_贝叶斯统计完整案例.html",
+    "original": true
+  },
+  {
+    "id": 75,
+    "title": "MAP、MLE与正则化关系",
+    "file": "课程/75_MAP、MLE与正则化关系.html",
+    "original": true
+  },
+  {
+    "id": 76,
+    "title": "第三周总结",
+    "file": "课程/76_第三周总结.html",
+    "original": true
+  },
+  {
+    "id": 77,
+    "title": "置信区间概述",
+    "file": "课程/77_置信区间概述.html",
+    "original": true
+  },
+  {
+    "id": 78,
+    "title": "置信区间范围调整",
+    "file": "课程/78_置信区间范围调整.html",
+    "original": true
+  },
+  {
+    "id": 79,
+    "title": "置信区间误差范围",
+    "file": "课程/79_置信区间误差范围.html",
+    "original": true
+  },
+  {
+    "id": 80,
+    "title": "置信区间计算步骤",
+    "file": "课程/80_置信区间计算步骤.html",
+    "original": true
+  },
+  {
+    "id": 81,
+    "title": "置信区间示例",
+    "file": "课程/81_置信区间示例.html",
+    "original": true
+  },
+  {
+    "id": 82,
+    "title": "样本量计算",
+    "file": "课程/82_样本量计算.html",
+    "original": true
+  },
+  {
+    "id": 83,
+    "title": "置信度与概率区别",
+    "file": "课程/83_置信度与概率区别.html",
+    "original": true
+  },
+  {
+    "id": 84,
+    "title": "未知标准差处理",
+    "file": "课程/84_未知标准差处理.html",
+    "original": true
+  },
+  {
+    "id": 85,
+    "title": "比例置信区间",
+    "file": "课程/85_比例置信区间.html",
+    "original": true
+  },
+  {
+    "id": 86,
+    "title": "假设定义",
+    "file": "课程/86_假设定义.html",
+    "original": true
+  },
+  {
+    "id": 87,
+    "title": "Ⅰ型与Ⅱ型错误",
+    "file": "课程/87_Ⅰ型与Ⅱ型错误.html",
+    "original": true
+  },
+  {
+    "id": 88,
+    "title": "右尾、左尾与双尾检验",
+    "file": "课程/88_右尾、左尾与双尾检验.html",
+    "original": true
+  },
+  {
+    "id": 89,
+    "title": "P值",
+    "file": "课程/89_P值.html",
+    "original": true
+  },
+  {
+    "id": 90,
+    "title": "临界值",
+    "file": "课程/90_临界值.html",
+    "original": true
+  },
+  {
+    "id": 91,
+    "title": "检验功效",
+    "file": "课程/91_检验功效.html",
+    "original": true
+  },
+  {
+    "id": 92,
+    "title": "结果解释",
+    "file": "课程/92_结果解释.html",
+    "original": true
+  },
+  {
+    "id": 93,
+    "title": "t分布",
+    "file": "课程/93_t分布.html",
+    "original": true
+  },
+  {
+    "id": 94,
+    "title": "t检验",
+    "file": "课程/94_t检验.html",
+    "original": true
+  },
+  {
+    "id": 95,
+    "title": "双样本t检验",
+    "file": "课程/95_双样本t检验.html",
+    "original": true
+  },
+  {
+    "id": 96,
+    "title": "配对t检验",
+    "file": "课程/96_配对t检验.html",
+    "original": true
+  },
+  {
+    "id": 97,
+    "title": "机器学习应用：A-B测试",
+    "file": "课程/97_机器学习应用：A-B测试.html",
+    "original": true
+  },
+  {
+    "id": 98,
+    "title": "第四周总结",
+    "file": "课程/98_第四周总结.html",
+    "original": true
+  },
+  {
+    "id": 99,
+    "title": "补充：熵与交叉熵",
+    "file": "课程/99_补充：熵与交叉熵.html",
+    "original": false
+  },
+  {
+    "id": 100,
+    "title": "补充：KL 散度",
+    "file": "课程/100_补充：KL 散度.html",
+    "original": false
+  },
+  {
+    "id": 101,
+    "title": "补充：概率到 Transformer 反向传播",
+    "file": "课程/101_补充：概率到 Transformer 反向传播.html",
+    "original": false
+  }
+]
